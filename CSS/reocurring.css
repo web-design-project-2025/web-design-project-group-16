@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: #130204;
+}
+
+header {
+  background-color: #fdf9ec;
+  height: 80px;
+}
+footer {
+  background-color: #fdf9ec;
+  height: 200px;
+}
+
+h1 {
+  color: #fdf9ec;
+}
+
+.headerImage {
+  width: 100%;
+}
