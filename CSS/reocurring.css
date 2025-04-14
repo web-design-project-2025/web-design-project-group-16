@@ -15,6 +15,11 @@ footer {
   height: 200px;
 }
 
+#footer-logo {
+  width: 100px;
+  margin: 0;
+}
+
 h1 {
   color: #fdf9ec;
 }
