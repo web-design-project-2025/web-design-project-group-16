@@ -1,19 +1,22 @@
 [
-{
+  {
     "id": 1,
-    "name": "Novocaine",  
+    "name": "Novocaine",
     "genre": "Comedy Action",
-    "director": "Berk Robert Olsen", 
-    "writer": "Lars Jacobson", 
-    "starring": "Jack Quaid, Amber Midthunder", 
+    "director": "Berk Robert Olsen",
+    "writer": "Lars Jacobson",
+    "starring": "Jack Quaid, Amber Midthunder",
     "release-year": "2025",
     "description": "The film stars Jack Quaid, Amber Midthunder, Ray Nicholson, Betty Gabriel, Matt Walsh, and Jacob Batalon. Its plot follows Nathan Caine (Quaid), a bank employee with the inability to feel pain who goes out to rescue his co-worker (Midthunder) after she is taken hostage by a group of bank robbers."
-},
+  },
 
-{
-    "id": 2,
-    "name": "Forrest Gump",
-    "genre": "Drama"
-}
+  {
+    "id": 1,
+    "name": "You’re Cordially invited",
+    "genre": "Comedy",
+    "director": "Nicholas Stoller",
+    "Writer": "Nicholas Stoller, Reese Witherspoon",
+    "starring": "Reese Witherspoon, Will Ferrell, Geraldine Viswanathan",
+    "release-year": "2025"
+  }
 ]
-
