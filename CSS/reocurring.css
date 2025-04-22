@@ -1,3 +1,4 @@
+/* --- CSS FOR ENTIRE PAGE START --- */
 * {
   margin: 0;
   padding: 0;
@@ -5,25 +6,49 @@
 html {
   background-color: #130204;
 }
+/* --- CSS FOR ENTIRE PAGE END --- */
 
+/* --- MENU BAR CSS START --- */
 header {
   background-color: #fdf9ec;
-  height: 80px;
-}
-footer {
-  background-color: #fdf9ec;
-  height: 200px;
+  height: 108px;
 }
 
-#footer-logo {
-  width: 100px;
-  margin-left: 48px;
+#menu-logo {
+  width: 204px;
 }
 
-h1 {
+/* --- MENU BAR CSS END --- */
+
+/* h1 {
   color: #fdf9ec;
 }
 
 .headerImage {
   width: 100%;
+} */
+
+/* --- FOOTER CSS START --- */
+
+#footer-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #fdf9ec;
+  height: 240px;
 }
+
+#logo-footer {
+  width: 773px;
+  height: 105px;
+}
+
+#footer-text-container {
+  margin-left: 7%;
+  margin-top: 5%;
+}
+#footer-text {
+  padding-top: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- FOOTER CSS END --- */
