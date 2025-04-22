@@ -11,12 +11,40 @@
   },
 
   {
-    "id": 1,
+    "id": 2,
     "name": "You’re Cordially invited",
     "genre": "Comedy",
     "director": "Nicholas Stoller",
     "Writer": "Nicholas Stoller, Reese Witherspoon",
     "starring": "Reese Witherspoon, Will Ferrell, Geraldine Viswanathan",
     "release-year": "2025"
+  },
+  {
+    "id": 3,
+    "name": "WOLFS",
+    "genre": "Comedy, Action",
+    "director": "Jon Watts",
+    "writer": "Jon Watts",
+    "starring": "George Clooney, Brad Pitt, Austin Abrams",
+    "release-year": "2024"
+  },
+
+  {
+    "id": 4,
+    "name": "Mickey 17",
+    "genre": " Comedy, Sci-Fi",
+    "director": "Bong Joon Ho",
+    "writer": "Jon Watts",
+    "starring": "Bong Joon Ho, Edward Ashton",
+    "release-year": "2025"
+  },
+  {
+    "id": 5,
+    "name": "Ted",
+    "genre": " Comedy",
+    "director": "Seth MacFarlane ",
+    "writer": "Seth MacFarlane",
+    "starring": "Mark Wahlberg, Mila Kunis, Seth MacFarlane",
+    "release-year": "2012"
   }
 ]
