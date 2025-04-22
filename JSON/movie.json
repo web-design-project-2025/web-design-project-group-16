@@ -1,0 +1,71 @@
+Comedy[
+  {
+    "id": 1,
+    "name": "Novocaine",
+    "genre": "Comedy Action",
+    "director": "Berk Robert Olsen",
+    "writer": "Lars Jacobson",
+    "starring": "Jack Quaid, Amber Midthunder",
+    "release-year": "2025",
+    "description": "The film stars Jack Quaid, Amber Midthunder, Ray Nicholson, Betty Gabriel, Matt Walsh, and Jacob Batalon. Its plot follows Nathan Caine (Quaid), a bank employee with the inability to feel pain who goes out to rescue his co-worker (Midthunder) after she is taken hostage by a group of bank robbers."
+  },
+
+  {
+    "id": 2,
+    "name": "You’re Cordially invited",
+    "genre": "Comedy",
+    "director": "Nicholas Stoller",
+    "Writer": "Nicholas Stoller, Reese Witherspoon",
+    "starring": "Reese Witherspoon, Will Ferrell, Geraldine Viswanathan",
+    "release-year": "2025"
+  },
+  {
+    "id": 3,
+    "name": "WOLFS",
+    "genre": "Comedy, Action",
+    "director": "Jon Watts",
+    "writer": "Jon Watts",
+    "starring": "George Clooney, Brad Pitt, Austin Abrams",
+    "release-year": "2024"
+  },
+
+  {
+    "id": 4,
+    "name": "Mickey 17",
+    "genre": " Comedy, Sci-Fi",
+    "director": "Bong Joon Ho",
+    "writer": "Jon Watts",
+    "starring": "Bong Joon Ho, Edward Ashton",
+    "release-year": "2025"
+  },
+  {
+    "id": 5,
+    "name": "Ted",
+    "genre": " Comedy",
+    "director": "Seth MacFarlane ",
+    "writer": "Seth MacFarlane",
+    "starring": "Mark Wahlberg, Mila Kunis, Seth MacFarlane",
+    "release-year": "2012"
+  }
+]
+
+Romance[
+    {
+        "id": 6,
+        "name": "It ends with us", 
+        "genre": "Romance, Drama", 
+        "director": "Justin Baldoni", 
+        "writer": "Christy Hall, Colleen Hoover", 
+        "starring": "Blake Lively, Justin Baldoni", 
+        "release-year": "2024" 
+    },
+    {
+        "id": 7,
+        "name": "Snow white",
+        "genre": "Romance, Fairy Tale",
+        "director": "Marc Webb",
+        "writer": "Erin Cressida Wilson, Jacob Grimm",
+        "starring": "Rachel Zegler, Gal Gadot",
+        "release-year": "2025"
+    },
+]
