@@ -14,25 +14,43 @@ header {
   height: 108px;
 }
 
+/* Div for entire menu bar */
+.menu-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Logotype */
 #menu-logo {
   width: 204px;
+  height: 30px;
+  padding-top: 2%;
+  margin-right: 27%;
+  align-self: center;
+}
+
+/* the lsit itself */
+.menu-ul {
+  display: flex;
+  list-style: none;
+  padding-top: 2%;
+  margin-right: 5%;
+}
+
+/* individual list items */
+li {
+  margin-left: 3rem;
+  margin-top: 2%;
 }
 
 /* --- MENU BAR CSS END --- */
-
-/* h1 {
-  color: #fdf9ec;
-}
-
-.headerImage {
-  width: 100%;
-} */
 
 /* --- FOOTER CSS START --- */
 
 #footer-container {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   background-color: #fdf9ec;
   height: 240px;
 }
@@ -40,6 +58,7 @@ header {
 #logo-footer {
   width: 773px;
   height: 105px;
+  justify-self: flex-end;
 }
 
 #footer-text-container {
