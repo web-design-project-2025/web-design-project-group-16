@@ -10,7 +10,8 @@ html {
 /* --- CSS FOR ENTIRE PAGE END --- */
 
 /* --- MENU BAR CSS START --- */
-header {
+
+.menu-bar {
   display: flex;
   align-items: center;
   justify-content: flex-end;
