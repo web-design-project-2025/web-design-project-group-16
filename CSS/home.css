@@ -1,3 +1,45 @@
+/* Begin help from chatGPT, date 24/04/2024, source: https://chatgpt.com/share/680ab363-b874-8007-b549-9c5e4b3c5d75 */
+.search-videobar {
+  position: relative;
+  overflow: hidden;
+  height: 670px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+#search {
+  background-color: #fdf9ec;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 56px; */
+  width: fit-content;
+  margin-top: 250px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 5px;
+}
+
+#quote-text {
+  font-size: 16px;
+}
+
+/* End help from chat GPT */
+
+/* Search bar starts */
+/* Search bar ends */
+
 /* Quote starts */
 #quote {
   display: flex;
