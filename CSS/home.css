@@ -1,17 +1,72 @@
-/* Scrollmenu start */
-div.scrollmenu-movies {
+/* Quote starts */
+#quote {
   display: flex;
-  overflow: auto;
+  flex-direction: row;
   padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 48px;
-  margin-left: 24px;
-  margin-right: 24px;
+  justify-content: center;
 }
 
-div.scrollmenu-movies img {
-  width: 104;
-  height: 200;
+#quote-text {
+  color: red;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
+/* Quote ends */
+
+/* Scrollmenu start */
+.scrollmenu-movies {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 48px;
+  gap: 24px;
+}
+
+.scrollmenu-movies img {
+  width: 204px;
+  height: 330px;
+  border-radius: 10px;
+}
 /* Scrollmenu ends */
+
+/* Bento boxes starts */
+#bento-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 48px;
+  padding-top: 0px;
+  gap: 24px;
+}
+
+#top-reviewers,
+#about-us,
+#article,
+#box4 {
+  height: 230px;
+  border-radius: 10px;
+  background-color: #fdf9ec;
+}
+
+.bento-headers {
+  color: #130204;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.bento-text {
+  color: #130204;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+/* Bento boxes ends */
