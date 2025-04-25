@@ -1,0 +1,23 @@
+p1{
+    color: #fdf9ec;
+}
+
+/* Hide the browser's default checkbox*/
+.container input {
+    position: ;
+    opacity: 190;
+    cursor: pointer;
+    height: 10;
+    width: 10;
+
+
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height : 25px;
+    width: 25px;
+    background-color:#fdf9ec;
+}
