@@ -1,4 +1,6 @@
-/* Begin help from chatGPT, date 24/04/2024, source: https://chatgpt.com/share/680ab363-b874-8007-b549-9c5e4b3c5d75 */
+/* --- SEARCH-VIDEOBAR STARTS --- */
+/* Container for both the video in the background and the searchbar */
+/* Begin help from chatGPT with position, overflow and z-index, date 24/04/2024, source: https://chatgpt.com/share/680ab363-b874-8007-b549-9c5e4b3c5d75 */
 .search-videobar {
   position: relative;
   overflow: hidden;
@@ -8,6 +10,7 @@
   align-items: center;
 }
 
+/* The video in the background */
 #background-video {
   width: 100%;
   height: 100%;
@@ -17,7 +20,10 @@
   top: 0;
   z-index: 0;
 }
+/* --- SEARCH-VIDEOBAR END --- */
 
+/* --- SEARCH BAR STARTS --- */
+/* The searchbar */
 #search {
   background-color: #fdf9ec;
   z-index: 1;
@@ -31,16 +37,15 @@
   border-radius: 5px;
 }
 
+/* Font settings - searchbar */
 #quote-text {
   font-size: 16px;
 }
-
+/* --- SERACH BAR ENDS --- */
 /* End help from chat GPT */
 
-/* Search bar starts */
-/* Search bar ends */
-
-/* Quote starts */
+/* --- QUOTE STARTS --- */
+/* Container for the logo and text */
 #quote {
   display: flex;
   flex-direction: row;
@@ -48,15 +53,17 @@
   justify-content: center;
 }
 
+/* Font settings - quote*/
 #quote-text {
   color: red;
   text-transform: uppercase;
   font-size: 20px;
 }
+/* --- QUOTE ENDS --- */
 
-/* Quote ends */
-
-/* Scrollmenu start */
+/* --- SCROLLMENU STARTS --- */
+/* Inspiration taken from https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp Date: 24/04/2025 */
+/* Movie container */
 .scrollmenu-movies {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -66,14 +73,16 @@
   gap: 24px;
 }
 
+/* Settings for images*/
 .scrollmenu-movies img {
   width: 204px;
   height: 330px;
   border-radius: 10px;
 }
-/* Scrollmenu ends */
+/* --- SCROLLMENY ENDS --- */
 
-/* Bento boxes starts */
+/* --- BENTO BOXES STARTS --- */
+/* Container for bento boxes */
 #bento-boxes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -82,6 +91,7 @@
   gap: 24px;
 }
 
+/* Settings for the invidual boxes */
 #top-reviewers,
 #about-us,
 #article,
@@ -91,6 +101,7 @@
   background-color: #fdf9ec;
 }
 
+/* Font settings for the headers */
 .bento-headers {
   color: #130204;
   display: flex;
@@ -101,6 +112,7 @@
   font-size: 20px;
 }
 
+/* Font settings for the text */
 .bento-text {
   color: #130204;
   display: flex;
@@ -110,5 +122,4 @@
   margin-left: 10px;
   font-size: 14px;
 }
-
-/* Bento boxes ends */
+/* --- BENTO BOXES ENDS --- */
