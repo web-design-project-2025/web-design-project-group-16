@@ -19,13 +19,14 @@
   display: flex;
   flex-direction: row;
   margin-top: 96px;
-  margin-bottom: 150px;
+  margin-bottom: 96px;
 }
 
 /* Profile picture*/
-#account-profile-picture {
+.profile-info-containter img {
   width: 15%;
-  margin-left: 96px;
+  border-radius: 10px;
+  margin-left: 48px;
   margin-right: 48px;
 }
 
@@ -41,6 +42,14 @@
   margin-top: 16px;
 }
 
+.profile-info-text h3 {
+  margin-top: 16px;
+}
+
+.profile-info-text p {
+  margin-right: 160px;
+}
+
 /* --- PROFILE INFO END --- */
 
 /* --- IMAGES START --- */
@@ -54,7 +63,6 @@
   overflow-x: auto;
   overflow-y: hidden;
   /* --- end ---- */
-  gap: 24px;
 }
 
 .account-movies-container img {
@@ -80,13 +88,20 @@
 }
 
 .account-reviews-container img {
-  width: 204px;
-  height: 330px;
+  width: 15%;
   border-radius: 10px;
 }
 
 .account-review-text {
   margin-left: 48px;
+}
+
+.account-review-text h3 {
+  margin-top: 16px;
+}
+
+.account-review-text p {
+  margin-top: 16px;
 }
 
 /* --- REVIEWS END --- */
