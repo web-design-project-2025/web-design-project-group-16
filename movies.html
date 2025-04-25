@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/reocurring.css" />
+    <link rel="stylesheet" href="CSS/movies.css" />
     <title>Neolens</title>
   </head>
 
@@ -22,7 +23,61 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <div class="search-videobar">
+        <!-- Source: https://chatgpt.com/share/680aaa8f-f1b4-8007-a492-96cb61666ae1 Date: 24/04/2025 Begin help from chatGPT-->
+        <video id="background-video" autoplay muted loop playsinline>
+          <source src="images/cinemaVideo.mp4" type="video/mp4" />
+        </video>
+        <!-- End help for chatGPT -->
+        <div id="search">
+          <p id="search-text">SEARCH MOVIES, REVIEWERS ETC...</p>
+          <img src="images/search-icon.png" alt="Magnifying glass" />
+        </div>
+      </div>
+
+      <ul class="categories">
+        <li>
+          <a href="#"> <img src="" alt="Comedy" /></a>
+        </li>
+        <li>
+          <a href="#"> <img src="" alt="Romance" /></a>
+        </li>
+        <li>
+          <a href="#"> <img src="" alt="Drama" /></a>
+        </li>
+        <li>
+          <a href="#"> <img src="" alt="Horror" /></a>
+        </li>
+        <li>
+          <a href="#"> <img src="" alt="Romcom" /></a>
+        </li>
+        <li>
+          <a href="#"> <img src="" alt="Action" /></a>
+        </li>
+        <li>
+          <a href="#"> <img src="" alt="Musical" /></a>
+        </li>
+        <li>
+          <a href="#"> <img src="" alt="Western" /></a>
+        </li>
+        <li>
+          <a href="#"> <img src="" alt="Sci-Fi" /></a>
+        </li>
+        <li>
+          <a href="#"> <img src="" alt="Mystery" /></a>
+        </li>
+      </ul>
+      <div class="filter">
+        <p id="sort-by">Sort By:</p>
+        <button class="most-popular">
+          Most Popular
+          <img id="arrow" src="images/arrow-icon.png" alt="Arrow" />
+        </button>
+      </div>
+
+      <!-- <ul class="movies-by-categories"></ul> -->
+    </main>
 
     <footer>
       <div id="footer-container">
