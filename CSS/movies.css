@@ -1,6 +1,28 @@
 /* --- SEARCH-VIDEOBAR STARTS --- */
 /* Container for both the video in the background and the searchbar */
 /* Begin help from chatGPT with position, overflow and z-index, date 24/04/2024, source: https://chatgpt.com/share/680ab363-b874-8007-b549-9c5e4b3c5d75 */
+
+#content {
+  display: grid;
+  grid-template-columns: repeat(4, 5fr);
+  margin: 48px;
+  gap: 12px;
+}
+
+h1 {
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: aliceblue;
+}
+
+.movie-poster {
+  width: 100%;
+  border-radius: 10px;
+}
+
 .search-videobar {
   position: relative;
   overflow: hidden;

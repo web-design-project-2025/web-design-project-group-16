@@ -4,7 +4,7 @@ const contentElement = document.getElementById("content");
 
 async function loadData() {
   const movieResponse = await fetch(
-    "https://api.themoviedb.org/3/discover/movie?api_key=41633bc6f1e4947d357fb72eeb8115ed" // How to implement the key into the js taken form:https://www.youtube.com/watch?v=03FAepR-WVQ
+    "https://api.themoviedb.org/3/movie/upcoming?api_key=41633bc6f1e4947d357fb72eeb8115ed" // How to implement the key into the js taken form:https://www.youtube.com/watch?v=03FAepR-WVQ
   ); //Figure out how to fetch the "correct" movie id, arrays
   const movieData = await movieResponse.json();
   movies = movieData.results;
@@ -19,6 +19,7 @@ function getMovieById(id) {
 
 function displayMovieElement(movie) {
   const movieElement = document.createElement("div");
+  // movieElement.setAttribute("href:moviedetails.html");
   movieElement.classList.add("movie-container");
 
   // POSTER ELEMENT
@@ -36,11 +37,11 @@ function displayMovieElement(movie) {
   movieElement.appendChild(titleElement);
 
   // RELEASE DATE
-  //   const releaseDateElement = document.createElement("h2");
-  //   releaseDateElement.classList.add("release-date");
-  //   //console.log(movie);
-  //   releaseDateElement.textContent = movie.release_date;
-  //   movieElement.appendChild(releaseDateElement);
+  // const releaseDateElement = document.createElement("h2");
+  // releaseDateElement.classList.add("release-date");
+  // //console.log(movie);
+  // releaseDateElement.textContent = movie.release_date;
+  // movieElement.appendChild(releaseDateElement);
 
   return movieElement;
 }
