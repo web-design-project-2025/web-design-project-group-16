@@ -1,3 +1,16 @@
-p {
-    color: aliceblue;
+/* .movie-container {
+  display: grid;
+  grid-template-rows: repeat(5, 4fr);
+} */
+
+h1 {
+  color: aliceblue;
+}
+
+h2 {
+  color: aliceblue;
+}
+
+.movie-poster {
+  width: 20%;
 }

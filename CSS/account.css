@@ -37,10 +37,15 @@
 }
 
 /* Genre Icons*/
-.profile-info-text img {
-  width: 40px;
-  margin: 12px;
+.favourite-genres {
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: start;
+}
+
+.favourite-genres img {
+  width: 40px;
 }
 /* Profile text*/
 

@@ -15,7 +15,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: #fdf9ec;
+  background-color: #e7dbcf;
   height: 108px;
 }
 
@@ -50,7 +50,7 @@ li {
 #footer-container {
   display: flex;
   align-items: center;
-  background-color: #fdf9ec;
+  background-color: #e7dbcf;
   height: 240px;
 }
 
