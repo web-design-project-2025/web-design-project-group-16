@@ -75,13 +75,14 @@ h2 {
   overflow-x: auto;
   overflow-y: hidden;
   padding: 48px;
-  gap: 24px;
+  gap: 48px;
 }
 
 /* Settings for category images */
 .categories img {
-  width: 32px;
-  height: 32px;
+  /* width: 32px;
+  height: 32px; */
+  width: 80%;
 }
 /* --- CATEGORIES ENDS --- */
 
