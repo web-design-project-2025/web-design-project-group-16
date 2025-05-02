@@ -1,14 +1,6 @@
 let movies = [];
-let reviews = [];
-const contentElement = document.getElementById("content");
-const filterButton = document.querySelector("#filter-button");
-const filmRedirect = document.querySelector("movie-container");
 
-// filterButton.addEventListener("click", function (event) {
-//   const movieResponse = fetch(
-//     "https://api.themoviedb.org/3/movie/upcoming?api_key=41633bc6f1e4947d357fb72eeb8115ed" // How to implement the key into the js taken form:https://www.youtube.com/watch?v=03FAepR-WVQ
-//   );
-// });
+const contentElement = document.getElementById("content");
 
 async function loadData() {
   const movieResponse = await fetch(
@@ -16,7 +8,7 @@ async function loadData() {
   ); //Figure out how to fetch the "correct" movie id, arrays
   const movieData = await movieResponse.json();
   movies = movieData.results;
-  // console.log(movieData);
+  console.log(movieData);
 
   renderContent();
 }
@@ -27,22 +19,14 @@ function getMovieById(id) {
 
 function displayMovieElement(movie) {
   const movieElement = document.createElement("div");
-  // movieElement.setAttribute("href:moviedetails.html");
-  movieElement.classList.add("movie-container");
+  movieElement.classList.add("movies-homepage-container");
 
   // POSTER ELEMENT
   const posterElement = document.createElement("img");
-  posterElement.classList.add("movie-poster");
+  posterElement.classList.add("movie-poster-homepage");
   //console.log(movie);
   posterElement.src = "https://image.tmdb.org/t/p/w1280/" + movie.poster_path;
   movieElement.appendChild(posterElement);
-
-  // TITLE ELEMENT
-  const titleElement = document.createElement("h1");
-  titleElement.classList.add("title");
-  //console.log(movie);
-  titleElement.textContent = movie.original_title;
-  movieElement.appendChild(titleElement);
 
   return movieElement;
 }
@@ -58,7 +42,3 @@ function renderContent() {
 }
 
 loadData();
-
-filmRedirect.addEventListener("click", function (event) {
-  window.location.href = "moviedetails.html";
-});

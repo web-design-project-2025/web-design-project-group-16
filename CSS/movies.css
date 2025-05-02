@@ -98,7 +98,7 @@ h2 {
 }
 
 /* button */
-.most-popular {
+#filter-button {
   display: flex;
   font-size: 20px;
   color: #fdf9ec;

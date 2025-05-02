@@ -64,21 +64,24 @@
 /* --- SCROLLMENU STARTS --- */
 /* Inspiration taken from https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp Date: 24/04/2025 */
 /* Movie container */
-.scrollmenu-movies {
+
+#content {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(20, 1fr);
   overflow-x: auto;
   overflow-y: hidden;
+  white-space: nowrap;
   padding: 48px;
   gap: 24px;
 }
 
 /* Settings for images*/
-.scrollmenu-movies img {
+.movie-poster-homepage {
   width: 204px;
   height: 330px;
   border-radius: 10px;
 }
+
 /* --- SCROLLMENU ENDS --- */
 
 /* --- BENTO BOXES STARTS --- */
