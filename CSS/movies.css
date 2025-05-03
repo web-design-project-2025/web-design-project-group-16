@@ -93,13 +93,25 @@ h2 {
 }
 
 /* sort by */
-#sort-by {
+/* #sort-by {
   color: #fdf9ec;
   font-size: 20px;
-}
+} */
 
 /* button */
-#filter-button {
+#sortby-button {
+  display: flex;
+  font-size: 20px;
+  color: #fdf9ec;
+  width: 150px;
+  background-color: #130204;
+  border: 2px solid #fdf9ec;
+  padding: 10px;
+  gap: 5px;
+}
+
+/* w3 Schools*/
+.dropdown-content button {
   display: flex;
   font-size: 20px;
   color: #fdf9ec;
@@ -107,7 +119,19 @@ h2 {
   border: 2px solid #fdf9ec;
   padding: 10px;
   gap: 5px;
+  width: 150px;
 }
+.dropdown-content {
+  position: relative;
+  display: none;
+}
+
+.dropdown-content-show {
+  position: relative;
+  display: block;
+}
+
+/* w3 Schools*/
 
 /* #arrow {
   rotate: 50px;

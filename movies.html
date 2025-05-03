@@ -39,7 +39,7 @@
 
       <ul class="categories">
         <li>
-          <a href="#">
+          <a id="comedy-icon" href="#">
             <img
               src="images/movie-icons-white-and-black/comedy.png"
               alt="Comedy"
@@ -109,11 +109,15 @@
         </li>
       </ul>
       <div class="filter">
-        <p id="sort-by">Sort By:</p>
-        <button id="filter-button">
-          Most Popular
+        <button id="sortby-button">
+          Sort By:
           <img id="arrow" src="images/arrow-icon.png" alt="Arrow" />
         </button>
+        <div class="dropdown-content">
+          <button id="mostPopular-button">Most Popular</button>
+          <button id="upcomming-button">Upcomming</button>
+          <button id="topRated-button">Top Rated</button>
+        </div>
       </div>
 
       <div class="content" id="content"></div>
