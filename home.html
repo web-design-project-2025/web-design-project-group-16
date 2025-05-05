@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/reocurring.css" />
     <link rel="stylesheet" href="CSS/home.css" />
+    <script src="JS/fetch-homepage" defer></script>
+    <script src="JS/search-function.js" defer></script>
     <title>Neolens</title>
   </head>
 
@@ -31,9 +33,16 @@
         </video>
         <!-- End help for chatGPT -->
         <div id="search">
-          <p id="search-text">SEARCH MOVIES, REVIEWERS ETC...</p>
+          <input
+            type="text"
+            name=""
+            id="search-text"
+            placeholder="SEARCH
+          MOVIES, REVIEWERS ETC..."
+          />
           <img src="" alt="Magnifying glass" />
         </div>
+        <div class="search-content" id="search-content"></div>
       </div>
 
       <div id="quote">
@@ -43,54 +52,8 @@
           love the films you do
         </p>
       </div>
-      <ul class="scrollmenu-movies">
-        <li>
-          <a href="#">
-            <img src="images/Movie-Posters/novocaine.jpg" alt="Novocaine"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="images/Movie-Posters/forrest-gump.jpg" alt="Forrest Gump"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/Movie-Posters/alien-romulus.jpg"
-              alt="Alien: Romulus"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="images/Movie-Posters/challengers.jpg" alt="Challengers"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="images/Movie-Posters/set-it-up.jpg" alt="Set it up"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/Movie-Posters/you're-cordially-invited.jpg"
-              alt="you're Cordially invited"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/Movie-Posters/the-assessment.jpg"
-              alt="The assessment"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="images/Movie-Posters/nosferatu.jpg" alt="Nosferatu"
-          /></a>
-        </li>
-      </ul>
+
+      <div class="content" id="content"></div>
 
       <div id="bento-boxes">
         <div id="top-reviewers">

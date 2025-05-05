@@ -39,17 +39,17 @@
 
       <ul class="categories">
         <li>
-          <a href="#"> <img src="" alt="Comedy" /></a>
-        </li>
-        <li>
-          <a href="#">
+          <a id="comedy-icon" href="#">
             <img
-              src="images/movie-icons-white-and-black/romcom.png"
-              alt="Romance"
+              src="images/movie-icons-white-and-black/comedy.png"
+              alt="Comedy"
           /></a>
         </li>
+
         <li>
-          <a href="#"> <img src="" alt="Drama" /></a>
+          <a href="#">
+            <img src="images/movie-icons-white-and-black/drama.png" alt="Drama"
+          /></a>
         </li>
         <li>
           <a href="#">
@@ -82,8 +82,15 @@
         <li>
           <a href="#">
             <img
-              src="images/movie-icons-white-and-black/western.png"
-              alt="Western"
+              src="images/movie-icons-white-and-black/old-films.png"
+              alt="Old Films"
+          /></a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="images/movie-icons-white-and-black/romance.png"
+              alt="Romance"
           /></a>
         </li>
         <li>
@@ -102,11 +109,15 @@
         </li>
       </ul>
       <div class="filter">
-        <p id="sort-by">Sort By:</p>
-        <button class="most-popular">
-          Most Popular
+        <button id="sortby-button">
+          Sort By:
           <img id="arrow" src="images/arrow-icon.png" alt="Arrow" />
         </button>
+        <div class="dropdown-content">
+          <button id="mostPopular-button">Most Popular</button>
+          <button id="upcomming-button">Upcomming</button>
+          <button id="topRated-button">Top Rated</button>
+        </div>
       </div>
 
       <div class="content" id="content"></div>
