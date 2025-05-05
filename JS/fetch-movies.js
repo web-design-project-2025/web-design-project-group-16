@@ -13,7 +13,7 @@ async function loadData() {
   ); //Figure out how to fetch the "correct" movie id, arrays
   const movieData = await movieResponse.json();
   movies = movieData.results;
-  // console.log(movieData);
+  console.log(movieData);
 
   renderContent();
 }
@@ -24,7 +24,6 @@ function getMovieById(id) {
 
 function displayMovieElement(movie) {
   const movieElement = document.createElement("div");
-  // movieElement.setAttribute("href:moviedetails.html");
   movieElement.classList.add("movie-container");
 
   // POSTER ELEMENT
@@ -50,6 +49,10 @@ function renderContent() {
   for (let movie of movies) {
     //const film = getMovieById(movie.movie_id);
     const descriptionElement = displayMovieElement(movie);
+    console.log(movie);
+    descriptionElement.addEventListener("click", () => {
+      window.location.href = `moviedetails.html?id=${movie.id}`; // on the click, go to the location on the window where you get a link, where the link will redirect you to the html where the movie id is equal to the id of the movie you pressed
+    });
     contentElement.appendChild(descriptionElement);
   }
 }
@@ -125,6 +128,10 @@ mostPopularButtonElement.addEventListener("click", () => {
 });
 
 /* --- MAIN FILTERING END --- */
+
+/* --- GOING TO MOVIE DETAILS PAGE START --- */
+
+/* --- GOING TO MOVIE DETAILS PAGE END --- */
 
 /* --- FILTERING BASED ON CATEGORY - START --- */
 
