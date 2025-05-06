@@ -6,7 +6,6 @@ let movieID = parseInt(params.get("id"));
 
 async function loadData() {
   const movieResponse = await fetch(
-    //https://api.themoviedb.org/3/movie/ - + and stuff
     `https://api.themoviedb.org/3/movie/${movieID}?api_key=41633bc6f1e4947d357fb72eeb8115ed` // How to implement the key into the js taken form:https://www.youtube.com/watch?v=03FAepR-WVQ & help from lab assistants
   ); //Figure out how to fetch the "correct" movie id, arrays, help with specifying ID from lab assistans
   const movieData = await movieResponse.json();
