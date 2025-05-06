@@ -38,12 +38,29 @@ function displayMovieElement(movie) {
   titleElement.textContent = movie.original_title;
   movieDetailsElement.appendChild(titleElement);
 
+  //GENRE
+  const genreElement = document.createElement("p");
+  genreElement.classList.add("moviedetails-genre");
+  let genres = movie.genres;
+  for (let genre of genres) {
+    //help lab assistants
+    genreElement.textContent += genre.name + ", ";
+    console.log(genre.name);
+  }
+  titleElement.appendChild(genreElement);
+
+  //RUNTIME
+  const runtimeElement = document.createElement("h3");
+  runtimeElement.classList.add("moviedetails-runtime");
+  runtimeElement.textContent = "Runtime: " + movie.runtime + " minutes";
+  genreElement.appendChild(runtimeElement);
+
   // RELEASE DATE
-  const releaseDateElement = document.createElement("h2");
+  const releaseDateElement = document.createElement("p");
   releaseDateElement.classList.add("moviedetails-release-date");
   //console.log(movie);
-  releaseDateElement.textContent = movie.release_date;
-  titleElement.appendChild(releaseDateElement);
+  releaseDateElement.textContent = "Release Date: " + movie.release_date;
+  genreElement.appendChild(releaseDateElement);
 
   //SYNOPSIS
   const synopsisElement = document.createElement("p");
@@ -51,21 +68,11 @@ function displayMovieElement(movie) {
   synopsisElement.textContent = movie.overview;
   releaseDateElement.appendChild(synopsisElement);
 
-  //GENRE
-  const genreElement = document.createElement("h3");
-  genreElement.classList.add("moviedetails-genre");
-  let genres = movie.genres;
-  for (let genre of genres) {
-    //help lab assistants
-    genreElement.textContent += genre.name;
-  }
-  synopsisElement.appendChild(genreElement);
-
-  //RUNTIME
-  const runtimeElement = document.createElement("h3");
-  runtimeElement.classList.add("moviedetails-runtime");
-  runtimeElement.textContent = movie.runtime + "minutes";
-  genreElement.appendChild(runtimeElement);
+  //RATING
+  const ratingElement = document.createElement("p");
+  ratingElement.classList.add("moviedetails-rating");
+  ratingElement.textContent = "Rating: " + movie.vote_average;
+  synopsisElement.appendChild(ratingElement);
 
   return movieDetailsElement;
 }
