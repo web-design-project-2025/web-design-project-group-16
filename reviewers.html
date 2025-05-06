@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/reocurring.css" />
+    <link rel="stylesheet" href="CSS/reviewers.css" />
+    <script src="JS/reviewers.js" defer></script>
     <title>Neolens</title>
   </head>
 
@@ -22,7 +24,38 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <div class="search-videobar">
+        <!-- Source: https://chatgpt.com/share/680aaa8f-f1b4-8007-a492-96cb61666ae1 Date: 24/04/2025 Begin help from chatGPT-->
+        <video id="background-video" autoplay muted loop playsinline>
+          <source src="images/cinemaVideo.mp4" type="video/mp4" />
+        </video>
+        <!-- End help for chatGPT -->
+        <div id="search">
+          <p id="search-text">Search movies, reviewers etc...</p>
+          <img src="" alt="Magnifying glas" />
+        </div>
+      </div>
+      <p id="top-reviewers">Top reviewers</p>
+      <p id="top-reviewers-text">
+        Search between thousands of users, all with opinions on the movies you
+        want to know the truth about.
+      </p>
+      <div class="filter">
+        <p id="sort-by">Sort By:</p>
+        <button id="filter-button">
+          Most Popular
+          <img src="images/arrow-icon.png" alt="Arrow" />
+        </button>
+        <div id="filter-choices">
+          <button>Most popular</button>
+          <button>A-Z</button>
+          <button>Favourite genre</button>
+        </div>
+      </div>
+
+      <div id="cards"></div>
+    </main>
 
     <footer>
       <div id="footer-container">
