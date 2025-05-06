@@ -1,5 +1,6 @@
 /* --- FOR ENTIRE PAGE START --- */
 .moviedetails-page-container {
+  /* grid-template-columns: repeat(2, 2fr); */
   background-color: #e7dbcf;
   margin: 48px;
   border-radius: 10px;
@@ -11,6 +12,7 @@
 /*flexbox containter for movie description*/
 .moviedetails-container {
   display: flex;
+  flex-direction: row;
 }
 /* Poster specifications */
 .moviedetails-poster {
