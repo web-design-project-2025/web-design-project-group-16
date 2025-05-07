@@ -133,19 +133,19 @@
 #cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 48px;
   padding-left: 162.5px;
   padding-right: 162.5px;
   padding-bottom: 48px;
   border-radius: 5px;
+  width: 1116px;
 }
 
 .container {
   background-color: #e7dbcf;
   border-radius: 10px;
-  /* width: 340px;  */
-  padding: 36.5px;
-  /* padding-bottom: 36.5px; */
+  padding: 20px;
+  width: 275px;
 }
 
 .image-text{
@@ -199,7 +199,8 @@
 /* Div around all movies */
 .movie-container{
   display: flex;
-  gap: 14px;
+  gap: 12px;
+  padding-right: 0;
 } 
 
 .movie-img {
