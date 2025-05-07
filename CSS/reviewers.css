@@ -1,0 +1,253 @@
+/* --- SEARCH-VIDEOBAR STARTS --- */
+/* Container for both the video in the background and the searchbar */
+/* Begin help from chatGPT with position, overflow and z-index, date 24/04/2024, source: https://chatgpt.com/share/680ab363-b874-8007-b549-9c5e4b3c5d75 */
+.search-videobar {
+  position: relative;
+  overflow: hidden;
+  height: 670px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The video in the background */
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+/* --- SEARCH-VIDEOBAR END --- */
+
+/* --- SEARCH BAR STARTS --- */
+/* The searchbar */
+#search {
+  background-color: #e7dbcf;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 56px; */
+  width: fit-content;
+  margin-top: 250px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 5px;
+}
+/* --- SERACH BAR ENDS --- */
+/* End help from chat GPT */
+
+/* --- INFO BEFORE FILTER BEGINS --- */
+/* Heading - top reviewers */
+#top-reviewers {
+  color: white;
+  font-size: 24px;
+  padding-left: 162.5px;
+  padding-top: 48px;
+  padding-bottom: 8px;
+}
+
+/* Text - top reviewers */
+#top-reviewers-text {
+  color: white;
+  font-size: 16px;
+  padding-left: 162.5px;
+  padding-bottom: 16px;
+}
+
+/* --- INFO BEFORE FILTER ENDS --- */
+
+/* --- FILTER STARTS --- */
+.filter {
+  padding-left: 162.5px;
+  padding-bottom: 16px;
+}
+
+/* sort by */
+#sort-by {
+  color: #e7dbcf;
+  font-size: 20px;
+  padding-bottom: 16px;
+}
+
+/* button */
+#filter-button {
+  display: flex;
+  font-size: 20px;
+  color: #e7dbcf;
+  background-color: #130204;
+  border: 2px solid #e7dbcf;
+  padding: 10px;
+  gap: 5px;
+  transition: all 0.3s;
+}
+
+/* #filter-button:hover {
+  color: black;
+  background-color: #e7dbcf;
+} */
+
+#filter-button img {
+  transform: rotate(90deg);
+}
+
+#filter-button img:hover {
+  color: black;
+}
+
+#filter-choices.visible {
+  display: flex;
+}
+
+#filter-choices {
+  display: none;
+}
+
+#filter-choices {
+  flex-direction: column;
+  position: absolute;
+  gap: 8px;
+  background-color: #e7dbcf;
+  opacity: 90%;
+  border-radius: 10px;
+  padding: 32px;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+#filter-choices button {
+  width: 100px;
+  border: none;
+  text-decoration: none;
+  background-color: transparent; /* help with only this line, date: 2/6, link https://chatgpt.com/share/681472d3-ac70-8007-90c2-2e889251f79d */
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* --- FILTER ENDS --- */
+
+/* --- FACE CARDS STARTS --- */
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  padding-left: 162.5px;
+  padding-right: 162.5px;
+  padding-bottom: 48px;
+  border-radius: 5px;
+  width: 1116px;
+}
+
+.container {
+  background-color: #e7dbcf;
+  border-radius: 10px;
+  padding: 20px;
+  width: 275px;
+}
+
+.image-text{
+  display: flex;
+  flex-direction: row;
+}
+
+/* Reviewer image */
+.reviewer-image {
+  width: 117px;
+  height: 170px;
+  border-radius: 10px;
+  margin-right: 8px;
+  margin-bottom: 16px;
+}
+.text-movie{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Name*/
+.reviewer-name {
+  font-size: 16px;
+  padding-bottom: 4px;
+  color: #34312e;
+}
+
+/* Email , Favorite genre */
+.reviewer-email,
+.reviewer-favorite {
+  font-size: 12px;
+  padding-bottom: 4px;
+  color: #34312e;
+}
+
+/* Text */
+.reviewer-text {
+  font-size: 11px;
+  padding-bottom: 4px;
+  width: 150px;
+  color: #34312e;
+}
+
+/* Recently reviewed */
+.reviewer-recently {
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #34312e;
+}
+
+/* Div around all movies */
+.movie-container{
+  display: flex;
+  gap: 12px;
+  padding-right: 0;
+} 
+
+.movie-img {
+  border-radius: 5px;
+  width: 60px;
+  height: 110px;
+}
+
+
+/* .profile-card {
+  background-color: #e7dbcf;
+  border-radius: 10px;
+  height: 388px;
+  width: 340px;
+  padding-left: 32.5px;
+  padding-top: 35.5px;
+} */
+
+/*
+.all-card-info {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+
+.all-card-info img {
+  width: 117px;
+  height: 170px;
+}
+
+.information-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 150px;
+}
+
+.genre {
+  display: flex;
+  gap: 8px;
+}
+
+.genre img {
+  width: 15px;
+  height: 15px;
+}
+
+
+
+
