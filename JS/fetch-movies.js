@@ -32,16 +32,22 @@ function displayMovieElement(movie) {
   posterElement.src = "https://image.tmdb.org/t/p/w1280/" + movie.poster_path;
   movieElement.appendChild(posterElement);
 
-  //RATING
-  const ratingElement = document.createElement("p");
-  ratingElement.classList.add("moviedetails-rating");
-  ratingElement.textContent = movie.vote_average;
-  movieElement.appendChild(ratingElement);
+  // TITLE ELEMENT
+  const titleElement = document.createElement("h1");
+  titleElement.classList.add("moviedetails-title");
+  titleElement.textContent = movie.original_title;
+  movieElement.appendChild(titleElement);
 
-  const heartElement = document.createElement("img");
-  heartElement.src = "images/movie-icons-white-and-black/romance.png";
-  heartElement.classList.add("rating-icon");
-  movieElement.appendChild(heartElement);
+  //RATING
+  // const heartElement = document.createElement("img");
+  // heartElement.src = "images/movie-icons-white-and-black/romance.png";
+  // heartElement.classList.add("rating-icon");
+  // movieElement.appendChild(heartElement);
+
+  // const ratingElement = document.createElement("p");
+  // ratingElement.classList.add("moviedetails-rating");
+  // ratingElement.textContent = movie.vote_average;
+  // movieElement.appendChild(ratingElement);
 
   return movieElement;
 }
