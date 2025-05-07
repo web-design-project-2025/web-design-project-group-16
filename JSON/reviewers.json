@@ -1,0 +1,104 @@
+{
+  "reviewers": [
+    {
+      "id": "1",
+      "picture-of-me": "images/Reviewers/reviewer1.jpg",
+      "name": "Ava Thompson",
+      "account-name": "ava.thompson@aol.com",
+      "favorite-genres": "Favorite genres",
+      "genre": ["Romance", "Romcom", "Drama"],
+      "text": "Nothing beats a good love story or emotional drama. I also enjoy a clever romantic comedy!",
+      "recently-reviewed": "Recently Reviewed"
+    },
+    {
+      "id": "2",
+      "picture-of-me": "images/Reviewers/reviewer2.jpg",
+      "name": "Bella Castillo",
+      "account-name": "bella.castillo@gmail.com",
+      "favorite-genres": "Favorite genres",
+      "genre": ["Horror", "Romance", "Comedy"],
+      "text": "I like my movies thrilling, heartwarming, and funny—preferably all in one night.",
+      "recently-reviewed": "Recently Reviewed"
+    },
+    {
+      "id": "3",
+      "picture-of-me": "images/Reviewers/reviewer3.jpg",
+      "name": "Clara Moon",
+      "account-name": "clara.moon@protonmail.com",
+      "favorite-genres": "Favorite genres",
+      "genre": ["Romcom", "Comedy", "Horror"],
+      "text": "Whether I’m laughing or jumping in fear, I love movies that keep me entertained.",
+      "recently-reviewed": "Recently Reviewed"
+    },
+    {
+      "id": "4",
+      "picture-of-me": "images/Reviewers/reviewer4.jpg",
+      "name": "Diana Nguyen",
+      "account-name": "diana.nguyen@yahoo.com",
+      "favorite-genres": "Favorite genres",
+      "genre": ["Drama", "Romance", "Romcom"],
+      "text": "I gravitate toward movies that explore deep emotions, relationships, and clever romantic twists.",
+      "recently-reviewed": "Recently Reviewed"
+    },
+    {
+      "id": "5",
+      "picture-of-me": "images/Reviewers/reviewer5.jpg",
+      "name": "Ella Brooks",
+      "account-name": "ella.brooks@icloud.com",
+      "favorite-genres": "Favorite genres",
+      "genre": ["Comedy", "Drama", "Romcom"],
+      "text": "I’m a fan of movies that make me laugh and also dive into real-life challenges.",
+      "recently-reviewed": "Recently Reviewed"
+    },
+    {
+      "id": "6",
+      "picture-of-me": "images/Reviewers/reviewer6.jpg",
+      "name": "Finn Harper",
+      "account-name": "finn.harper@hotmail.com",
+      "favorite-genres": "Favorite genres",
+      "genre": ["Horror", "Comedy", "Drama"],
+      "text": "From eerie horrors to bold dramas and witty comedies, I enjoy a wide range of stories.",
+      "recently-reviewed": "Recently Reviewed"
+    },
+    {
+      "id": "7",
+      "picture-of-me": "images/Reviewers/reviewer7.jpg",
+      "name": "Grace Lee",
+      "account-name": "grace.lee@gmail.com",
+      "favorite-genres": "Favorite genres",
+      "genre": ["Romcom", "Romance", "Drama"],
+      "text": "I love heartfelt dramas and sweet romantic comedies that make me smile.",
+      "recently-reviewed": "Recently Reviewed"
+    },
+    {
+      "id": "8",
+      "picture-of-me": "images/Reviewers/reviewer8.jpg",
+      "name": "Isla Rivera",
+      "account-name": "isla.rivera@icloud.com",
+      "favorite-genres": "Favorite genres",
+      "genre": ["Romcom", "Comedy", "Horror"],
+      "text": "Whether it's a scary story or a hilarious romcom, I'm here for the fun!",
+      "recently-reviewed": "Recently Reviewed"
+    },
+    {
+      "id": "9",
+      "picture-of-me": "images/Reviewers/reviewer9.jpg",
+      "name": "Jake Bennett",
+      "account-name": "jake.bennett@hotmail.com",
+      "favorite-genres": "Favorite genres",
+      "genre": ["Drama", "Horror", "Romance"],
+      "text": "I’m drawn to emotional storytelling, chilling horror, and meaningful romantic arcs.",
+      "recently-reviewed": "Recently Reviewed"
+    },
+    {
+      "id": "10",
+      "picture-of-me": "images/Reviewers/reviewer10.jpg",
+      "name": "Sofia Martinez",
+      "account-name": "sofia.martinez@hotmail.com",
+      "favorite-genres": "Favorite genres",
+      "genre": ["Comedy", "Romcom", "Drama"],
+      "text": "Big fan of witty romcoms, touching dramas, and lighthearted comedies for any mood.",
+      "recently-reviewed": "Recently Reviewed"
+    }
+  ]
+}

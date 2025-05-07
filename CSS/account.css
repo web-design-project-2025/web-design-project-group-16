@@ -1,0 +1,158 @@
+* {
+  font-family: "Montserrat", serif;
+  color: #34312e;
+  font-weight: 300;
+}
+
+/* Account Page headers */
+#account-page-headers {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  margin-left: 48px;
+}
+/* Container for entire page*/
+.account-page-containter {
+  display: grid;
+  grid-template-columns: repeat(1, 3fr);
+  background-color: #e7dbcf;
+  border-radius: 20px;
+  margin: 48px;
+}
+
+/* --- PROFILE INFO START --- */
+/* container for the profile info*/
+.profile-info-containter {
+  display: flex;
+  flex-direction: row;
+  margin-top: 96px;
+  margin-bottom: 48px;
+}
+
+/* Profile picture*/
+.profile-info-containter img {
+  width: 15%;
+  border-radius: 10px;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+/* Genre Icons*/
+.favourite-genres {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.favourite-genres img {
+  width: 40px;
+}
+/* Profile text*/
+
+.profile-info-text h1 {
+  color: black;
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+}
+
+.profile-info-text h2 {
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.profile-info-text h3 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.profile-info-text p {
+  margin-right: 160px;
+}
+
+/* --- PROFILE INFO END --- */
+
+/* --- IMAGES START --- */
+/* Images container */
+.account-movies-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  list-style: none;
+
+  /* --- Taken from https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp start --- */
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* --- end ---- */
+}
+
+.account-movies-container img {
+  width: 204px;
+  height: 330px;
+  border-radius: 10px;
+}
+
+/* --- IMAGES END --- */
+
+/* --- REVIEWS START --- */
+
+#top-reviews {
+  margin-left: 48px;
+  margin-top: 48px;
+}
+.account-reviews-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 48px;
+  margin-bottom: 48px;
+}
+
+.account-reviews-container img {
+  width: 15%;
+  border-radius: 10px;
+}
+
+.account-review-text {
+  margin-left: 48px;
+}
+
+.account-review-text h2 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+}
+
+.account-review-text h3 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.account-review-text p {
+  margin-top: 16px;
+  margin-right: 120px;
+}
+
+/* --- REVIEWS END --- */
+
+/*Fonts & typefaces*/
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.old-standard-tt-bold {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.old-standard-tt-regular {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
+}

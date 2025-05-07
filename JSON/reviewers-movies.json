@@ -1,0 +1,103 @@
+{
+  "movies": [
+    {
+      "user_id": "1",
+      "movies": [
+        "images/Movie-Posters/we-live-in-time.jpg",
+        "images/Movie-Posters/anora.jpg",
+        "images/Movie-Posters/bring-them-down.jpg",
+        "images/Movie-Posters/babygirl.jpg"
+      ]
+    },
+
+    {
+      "user_id": "2",
+      "movies": [
+        "images/Movie-Posters/alien-romulus.jpg",
+        "images/Movie-Posters/we-live-in-time.jpg",
+        "images/Movie-Posters/novocaine.jpg",
+        "images/Movie-Posters/smile2.jpg"
+      ]
+    },
+
+    {
+      "user_id": "3",
+      "movies": [
+        "images/Movie-Posters/no-hard-feelings.jpg",
+        "images/Movie-Posters/ted.jpg",
+        "images/Movie-Posters/smile.jpg",
+        "images/Movie-Posters/novocaine.jpg"
+      ]
+    },
+
+    {
+      "user_id": "4",
+      "movies": [
+        "images/Movie-Posters/drop.jpg",
+        "images/Movie-Posters/it-ends-with-us.jpg",
+        "images/Movie-Posters/anyone-but-you.jpg",
+        "images/Movie-Posters/challengers.jpg"
+      ]
+    },
+
+    {
+      "user_id": "5",
+      "movies": [
+        "images/Movie-Posters/you're-cordially-invited.jpg",
+        "images/Movie-Posters/challengers.jpg",
+        "images/Movie-Posters/the-life-list.jpg",
+        "images/Movie-Posters/set-it-up.jpg"
+      ]
+    },
+
+    {
+      "user_id": "6",
+      "movies": [
+        "images/Movie-Posters/nosferatu.jpg",
+        "images/Movie-Posters/wolfs.jpg",
+        "images/Movie-Posters/the-assessment.jpg",
+        "images/Movie-Posters/the-shining.jpg"
+      ]
+    },
+
+    {
+      "user_id": "7",
+      "movies": [
+        "images/Movie-Posters/set-it-up.jpg",
+        "images/Movie-Posters/babygirl.jpg",
+        "images/Movie-Posters/warfare.jpg",
+        "images/Movie-Posters/anora.jpg"
+      ]
+    },
+
+    {
+      "user_id": "8",
+      "movies": [
+        "images/Movie-Posters/anyone-but-you.jpg",
+        "images/Movie-Posters/mickey-17.jpg",
+        "images/Movie-Posters/the-shining.jpg",
+        "images/Movie-Posters/ted.jpg"
+      ]
+    },
+
+    {
+      "user_id": "9",
+      "movies": [
+        "images/Movie-Posters/the-assessment.jpg",
+        "images/Movie-Posters/smile.jpg",
+        "images/Movie-Posters/it-ends-with-us.jpg",
+        "images/Movie-Posters/warfare.jpg"
+      ]
+    },
+
+    {
+      "user_id": "10",
+      "movies": [
+        "images/Movie-Posters/ted.jpg",
+        "images/Movie-Posters/the-life-list.jpg",
+        "images/Movie-Posters/drop.jpg",
+        "images/Movie-Posters/anyone-but-you.jpg"
+      ]
+    }
+  ]
+}
