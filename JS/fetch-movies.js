@@ -29,16 +29,25 @@ function displayMovieElement(movie) {
   // POSTER ELEMENT
   const posterElement = document.createElement("img");
   posterElement.classList.add("movie-poster");
-  //console.log(movie);
   posterElement.src = "https://image.tmdb.org/t/p/w1280/" + movie.poster_path;
   movieElement.appendChild(posterElement);
 
   // TITLE ELEMENT
   const titleElement = document.createElement("h1");
-  titleElement.classList.add("title");
-  //console.log(movie);
+  titleElement.classList.add("moviedetails-title");
   titleElement.textContent = movie.original_title;
   movieElement.appendChild(titleElement);
+
+  //RATING
+  // const heartElement = document.createElement("img");
+  // heartElement.src = "images/movie-icons-white-and-black/romance.png";
+  // heartElement.classList.add("rating-icon");
+  // movieElement.appendChild(heartElement);
+
+  // const ratingElement = document.createElement("p");
+  // ratingElement.classList.add("moviedetails-rating");
+  // ratingElement.textContent = movie.vote_average;
+  // movieElement.appendChild(ratingElement);
 
   return movieElement;
 }
@@ -47,7 +56,6 @@ function renderContent() {
   contentElement.innerHTML = "";
 
   for (let movie of movies) {
-    //const film = getMovieById(movie.movie_id);
     const descriptionElement = displayMovieElement(movie);
     console.log(movie);
     descriptionElement.addEventListener("click", () => {
@@ -128,34 +136,3 @@ mostPopularButtonElement.addEventListener("click", () => {
 });
 
 /* --- MAIN FILTERING END --- */
-
-/* --- GOING TO MOVIE DETAILS PAGE START --- */
-
-/* --- GOING TO MOVIE DETAILS PAGE END --- */
-
-/* --- FILTERING BASED ON CATEGORY - START --- */
-
-/* getting all of the icons */
-// const comedyElement = document.querySelector("#comedy-icon");
-
-/* Conecting each icon to a genre API link*/
-
-/* COMEDY */
-// async function loadDataComedy() {
-//   const movieResponse = await fetch(
-//     "https://api.themoviedb.org/3/Comedy/movie/list?api_key=41633bc6f1e4947d357fb72eeb8115ed" // How to implement the key into the js taken form:https://www.youtube.com/watch?v=03FAepR-WVQ
-//   ); //Figure out how to fetch the "correct" movie id, arrays
-//   const movieData = await movieResponse.json();
-//   movies = movieData.results;
-//   // console.log(movieData);
-
-//   renderContent();
-// }
-
-/* Adding the eventlistner */
-
-// comedyElement.addEventListener("click", () => {
-//   loadDataComedy();
-// });
-
-/* --- FILTERING BASED ON CATEGORY - END --- */

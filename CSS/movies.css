@@ -5,13 +5,16 @@
 #content {
   display: grid;
   grid-template-columns: repeat(4, 5fr);
-  margin: 48px;
-  gap: 12px;
+  margin: 94px;
+  gap: 32px;
 }
 
 h1 {
   color: aliceblue;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+  font-weight: 400;
+  text-align: center;
 }
 
 h2 {
@@ -21,6 +24,17 @@ h2 {
 .movie-poster {
   width: 100%;
   border-radius: 10px;
+}
+
+.rating-icon {
+  width: 5%;
+  padding-top: 12px;
+  padding-left: 20%;
+}
+
+.moviedetails-rating {
+  color: aliceblue;
+  padding-left: 19%;
 }
 
 .search-videobar {
@@ -102,24 +116,26 @@ h2 {
 #sortby-button {
   display: flex;
   font-size: 20px;
-  color: #fdf9ec;
+  color: 130204;
   width: 150px;
-  background-color: #130204;
-  border: 2px solid #fdf9ec;
+  background-color: #fdf9ec;
+  border: 2px solid #130204;
+  border-radius: 10px;
   padding: 10px;
-  gap: 5px;
 }
 
 /* w3 Schools*/
 .dropdown-content button {
   display: flex;
-  font-size: 20px;
-  color: #fdf9ec;
-  background-color: #130204;
-  border: 2px solid #fdf9ec;
-  padding: 10px;
-  gap: 5px;
+  font-size: 18px;
+  color: 130204;
+
+  background-color: #fdf9ec;
+  border: 2px solid #130204;
   width: 150px;
+
+  border-radius: 10px;
+  padding: 10px;
 }
 .dropdown-content {
   position: relative;
