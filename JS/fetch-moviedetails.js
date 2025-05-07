@@ -33,7 +33,6 @@ function displayMovieElement(movie) {
   // TITLE ELEMENT
   const titleElement = document.createElement("h1");
   titleElement.classList.add("moviedetails-title");
-  //console.log(movie);
   titleElement.textContent = movie.original_title;
   movieDetailsElement.appendChild(titleElement);
 

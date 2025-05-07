@@ -29,16 +29,19 @@ function displayMovieElement(movie) {
   // POSTER ELEMENT
   const posterElement = document.createElement("img");
   posterElement.classList.add("movie-poster");
-  //console.log(movie);
   posterElement.src = "https://image.tmdb.org/t/p/w1280/" + movie.poster_path;
   movieElement.appendChild(posterElement);
 
-  // TITLE ELEMENT
-  const titleElement = document.createElement("h1");
-  titleElement.classList.add("title");
-  //console.log(movie);
-  titleElement.textContent = movie.original_title;
-  movieElement.appendChild(titleElement);
+  //RATING
+  const ratingElement = document.createElement("p");
+  ratingElement.classList.add("moviedetails-rating");
+  ratingElement.textContent = movie.vote_average;
+  movieElement.appendChild(ratingElement);
+
+  const heartElement = document.createElement("img");
+  heartElement.src = "images/movie-icons-white-and-black/romance.png";
+  heartElement.classList.add("rating-icon");
+  movieElement.appendChild(heartElement);
 
   return movieElement;
 }
