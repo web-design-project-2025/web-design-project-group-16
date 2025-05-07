@@ -1,0 +1,145 @@
+article input{
+    color: #616161;
+    font-size: 16px;
+    font-family: "Monsterrat", sans-serif;
+    font-weight: 500;
+    border-width: 0px;
+}
+h1{
+    color: black;
+    margin-bottom: 20px;
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/*code for the username, and password*/
+section {
+    display:block;
+    background-color: #e7dbcf;
+    padding: 30px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    max-width: 480px;
+    min-width: 270px;
+    
+}
+article {
+    display: block;
+    background-color: #ffff;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+ /* login/sigin buttons*/
+button {
+    display:block;
+    background-color: #cb2026;
+    color: #fdf9ec;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 480px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "OldStarndard TT", serif;
+    font-weight: 700;
+    font-size: 26px;
+    border-width: 0px;
+}
+button:hover {
+    transform: translateY(-3px);
+    box-shadow:0 6px 12px #616161;
+}
+
+button2 {
+    display:block;
+    background-color: #ffff;
+    border: #cb2026;
+    border-style: solid;
+    border-width: 4px;
+    color: #34312e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "OldStandard TT", serif;
+    font-weight:700;
+    font-size: 20px;
+}
+
+button2:hover {
+    transform: translateY(-3px);
+    box-shadow:0 6px 12px #616161;
+}
+
+/* checkbox "line"*/
+p2, p6 {
+    font-family: "Monsterrat", sans-serif;
+}
+
+p3 {
+    text-align: center;
+    display: block;
+    font-family: "Monsterrat", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.fix-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 40px;
+  }
+  
+  .p4, .p5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #fdf9ec;
+  }
+  
+  .p5 {
+    background-color: #cb2026;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+  
+
+/*Fonts & typefaces*/
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .old-standard-tt-bold {
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .old-standard-tt-regular {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  p2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
