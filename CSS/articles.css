@@ -1,0 +1,41 @@
+#article-details {
+  background-color: #e7dbcf;
+  margin: 48px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* --- ARTICLE DETAILS START --- */
+#details-card-text {
+  margin: 24px;
+}
+#details-card-text {
+  font-family: "Montserrat", sans-serif;
+}
+
+#details-card-text h1 {
+  font-size: 28px;
+}
+
+#details-card-text h2 {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#details-card-text h3 {
+  font-size: 14px;
+  font-weight: 300;
+}
+/* --- ARTICLE DETAILS END --- */
+
+/* --- ARTICLE ITSELF START --- */
+#article {
+  display: flex;
+  flex-direction: row;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  gap: 12px;
+}
+
+/* --- ARTICLE ITSELF END --- */
