@@ -38,8 +38,16 @@
 }
 
 /* Font settings - searchbar */
+#quote {
+  display: flex;
+  align-items: center;
+}
 #quote-text {
   font-size: 16px;
+}
+#quote img {
+  width: 10%;
+  padding-right: 12px;
 }
 /* --- SERACH BAR ENDS --- */
 /* End help from chat GPT */
@@ -94,11 +102,47 @@
   gap: 24px;
 }
 
-/* Settings for the invidual boxes */
-#top-reviewers,
+/*  --- SETTINGS FOR INDIVIDUAL BOXES START --- */
+
+/* About us box*/
+#about-us img {
+  width: 80%;
+  margin-left: 24px;
+  margin-top: 12px;
+}
+
+/* Article box*/
+#article p {
+  margin-top: 24px;
+}
+
+/* Top Reviewers box*/
+#top-reviewers-content {
+  display: flex;
+  flex-direction: row;
+}
+#top-reviewers img {
+  width: 30%;
+  border-radius: 20px;
+  margin-top: 12px;
+  margin-right: 24px;
+  justify-content: end;
+}
+
+#top-reviewers-content p {
+  margin-top: 36px;
+}
+
+/* Other shows and series box */
+
+/*  --- SETTINGS FOR INDIVIDUAL BOXES END --- */
+
+/* --- SETTINGS FOR ALL BOXES START */
+/* The box itself*/
 #about-us,
 #article,
-#box4 {
+#top-reviewers,
+#other-shows {
   height: 230px;
   border-radius: 10px;
   background-color: #fdf9ec;
@@ -110,8 +154,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 10px;
-  margin-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
   font-size: 20px;
 }
 
@@ -121,8 +168,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 10px;
-  margin-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 12px;
+  margin-left: 24px;
+  margin-right: 24px;
   font-size: 14px;
 }
 /* --- BENTO BOXES ENDS --- */
