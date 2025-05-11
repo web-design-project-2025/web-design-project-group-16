@@ -45,6 +45,11 @@
   background-color: transparent;
   padding: 20px 24px 20px 24px;
 }
+
+#search-button {
+  border: none;
+  background-color: transparent;
+}
 /* --- SEARCH BAR ENDS --- */
 /* End help from chat GPT */
 
@@ -86,7 +91,7 @@
 }
 
 /* button */
-#filter-button {
+#sort-button {
   display: flex;
   font-size: 20px;
   color: #e7dbcf;
@@ -97,28 +102,23 @@
   transition: all 0.3s;
 }
 
-/* #filter-button:hover {
-  color: black;
-  background-color: #e7dbcf;
-} */
-
-#filter-button img {
+#sort-button img {
   transform: rotate(90deg);
 }
 
-#filter-button img:hover {
+#sort-button img:hover {
   color: black;
 }
 
-#filter-choices.visible {
+#sort-choices.visible {
   display: flex;
 }
 
-#filter-choices {
+#sort-choices {
   display: none;
 }
 
-#filter-choices {
+#sort-choices {
   flex-direction: column;
   position: absolute;
   gap: 8px;
@@ -130,7 +130,7 @@
   width: fit-content;
 }
 
-#filter-choices button {
+#sort-choices button {
   width: 100px;
   border: none;
   text-decoration: none;

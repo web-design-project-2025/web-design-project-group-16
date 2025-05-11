@@ -3,8 +3,8 @@
     {
       "id": "1",
       "picture-of-me": "images/Reviewers/reviewer1.jpg",
-      "name": "Ava Thompson",
-      "account-name": "ava.thompson@aol.com",
+      "name": "Clara Moon",
+      "account-name": "clara.moon@protonmail.com",
       "favorite-genres": "Favorite genres",
       "genre": [
         {
@@ -26,8 +26,8 @@
     {
       "id": "2",
       "picture-of-me": "images/Reviewers/reviewer2.jpg",
-      "name": "Bella Castillo",
-      "account-name": "bella.castillo@gmail.com",
+      "name": "Isla Rivera",
+      "account-name": "isla.rivera@icloud.com",
       "favorite-genres": "Favorite genres",
       "genre": [
         {
@@ -49,8 +49,8 @@
     {
       "id": "3",
       "picture-of-me": "images/Reviewers/reviewer3.jpg",
-      "name": "Clara Moon",
-      "account-name": "clara.moon@protonmail.com",
+      "name": "Ella Brooks",
+      "account-name": "ella.brooks@icloud.com",
       "favorite-genres": "Favorite genres",
       "genre": [
         {
@@ -72,8 +72,8 @@
     {
       "id": "4",
       "picture-of-me": "images/Reviewers/reviewer4.jpg",
-      "name": "Diana Nguyen",
-      "account-name": "diana.nguyen@yahoo.com",
+      "name": "Grace Lee",
+      "account-name": "grace.lee@gmail.com",
       "favorite-genres": "Favorite genres",
       "genre": [
         {
@@ -95,8 +95,8 @@
     {
       "id": "5",
       "picture-of-me": "images/Reviewers/reviewer5.jpg",
-      "name": "Ella Brooks",
-      "account-name": "ella.brooks@icloud.com",
+      "name": "Sofia Martinez",
+      "account-name": "sofia.martinez@hotmail.com",
       "favorite-genres": "Favorite genres",
       "genre": [
         {
@@ -118,8 +118,8 @@
     {
       "id": "6",
       "picture-of-me": "images/Reviewers/reviewer6.jpg",
-      "name": "Finn Harper",
-      "account-name": "finn.harper@hotmail.com",
+      "name": "Jake Bennett",
+      "account-name": "jake.bennett@hotmail.com",
       "favorite-genres": "Favorite genres",
       "genre": [
         {
@@ -141,8 +141,8 @@
     {
       "id": "7",
       "picture-of-me": "images/Reviewers/reviewer7.jpg",
-      "name": "Grace Lee",
-      "account-name": "grace.lee@gmail.com",
+      "name": "Ava Thompson",
+      "account-name": "ava.thompson@aol.com",
       "favorite-genres": "Favorite genres",
       "genre": [
         {
@@ -164,8 +164,8 @@
     {
       "id": "8",
       "picture-of-me": "images/Reviewers/reviewer8.jpg",
-      "name": "Isla Rivera",
-      "account-name": "isla.rivera@icloud.com",
+      "name": "Bella Castillo",
+      "account-name": "bella.castillo@gmail.com",
       "favorite-genres": "Favorite genres",
       "genre": [
         {
@@ -187,8 +187,8 @@
     {
       "id": "9",
       "picture-of-me": "images/Reviewers/reviewer9.jpg",
-      "name": "Jake Bennett",
-      "account-name": "jake.bennett@hotmail.com",
+      "name": "Finn Harper",
+      "account-name": "finn.harper@hotmail.com",
       "favorite-genres": "Favorite genres",
       "genre": [
         {
@@ -210,8 +210,8 @@
     {
       "id": "10",
       "picture-of-me": "images/Reviewers/reviewer10.jpg",
-      "name": "Sofia Martinez",
-      "account-name": "sofia.martinez@hotmail.com",
+      "name": "Diana Nguyen",
+      "account-name": "diana.nguyen@yahoo.com",
       "favorite-genres": "Favorite genres",
       "genre": [
         {

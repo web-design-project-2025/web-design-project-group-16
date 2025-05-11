@@ -40,14 +40,65 @@ searchButton.addEventListener("click", function () {
 });
 
 // Button
-const filterReviewersButton = document.getElementById("filter-button");
-const textElement = document.getElementById("filter-choices");
+const sortReviewersButton = document.getElementById("sort-button");
+const textElement = document.getElementById("sort-choices");
 
-filterReviewersButton.addEventListener("click", function () {
+sortReviewersButton.addEventListener("click", function () {
   textElement.classList.toggle("visible");
 });
 
-// Filter for the button
+// Sort order, ex most popular etc
+// source video: https://www.youtube.com/watch?v=0cSz8bFasm4 Date 11/5-2025
+// Most popular button
+document
+  .getElementById("sort-by-most-popular")
+  .addEventListener("click", sortMovieByMostPopular);
+
+// A-Z button
+document.getElementById("sort-by-A-Z").addEventListener("click", sortMovieByAZ);
+
+// Favorite genre button
+document
+  .getElementById("sort-by-favourite-genre")
+  .addEventListener("click", sortMovieByFavoriteGenre);
+
+function sortMovieByMostPopular() {
+  movies.sort((curr, next) => next.popular - curr.popular); // descending
+  console.log(movies);
+  renderContent(movies);
+}
+
+function sortMovieByAZ() {
+  let sortedReviewers = reviewers.sort((curr, next) => {
+    // Source https://www.freecodecamp.org/news/how-to-sort-alphabetically-in-javascript/ Date: 11/5-2025
+    if (curr.name < next.name) {
+      return -1;
+    }
+    if (curr.name > next.name) {
+      return 1;
+    }
+    return 0;
+  });
+  console.log(sortedReviewers);
+  contentElement.innerHTML = ""; // Clears the old html
+
+  // rewrite it, display on the web
+  for (let i = 0; i < sortedReviewers.length; i++) {
+    const reviewer = getReviewerById(sortedReviewers[i].id);
+    const movieElement = createMovieElement(
+      movies.find((movie) => {
+        return movie.user_id === reviewer.id;
+      }),
+      reviewer
+    );
+    contentElement.appendChild(movieElement);
+  }
+}
+
+function sortMovieByFavoriteGenre() {
+  movies.sort((curr, next) => curr.genre - next.genre);
+  console.log(movies);
+}
 
 // Reviewers cards
 let reviewers = [];
