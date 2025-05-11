@@ -2,6 +2,7 @@
   "reviewers": [
     {
       "id": "1",
+      "most-popular": "3.2",
       "picture-of-me": "images/Reviewers/reviewer1.jpg",
       "name": "Clara Moon",
       "account-name": "clara.moon@protonmail.com",
@@ -25,6 +26,7 @@
     },
     {
       "id": "2",
+      "most-popular": "2.7",
       "picture-of-me": "images/Reviewers/reviewer2.jpg",
       "name": "Isla Rivera",
       "account-name": "isla.rivera@icloud.com",
@@ -48,6 +50,7 @@
     },
     {
       "id": "3",
+      "most-popular": "1.8",
       "picture-of-me": "images/Reviewers/reviewer3.jpg",
       "name": "Ella Brooks",
       "account-name": "ella.brooks@icloud.com",
@@ -71,6 +74,7 @@
     },
     {
       "id": "4",
+      "most-popular": "4.4",
       "picture-of-me": "images/Reviewers/reviewer4.jpg",
       "name": "Grace Lee",
       "account-name": "grace.lee@gmail.com",
@@ -94,6 +98,7 @@
     },
     {
       "id": "5",
+      "most-popular": "2.6",
       "picture-of-me": "images/Reviewers/reviewer5.jpg",
       "name": "Sofia Martinez",
       "account-name": "sofia.martinez@hotmail.com",
@@ -117,6 +122,7 @@
     },
     {
       "id": "6",
+      "most-popular": "4.2",
       "picture-of-me": "images/Reviewers/reviewer6.jpg",
       "name": "Jake Bennett",
       "account-name": "jake.bennett@hotmail.com",
@@ -140,6 +146,7 @@
     },
     {
       "id": "7",
+      "most-popular": "3.6",
       "picture-of-me": "images/Reviewers/reviewer7.jpg",
       "name": "Ava Thompson",
       "account-name": "ava.thompson@aol.com",
@@ -163,6 +170,7 @@
     },
     {
       "id": "8",
+      "most-popular": "1.5",
       "picture-of-me": "images/Reviewers/reviewer8.jpg",
       "name": "Bella Castillo",
       "account-name": "bella.castillo@gmail.com",
@@ -186,6 +194,7 @@
     },
     {
       "id": "9",
+      "most-popular": "4.4",
       "picture-of-me": "images/Reviewers/reviewer9.jpg",
       "name": "Finn Harper",
       "account-name": "finn.harper@hotmail.com",
@@ -209,6 +218,7 @@
     },
     {
       "id": "10",
+      "most-popular": "2.4",
       "picture-of-me": "images/Reviewers/reviewer10.jpg",
       "name": "Diana Nguyen",
       "account-name": "diana.nguyen@yahoo.com",

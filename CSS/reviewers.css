@@ -30,7 +30,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* height: 56px; */
   width: 432px;
   padding-right: 24px;
   margin-top: 250px;
@@ -38,7 +37,8 @@
   gap: 8px;
 }
 
-#search-text{
+/* Placeholder text */
+#search-text {
   width: 100%;
   border: none;
   outline: none;
@@ -46,6 +46,7 @@
   padding: 20px 24px 20px 24px;
 }
 
+/* Magnifying glas button */
 #search-button {
   border: none;
   background-color: transparent;
@@ -62,35 +63,36 @@
 #top-reviewers {
   color: white;
   font-size: 24px;
-  /* padding-left: 162.5px; */
-  padding-top: 48px;
-  padding-bottom: 8px;
+  margin-left: 48px;
+  margin-top: 48px;
+  margin-bottom: 8px;
 }
 
 /* Text - top reviewers */
 #top-reviewers-text {
   color: white;
   font-size: 16px;
-  /* padding-left: 162.5px; */
-  padding-bottom: 16px;
+  margin-left: 48px;
+  margin-bottom: 16px;
 }
 
 /* --- INFO BEFORE FILTER ENDS --- */
 
 /* --- FILTER STARTS --- */
 .filter {
-  /* padding-left: 162.5px; */
+  padding-left: 48px;
   padding-bottom: 16px;
 }
 
-/* sort by */
+/* Sort by */
 #sort-by {
   color: #e7dbcf;
   font-size: 20px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+  margin-left: 48px;
 }
 
-/* button */
+/* Button */
 #sort-button {
   display: flex;
   font-size: 20px;
@@ -98,16 +100,15 @@
   background-color: #130204;
   border: 2px solid #e7dbcf;
   padding: 10px;
+  margin-left: 48px;
+  margin-bottom: 16px;
   gap: 5px;
   transition: all 0.3s;
 }
 
+/* The arrow */
 #sort-button img {
   transform: rotate(90deg);
-}
-
-#sort-button img:hover {
-  color: black;
 }
 
 #sort-choices.visible {
@@ -118,22 +119,25 @@
   display: none;
 }
 
+/* The diplay of all the different choices */
 #sort-choices {
   flex-direction: column;
   position: absolute;
-  gap: 8px;
-  background-color: #e7dbcf;
+  /* gap: 8px; */
+  background-color: #ede4da;
   opacity: 90%;
   border-radius: 10px;
   padding: 32px;
-  margin-top: 20px;
+  margin-left: 48px;
   width: fit-content;
 }
 
+/* The text that is clickable */
 #sort-choices button {
   width: 100px;
   border: none;
   text-decoration: none;
+  font-size: 16px;
   background-color: transparent; /* help with only this line, date: 2/6, link https://chatgpt.com/share/681472d3-ac70-8007-90c2-2e889251f79d */
   display: flex;
   justify-content: flex-start;
@@ -143,28 +147,26 @@
 
 /* --- FACE CARDS STARTS --- */
 
+/* Container for all cards */
 #cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 48px;
-  justify-content: center;
-  align-items: center;
-  /* padding-left: 162.5px;
-  padding-right: 162.5px; */
+  margin-left: 48px;
+  margin-right: 48px;
   padding-bottom: 48px;
   border-radius: 5px;
-  /* width: 1116px; */
 }
 
+/* Container for the settings for the invidual cards*/
 .container {
   background-color: #e7dbcf;
   border-radius: 10px;
   padding: 20px;
-  width: 384px;
-  /* width: 275px; */
 }
 
-.image-text{
+/* Div for the reviewer image and text container */
+.image-text {
   display: flex;
   flex-direction: row;
 }
@@ -174,12 +176,15 @@
   width: 117px;
   height: 170px;
   border-radius: 10px;
-  margin-right: 8px;
+  margin-right: 16px;
   margin-bottom: 16px;
 }
-.text-movie{
+
+/* Text container */
+.text {
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px;
 }
 
 /* Name*/
@@ -197,9 +202,8 @@
   color: #34312e;
 }
 
-
 /* Div around all icons */
-.icons-container{
+.icons-container {
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -207,7 +211,7 @@
 }
 
 /* Settings for each icon */
-.icons-img{
+.icons-img {
   width: 15px;
   height: 15px;
 }
@@ -228,58 +232,60 @@
 }
 
 /* Div around all movies */
-.movie-container{
-  display: flex;
-  gap: 8px;
-  padding-right: 0;
-} 
+.movie-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+  position: relative;
+}
 
 /* Settings for each movie poster */
 .movie-img {
   border-radius: 5px;
-  width: 80px;
-  height: 120px;
+  width: 100%;
+  height: auto;
 }
 
+/* --- FACE CARDS ENDS --- */
 
-/* .profile-card {
-  background-color: #e7dbcf;
-  border-radius: 10px;
-  height: 388px;
-  width: 340px;
-  padding-left: 32.5px;
-  padding-top: 35.5px;
-} */
-
-/*
-.all-card-info {
-  display: flex;
-  gap: 8px;
-  padding-bottom: 16px;
+/* --- MEDIA STARTS --- */
+@media screen and (max-width: 1100px) {
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.all-card-info img {
-  width: 117px;
-  height: 170px;
+@media screen and (max-width: 850px) {
+  #top-reviewers-text {
+    margin-right: 48px;
+  }
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .reviewer-image {
+    width: 80px;
+    height: auto;
+  }
+  .search-videobar {
+    height: 600px;
+  }
 }
 
-.information-text {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 150px;
+@media screen and (max-width: 500px) {
+  #search {
+    width: 100%;
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+  #search-text {
+    font-size: 12px;
+  }
+  .search-videobar {
+    height: 550px;
+  }
 }
 
-.genre {
-  display: flex;
-  gap: 8px;
-}
-
-.genre img {
-  width: 15px;
-  height: 15px;
-}
-
-
-
-
+/* --- MEDIA ENDS --- */
