@@ -26,11 +26,16 @@ function displayMovieElement(movie) {
   const movieElement = document.createElement("div");
   movieElement.classList.add("movie-container");
 
+  // DIV AROUND IMG
+  const imageElement = document.createElement("div");
+  imageElement.classList.add("image-container");
+  movieElement.appendChild(imageElement);
+
   // POSTER ELEMENT
   const posterElement = document.createElement("img");
   posterElement.classList.add("movie-poster");
   posterElement.src = "https://image.tmdb.org/t/p/w1280/" + movie.poster_path;
-  movieElement.appendChild(posterElement);
+  imageElement.appendChild(posterElement);
 
   // TITLE ELEMENT
   const titleElement = document.createElement("h1");
