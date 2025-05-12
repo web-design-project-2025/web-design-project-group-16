@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+}
 /* --- SEARCH-VIDEOBAR STARTS --- */
 /* Container for both the video in the background and the searchbar */
 /* Begin help from chatGPT with position, overflow and z-index, date 24/04/2024, source: https://chatgpt.com/share/680ab363-b874-8007-b549-9c5e4b3c5d75 */
+/* The video in the background */
 .search-videobar {
   position: relative;
   overflow: hidden;
@@ -20,52 +24,62 @@
   top: 0;
   z-index: 0;
 }
-/* --- SEARCH-VIDEOBAR END --- */
-
-/* --- SEARCH BAR STARTS --- */
+/* --- SEARCHBAR STARTS --- */
 /* The searchbar */
 #search {
-  background-color: #fdf9ec;
+  background-color: #e7dbcf;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* height: 56px; */
-  width: fit-content;
+  width: 432px;
+  padding-right: 24px;
   margin-top: 250px;
-  padding: 12px 24px 12px 24px;
   border-radius: 5px;
+  gap: 8px;
 }
 
-/* Font settings - searchbar */
-#quote {
-  display: flex;
-  align-items: center;
+/* Placeholder text */
+#search-text {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 20px 24px 20px 24px;
 }
-#quote-text {
-  font-size: 16px;
+
+/* Magnifying glas button */
+#search-button {
+  border: none;
+  background-color: transparent;
 }
-#quote img {
-  width: 10%;
-  padding-right: 12px;
-}
-/* --- SERACH BAR ENDS --- */
+/* --- SEARCH BAR ENDS --- */
+/* --- SEARCH-VIDEOBAR END --- */
 /* End help from chat GPT */
+
+/* --- SERACH BAR ENDS --- */
 
 /* --- QUOTE STARTS --- */
 /* Container for the logo and text */
 #quote {
   display: flex;
-  flex-direction: row;
-  padding-top: 48px;
+  align-items: center;
   justify-content: center;
+  flex-direction: row;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 48px;
 }
 
-/* Font settings - quote*/
+/* Font settings - quote */
 #quote-text {
   color: red;
   text-transform: uppercase;
   font-size: 20px;
+}
+#quote img {
+  width: 10%;
+  padding-right: 12px;
 }
 /* --- QUOTE ENDS --- */
 
@@ -112,8 +126,9 @@
 }
 
 /* Article box*/
-#article p {
-  margin-top: 24px;
+#article-text {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Top Reviewers box*/
@@ -121,16 +136,17 @@
   display: flex;
   flex-direction: row;
 }
-#top-reviewers img {
-  width: 30%;
-  border-radius: 20px;
-  margin-top: 12px;
-  margin-right: 24px;
-  justify-content: end;
+#top-reviewers-text {
+  display: flex;
+  flex-direction: column;
 }
-
-#top-reviewers-content p {
-  margin-top: 36px;
+#top-reviewers img {
+  width: 85px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 24px;
+  margin-right: 24px;
+  margin-bottom: 24px;
 }
 
 /* Other shows and series box */
@@ -143,17 +159,19 @@
 #article,
 #top-reviewers,
 #other-shows {
-  height: 230px;
+  width: 100%;
+  height: 240px;
   border-radius: 10px;
-  background-color: #fdf9ec;
+  background-color: #e7dbcf;
+  overflow: hidden;
 }
 
 /* Font settings for the headers */
 .bento-headers {
   color: #130204;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  /* flex-direction: column;
+  align-items: flex-start; */
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin-top: 24px;
@@ -166,12 +184,53 @@
 .bento-text {
   color: #130204;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  /* flex-direction: column;
+  align-items: flex-start; */
   font-family: "Montserrat", sans-serif;
-  margin-top: 12px;
-  margin-left: 24px;
-  margin-right: 24px;
+  /* margin-top: 12px; */
+  margin: 12px 24px 12px 24px;
+  /* margin-left: 24px;
+  margin-right: 24px; */
   font-size: 14px;
 }
 /* --- BENTO BOXES ENDS --- */
+
+/* --- MEDIA STARTS --- */
+/* Search */
+@media screen and (max-width: 850px) {
+  .search-videobar {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #search {
+    width: 100%;
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+  #search-text {
+    font-size: 12px;
+  }
+  .search-videobar {
+    height: 550px;
+  }
+}
+/* Quote */
+@media screen and (max-width: 800px) {
+  #quote {
+    display: none;
+  }
+}
+/* Bento boxes */
+@media screen and (max-width: 1275px) {
+  #bento-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 675px) {
+  #bento-boxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
