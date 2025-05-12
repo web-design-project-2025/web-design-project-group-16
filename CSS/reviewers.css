@@ -190,7 +190,7 @@
 
 /* --- FACE CARDS ENDS --- */
 
-/* --- MEDIA STARTS --- */
+/* --- RESPONSIVE MODE START --- */
 @media screen and (max-width: 1100px) {
   #cards {
     display: grid;
@@ -228,5 +228,4 @@
     height: 550px;
   }
 }
-
-/* --- MEDIA ENDS --- */
+/* --- RESPONSIVE MODE ENDS --- */

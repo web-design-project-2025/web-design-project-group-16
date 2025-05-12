@@ -78,6 +78,7 @@
   gap: 32px;
 }
 
+/* Help from second year NMD student, Erik sandquist with position, max-height and aspect-ratio.*/
 /* Div around each img */
 .image-container {
   position: relative;
@@ -121,7 +122,7 @@ h1 {
 } */
 /* --- MOVIES ENDS --- */
 
-/* --- MEDIA STARTS --- */
+/* --- RESPONSIVE MODE START --- */
 /* Search */
 @media screen and (max-width: 850px) {
   .search-videobar {
@@ -153,3 +154,4 @@ h1 {
     grid-template-columns: repeat(2, 5fr);
   }
 }
+/* --- RESPONSIVE MODE ENDS --- */

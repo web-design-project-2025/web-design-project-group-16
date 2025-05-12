@@ -12,8 +12,9 @@
 
 /* --- ARTICLE DETAILS START --- */
 #details-card-text {
-  margin-left: 42px;
-  padding-top: 42px;
+  margin-left: 48px;
+  margin-right: 48px;
+  padding-top: 48px;
 }
 #details-card-text {
   font-family: "Montserrat", sans-serif;
@@ -21,17 +22,20 @@
 
 #details-card-text h1 {
   font-size: 28px;
+  margin-bottom: 4px;
 }
 
 #details-card-text h2 {
   font-size: 18px;
   font-weight: 400;
   font-style: italic;
+  margin-bottom: 4px;
 }
 
 #details-card-text h3 {
   font-size: 14px;
   font-weight: 300;
+  margin-bottom: 4px;
 }
 /* --- ARTICLE DETAILS END --- */
 
@@ -39,7 +43,7 @@
 #intro {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  padding: 42px;
+  padding: 16px 48px;
   font-style: italic;
 }
 
@@ -47,23 +51,23 @@
 
 /* --- ARTICLE ITSELF START --- */
 #article {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background: none;
   font-family: "Montserrat", sans-serif;
   justify-content: center;
   align-items: baseline;
-  padding-bottom: 42px;
+  padding-bottom: 48px;
 }
 
 .column-1 p {
-  padding: 6px;
-  width: 635px;
+  display: grid;
+  padding: 6px 6px 6px 48px;
 }
 
 .column-2 p {
-  padding: 6px;
-  width: 635px;
+  display: grid;
+  padding: 6px 48px 6px 6px;
 }
 
 /* --- ARTICLE ITSELF END --- */
@@ -74,8 +78,9 @@
   color: #e7dbcf;
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
-  padding-left: 42px;
   padding-top: 24px;
+  margin-left: 48px;
+  margin-right: 48px;
   margin-top: 24px;
 }
 
@@ -84,22 +89,20 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-style: italic;
-  padding-left: 42px;
+  padding-left: 48px;
 }
 
 #line {
   background-color: #e7dbcf;
   height: 1px;
-  margin-left: 42px;
-  margin: 42px;
+  margin-left: 48px;
+  margin: 48px;
 }
 .scroll-function {
   display: flex;
   flex-direction: row;
   overflow: scroll;
-  padding-top: 42px;
-  padding-bottom: 42px;
-  padding-left: 42px;
+  padding: 16px 48px 48px 48px;
   gap: 24px;
 }
 .small-article {
@@ -110,7 +113,7 @@
 
 .small-article img {
   width: 318px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .small-article p {
@@ -122,3 +125,15 @@
 /* --- ARTICLES SCROLL END --- */
 
 /* --- RESPONSIVE MODE START --- */
+/* Text */
+@media screen and (max-width: 800px) {
+  #article {
+    grid-template-columns: none;
+  }
+  .column-1 p {
+    padding: 16px 48px 0px 48px;
+  }
+  .column-2 p {
+    padding: 16px 48px 0px 48px;
+  }
+}
