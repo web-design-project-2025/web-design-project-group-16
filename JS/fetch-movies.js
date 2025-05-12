@@ -72,7 +72,7 @@ loadData();
 /* --- MAIN FILTERING START --- */
 
 /* Elements taken from HMTL */
-const filterButton = document.querySelector("#sortby-button");
+const filterButton = document.querySelector("#filter-button");
 const dropDownMenuElement = document.querySelector(".dropdown-content");
 const upcommingButtonElement = document.querySelector("#upcomming-button");
 const topRatedButtonElement = document.querySelector("#topRated-button");
