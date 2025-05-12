@@ -41,7 +41,7 @@ searchButton.addEventListener("click", function () {
 
 //// Button for sort order
 // Button
-const sortReviewersButton = document.getElementById("sort-button");
+const sortReviewersButton = document.getElementById("sort-by-button");
 const textElement = document.getElementById("sort-choices");
 
 sortReviewersButton.addEventListener("click", function () {
