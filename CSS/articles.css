@@ -1,0 +1,124 @@
+.article-details {
+  background-color: #e7dbcf;
+  margin: 48px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* --- ARTICLE IMAGE ---*/
+#article-image {
+  width: 100%;
+}
+
+/* --- ARTICLE DETAILS START --- */
+#details-card-text {
+  margin-left: 42px;
+  padding-top: 42px;
+}
+#details-card-text {
+  font-family: "Montserrat", sans-serif;
+}
+
+#details-card-text h1 {
+  font-size: 28px;
+}
+
+#details-card-text h2 {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#details-card-text h3 {
+  font-size: 14px;
+  font-weight: 300;
+}
+/* --- ARTICLE DETAILS END --- */
+
+/* --- ARTICLE INTRO START --- */
+#intro {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  padding: 42px;
+  font-style: italic;
+}
+
+/* --- ARTICLE INTRO END --- */
+
+/* --- ARTICLE ITSELF START --- */
+#article {
+  display: flex;
+  flex-direction: row;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  align-items: baseline;
+  padding-bottom: 42px;
+}
+
+.column-1 p {
+  padding: 6px;
+  width: 635px;
+}
+
+.column-2 p {
+  padding: 6px;
+  width: 635px;
+}
+
+/* --- ARTICLE ITSELF END --- */
+
+/* --- ARTICLES SCROLL START --- */
+
+#page-headers {
+  color: #e7dbcf;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  padding-left: 42px;
+  padding-top: 24px;
+  margin-top: 24px;
+}
+
+#page-header-caption {
+  color: #e7dbcf;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  padding-left: 42px;
+}
+
+#line {
+  background-color: #e7dbcf;
+  height: 1px;
+  margin-left: 42px;
+  margin: 42px;
+}
+.scroll-function {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  padding-left: 42px;
+  gap: 24px;
+}
+.small-article {
+  background-color: #e7dbcf;
+  width: 318px;
+  border-radius: 10px;
+}
+
+.small-article img {
+  width: 318px;
+  border-radius: 10px;
+}
+
+.small-article p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 12px;
+}
+
+/* --- ARTICLES SCROLL END --- */
+
+/* --- RESPONSIVE MODE START --- */
