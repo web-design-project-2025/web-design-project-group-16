@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/reocurring.css" />
     <link rel="stylesheet" href="CSS/reviewers.css" />
-    <script src="JS/reviewers.js" defer></script>
+
     <title>Neolens</title>
   </head>
 
@@ -16,7 +16,6 @@
           <img id="menu-logo" src="images/logo-no-border2.png" alt="logotype"
         /></a>
         <ul class="menu-ul">
-          <a href="#"> <li>Light Mode</li></a>
           <a href="#"> <li>Articles</li></a>
           <a href="account.html"> <li>Account</li></a>
           <a href="movies.html"> <li>Movies</li> </a>
@@ -32,29 +31,39 @@
         </video>
         <!-- End help for chatGPT -->
         <div id="search">
-          <p id="search-text">Search movies, reviewers etc...</p>
-          <img src="" alt="Magnifying glas" />
+          <input
+            type="text"
+            name=""
+            id="search-text"
+            placeholder="SEARCH
+        MOVIES, REVIEWERS ETC..."
+          />
+          <button id="search-button">
+            <img src="images/search-icon.png" alt="Magnifying glas" />
+          </button>
         </div>
       </div>
-      <p id="top-reviewers">Top reviewers</p>
-      <p id="top-reviewers-text">
-        Search between thousands of users, all with opinions on the movies you
-        want to know the truth about.
-      </p>
-      <div class="filter">
-        <p id="sort-by">Sort By:</p>
-        <button id="filter-button">
-          Most Popular
-          <img src="images/arrow-icon.png" alt="Arrow" />
-        </button>
-        <div id="filter-choices">
-          <button>Most popular</button>
-          <button>A-Z</button>
-          <button>Favourite genre</button>
+      <div id="reviewers-container">
+        <p id="top-reviewers">Top reviewers</p>
+        <p id="top-reviewers-text">
+          Search between thousands of users, all with opinions on the movies you
+          want to know the truth about.
+        </p>
+        <div class="sort">
+          <p id="sort-by">Sort By:</p>
+          <button id="sort-button">
+            Most Popular
+            <img src="images/arrow-icon.png" alt="Arrow" />
+          </button>
+          <div id="sort-choices">
+            <!-- <button id="sort-by-most-popular">Most popular</button> -->
+            <button id="sort-by-A-Z">A-Z</button>
+            <!-- <button id="sort-by-favourite-genre">Favourite genre</button> -->
+          </div>
         </div>
-      </div>
 
-      <div id="cards"></div>
+        <div id="cards"></div>
+      </div>
     </main>
 
     <footer>
@@ -67,5 +76,7 @@
         <img id="logo-footer" src="images/logo-no-border2.png" alt="logotype" />
       </div>
     </footer>
+
+    <script src="JS/reviewers.js" defer></script>
   </body>
 </html>
