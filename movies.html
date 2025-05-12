@@ -16,11 +16,10 @@
     <header>
       <nav class="menu-bar">
         <a href="home.html">
-          <img id="menu-logo" src="images/logo-no-border2.png" alt="logotype"
+          <img id="menu-logo" src="images/logo-2.png" alt="logotype"
         /></a>
         <ul class="menu-ul">
-          <a href="#"> <li>Light Mode</li></a>
-          <a href="#"> <li>Articles</li></a>
+          <a href="articles.html"> <li>Articles</li></a>
           <a href="account.html"> <li>Account</li></a>
           <a href="movies.html"> <li>Movies</li> </a>
         </ul>
@@ -35,92 +34,21 @@
         </video>
         <!-- End help for chatGPT -->
         <div id="search">
-          <p id="search-text">SEARCH MOVIES, REVIEWERS ETC...</p>
+          <input
+            type="text"
+            name=""
+            id="search-text"
+            placeholder="SEARCH
+          MOVIES, REVIEWERS ETC..."
+          />
           <img src="images/search-icon.png" alt="Magnifying glass" />
         </div>
       </div>
-
-      <!-- <img
-        id="heart-icon"
-        src="images/movie-icons-white-and-black/romance.png"
-        alt="" -->
-      />
-      <!-- 
-      <ul class="categories">
-        <li>
-          <a id="comedy-icon" href="#">
-            <img
-              src="images/movie-icons-white-and-black/comedy.png"
-              alt="Comedy"
-          /></a>
-        </li>
-
-        <li>
-          <a href="#">
-            <img src="images/movie-icons-white-and-black/drama.png" alt="Drama"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/horror.png"
-              alt="Horror"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/romcom.png"
-              alt="Romcom"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/action.png"
-              alt="Action"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/musical.png"
-              alt="Musical"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/old-films.png"
-              alt="Old Films"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/romance.png"
-              alt="Romance"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/sci-fi.png"
-              alt="Sci-Fi"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/mystery.png"
-              alt="Mystery"
-          /></a>
-        </li>
-      </ul> -->
       <div class="filter">
-        <button id="sortby-button">
-          Sort By:
-          <img id="arrow" src="images/arrow-icon.png" alt="Arrow" />
+        <p id="sort-by">Sort By:</p>
+        <button id="filter-button">
+          Most Popular
+          <img src="images/arrow-icon.png" alt="Arrow" />
         </button>
         <div class="dropdown-content">
           <button id="mostPopular-button">Most Popular</button>
@@ -130,18 +58,26 @@
       </div>
 
       <div class="content" id="content"></div>
-
-      <!-- <ul class="movies-by-categories"></ul> -->
     </main>
 
     <footer>
       <div id="footer-container">
-        <div id="footer-text-container">
-          <p id="footer-text">Instagram</p>
-          <p id="footer-text">Facebook</p>
-          <p id="footer-text">About Us</p>
+        <div id="footer-left-side">
+          <div id="footer-socialmedia-container">
+            <p id="footer-text">SOCIAL MEDIA</p>
+            <a id="footer-text" href="#"> INSTAGRAM </a>
+            <a id="footer-text" href="#"> FACEBOOK </a>
+            <a id="footer-text" href="#"> TIKTOK </a>
+          </div>
+
+          <div id="footer-quicklinks-container">
+            <p id="footer-text">QUICK LINKS</p>
+            <a id="footer-text" href="#"> ARTICLES </a>
+            <a id="footer-text" href="#"> ABOUT US </a>
+            <a id="footer-text" href="#"> FAQ </a>
+          </div>
         </div>
-        <img id="logo-footer" src="images/logo-no-border2.png" alt="logotype" />
+        <img id="logo-footer" src="images/logo-outline.png" alt="logotype" />
       </div>
     </footer>
   </body>
