@@ -5,11 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/reocurring.css" />
     <link rel="stylesheet" href="CSS/moviedetails.css" />
-    <script src="JS/movieLoadData.js" defer></script>
+    <script src="JS/fetch-moviedetails.js" defer></script>
     <title>Movie details</title>
   </head>
+
+  <header>
+    <nav class="menu-bar">
+      <a href="home.html">
+        <img id="menu-logo" src="images/logo-no-border2.png" alt="logotype"
+      /></a>
+      <ul class="menu-ul">
+        <a href="#"> <li>Light Mode</li></a>
+        <a href="#"> <li>Articles</li></a>
+        <a href="account.html"> <li>Account</li></a>
+        <a href="movies.html"> <li>Movies</li> </a>
+      </ul>
+    </nav>
+  </header>
   <body>
-    <button id="movieDetailsButton">Movie</button>
-    <p id="movieDetails">Hej</p>
+    <div class="moviedetails-page-container">
+      <div class="content" id="content"></div>
+    </div>
   </body>
+
+  <footer>
+    <div id="footer-container">
+      <div id="footer-text-container">
+        <p id="footer-text">Instagram</p>
+        <p id="footer-text">Facebook</p>
+        <p id="footer-text">About Us</p>
+      </div>
+      <img id="logo-footer" src="images/logo-no-border2.png" alt="logotype" />
+    </div>
+  </footer>
 </html>

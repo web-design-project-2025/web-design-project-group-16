@@ -1,3 +1,32 @@
-p {
-    color: aliceblue;
+/* --- FOR ENTIRE PAGE START --- */
+.moviedetails-page-container {
+  /* grid-template-columns: repeat(2, 2fr); */
+  background-color: #e7dbcf;
+  margin: 48px;
+  border-radius: 10px;
 }
+
+/* --- FOR ENTIRE PAGE END --- */
+
+/* --- POSTER AND DESCRIPTION BOX START --- */
+/*flexbox containter for movie description*/
+.moviedetails-container {
+  display: flex;
+  flex-direction: row;
+}
+/* Poster specifications */
+.moviedetails-poster {
+  width: 20%;
+  border-radius: 10px;
+  margin: 48px;
+}
+
+/* Text specifications */
+.moviedetails-container h1,
+h2,
+h3,
+p {
+  color: #130204;
+}
+
+/* --- POSTER AND DESCRIPTION BOX END --- */
