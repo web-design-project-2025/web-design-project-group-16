@@ -206,26 +206,21 @@ html {
   }
   #hamburger-button {
     display: block;
+    position: relative;
   }
   .menu-ul {
     flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
     gap: 8px;
-    background-color: #ede4da;
-    opacity: 90%;
     width: fit-content;
     padding: 32px;
-    height: 100%;
-    /* position: fixed; */
-    z-index: 1;
-    position: relative;
-  }
-  #hamburgerIcon-container {
-    position: absolute;
-    z-index: 100px;
-    right: 10px;
-    top: 40px;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
+    margin-top: 90px;
+    margin-right: 48px;
+    border-radius: 10px;
+    background-color: #ede4da;
+    opacity: 90%;
   }
 }
