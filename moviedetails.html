@@ -10,7 +10,6 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vina+Sans&display=swap");
     </style>
-
     <title>Movie details</title>
   </head>
 
@@ -38,8 +37,20 @@
   <body>
     <div class="moviedetails-page-container">
       <div class="content" id="content"></div>
-      <!-- div for reviews content -->
+      <div class="reviews" id="reviews"></div>
+      <div class="submit-review-container">
+        <h3>WRITE YOUR OWN REVIEW</h3>
+        <form id="review-form">
+          <input type="text" id="subject" placeholder="Title" required />
+          <input type="text" id="username" placeholder="Your username" required />
+          <input type="text" id="name" placeholder="Your name" required />
+          <input type="number" id="rating" placeholder="Rating (0-10)" step="0.1" min="0" max="10" required />
+          <textarea id="review-text" placeholder="Write your review here..." required></textarea>
+          <button type="submit">SUBMIT REVIEW</button>
+        </form>
     </div>
+    </div>
+      
   </body>
 
   <footer>
