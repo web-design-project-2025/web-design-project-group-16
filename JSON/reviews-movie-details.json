@@ -1,0 +1,52 @@
+{
+    "ten-eight": [
+        {
+           "review-id": 1,
+           "subject" : "Amazing!",
+           "rating" : "9.65",
+           "review" : "An emotional rollercoaster in the best way. Loved every second."
+        },
+        {
+            "review-id": 2,
+            "subject" : "Art",
+            "rating": "8.25",
+            "review": "This movie was art. Everything from the cinematography to the sound design felt intentional and immersive. A masterclass in modern filmmaking, if you ask me."
+        },
+        {
+            "review-id": 3,
+            "subject" : "LOVED IT!!!",
+            "rating": "9.26",
+            "review": "ABSOLUTELY LOVED IT!!! The cast was amazing and I was on the edge of my seat the whole time. 10/10 would watch again. "
+        },
+        {
+            "review-id": 4,
+            "subject" : "Perfect",
+            "rating": "9.34",
+            "review":"What a film. The direction was confident, the cinematography stunning without ever being showy, and the performances so layered. It’s the kind of movie that rewards patience and observation, subtle, but never boring. You can tell a lot of care went into every frame. I don’t give out five stars lightly, but this one earned every bit of it. "
+        },
+        {
+            "review-id": 5,
+            "subject" : "Perfection",
+            "rating": "8.9",
+            "review": "This movie had everything, great story, acting, visuals. Instant favorite. "
+        },
+        {
+            "review-id": 6,
+            "subject" : "Classic",
+            "rating": "9.98",
+            "review":"Instant classic."
+        },
+        {
+            "review-id": 7,
+            "subject" : "Unreal",
+            "rating": "8.29",
+            "review": "Unreal. So good."
+        },
+        {
+            "review-id": 8,
+            "subject" : "Beautiflul and intense",
+            "rating": "9.37",
+            "review": "Couldn’t stop thinking about it after. Beautiful and intense."
+        }
+    ]
+}
