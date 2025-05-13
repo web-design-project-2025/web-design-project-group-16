@@ -71,6 +71,17 @@ html {
 }
 /* End help from Erik with deviding css for the changes semantic */
 
+/* Hamburger menu */
+.hamburgermenu-id {
+  display: block;
+}
+
+#hamburger-button {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
 /* --- MENU BAR CSS END --- */
 
 /* --- SEARCH-VIDEOBAR STARTS --- */
@@ -187,9 +198,34 @@ html {
 /* --- FOOTER CSS END --- */
 
 /* --- RESPONSIVE MODE START --- */
-/* Links */
+
+/* Links and Hamburgermenu */
 @media screen and (max-width: 800px) {
+  .hamburgermenu-id {
+    display: none; /* hidden by default, toggled by JS */
+  }
+  #hamburger-button {
+    display: block;
+  }
   .menu-ul {
-    display: none;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #ede4da;
+    opacity: 90%;
+    width: fit-content;
+    padding: 32px;
+    height: 100%;
+    /* position: fixed; */
+    z-index: 1;
+    position: relative;
+  }
+  #hamburgerIcon-container {
+    position: absolute;
+    z-index: 100px;
+    right: 10px;
+    top: 40px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
   }
 }

@@ -10,6 +10,7 @@
     </style>
     <script src="JS/fetch-homepage" defer></script>
     <script src="JS/search-function.js" defer></script>
+    <script src="JS/hamburgermenu.js" defer></script>
     <title>Neolens</title>
   </head>
 
@@ -20,11 +21,19 @@
         <a href="home.html" class="logo-link">
           <img id="menu-logo" src="images/logo-2.png" alt="logotype"
         /></a>
-        <ul class="menu-ul">
-          <li><a href="articles.html">Article</a></li>
-          <li><a href="articles.html">Movies</a></li>
-          <li><a href="articles.html">Account</a></li>
-        </ul>
+        <!-- Help through W3 schools, Link: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp Date: 13/5-2025 -->
+        <div id="hamburgerIcon-container">
+          <button id="hamburger-button" onclick="toggleHamburgerNav()">
+            <img src="images/align-justify.png" alt="Hamburger Icon" />
+          </button>
+          <div id="hamburgermenu-id" class="hamburgermenu-class">
+            <ul class="menu-ul">
+              <li><a href="articles.html">Article</a></li>
+              <li><a href="movies.html">Movies</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
