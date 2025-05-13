@@ -83,3 +83,134 @@
 /* --- TEXT SPECIFICATIONS END --- */
 
 /* --- POSTER AND DESCRIPTION BOX END --- */
+
+/* --- REVIEWS SECTION START --- */
+.moviedetails-review {
+  background-color: #f6ede6;
+  margin: 24px 48px;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  font-family: montserrat;
+  color: #130204;
+}
+
+/* Subject */
+.reviews-subject {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #130204;
+}
+
+/* Profile image and identity container */
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* Profile Image */
+.reviews-profileimage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+  border: 2px solid #ccc;
+}
+
+/* Name */
+.reviews-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #130204;
+}
+
+/* Username */
+.reviews-username {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin: 0 0 0 8px;
+}
+
+/* Rating */
+.reviews-rating {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+/* Review Text */
+.reviews-post {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+/* --- REVIEWS SECTION END --- */
+
+/* --- REVIEW SUBMISSION SECTION START --- */
+.submit-review-container {
+  background-color: #f4ece4;
+  border-radius: 10px;
+  padding: 32px;
+  margin: 48px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Old Standard TT', serif;
+}
+
+.submit-review-container h3 {
+  font-size: 28px;
+  color: #130204;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+/* Form layout */
+#review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#review-form input,
+#review-form textarea {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #130204;
+  background-color: #fff;
+}
+
+/* Textarea styling */
+#review-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit button */
+#review-form button[type="submit"] {
+  padding: 12px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background-color: #cb2026;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Old Standard TT", serif;
+}
+
+#review-form button[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px #616161;
+}
+/* --- REVIEW SUBMISSION SECTION END --- */
