@@ -20,38 +20,56 @@ html {
 
 /* --- MENU BAR CSS START --- */
 
+/* Help from chatGPT with positon,space-between, left and transform. Link: https://chatgpt.com/share/68230639-5adc-8007-99cc-e4d200f7e011 Date: 13/5-2025 */
 .menu-bar {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   background-color: #e7dbcf;
   height: 108px;
+  padding-right: 48px;
+  flex: 1; /* Takes equal space to help center */
 }
 
+/* Wrong semantic in html, help from second year NMD student, erik sanquist with dividing with class: (logo-link) and id: (menu-logo). Date: 13/5-2025*/
 /* Logotype */
+.logo-link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Added a class in html to be able to move links, as well as added flex 1, Link: https://chatgpt.com/share/6823150f-4790-8007-9b39-cdc425427408 Date: 13/5-2025 */
+.left-placeholder {
+  flex: 1; /* Balances space on the left side */
+}
+
 #menu-logo {
   height: 45px;
   width: auto;
-  padding-right: 220px;
 }
 
 /* the lsit itself */
 .menu-ul {
   display: flex;
+  gap: 16px;
   list-style: none;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 5%;
+  margin-right: 0;
+  padding: 0;
 }
 
 /* individual list items */
-li {
+.menu-ul li {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #130204;
-  margin-left: 3rem;
-  margin-top: 2%;
 }
+
+.menu-ul a {
+  color: inherit;
+}
+/* End help from Erik with deviding css for the changes semantic */
 
 /* --- MENU BAR CSS END --- */
 
@@ -167,3 +185,11 @@ li {
 }
 
 /* --- FOOTER CSS END --- */
+
+/* --- RESPONSIVE MODE START --- */
+/* Links */
+@media screen and (max-width: 800px) {
+  .menu-ul {
+    display: none;
+  }
+}
