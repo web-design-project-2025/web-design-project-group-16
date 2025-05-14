@@ -147,17 +147,15 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #e7dbcf;
-  /* height: 240px;
-  width: 100%; */
-  align-items: center;
+  overflow: hidden;
 }
 
 /* layout left side */
 #footer-left-side {
   display: flex;
-  flex-direction: row;
+  align-items: last baseline;
   gap: 24px;
-  margin-left: 48px;
+  padding: 48px 0px 48px 48px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -165,7 +163,7 @@ html {
 #footer-socialmedia-container {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  white-space: nowrap;
 }
 
 /* text specifications social media */
@@ -188,7 +186,7 @@ html {
 #footer-quicklinks-container {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  white-space: nowrap;
 }
 
 /* text specifications quick links */
@@ -220,17 +218,15 @@ html {
 
 /* logo */
 #logo-footer {
-  max-height: 210px;
+  display: flex;
   height: auto;
-  width: auto;
-  margin-right: 48px;
+  width: 200%;
+  padding: 48px;
 }
 
 /* --- FOOTER CSS END --- */
 
 /* --- RESPONSIVE MODE START --- */
-
-/* Links and Hamburgermenu */
 @media screen and (max-width: 800px) {
   .hamburgermenu-id {
     display: none; /* hidden by default, toggled by JS */
@@ -253,5 +249,11 @@ html {
     border-radius: 10px;
     background-color: #ede4da;
     opacity: 90%;
+  }
+}
+/* Logo and footer links */
+@media screen and (max-width: 500px) {
+  #logo-footer {
+    display: none;
   }
 }
