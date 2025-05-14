@@ -1,3 +1,4 @@
+//Code taken from Garrit's Hamstergram Workshop
 let movies = [];
 
 const contentElement = document.getElementById("content");
@@ -38,6 +39,9 @@ function renderContent() {
     //const film = getMovieById(movie.movie_id);
     const descriptionElement = displayMovieElement(movie);
     contentElement.appendChild(descriptionElement);
+    descriptionElement.addEventListener("click", () => {
+      window.location.href = `moviedetails.html?id=${movie.id}`; // on the click, go to the location on the window where you get a link, where the link will redirect you to the html where the movie id is equal to the id of the movie you pressed
+    });
   }
 }
 

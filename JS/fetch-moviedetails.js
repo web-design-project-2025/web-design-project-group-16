@@ -1,3 +1,4 @@
+//Code taken from Garrit's Hamstergram Workshop
 // let movies = [];
 // let reviews = [];
 const contentElement = document.getElementById("content");
