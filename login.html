@@ -1,66 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/reocurring.css" />
-    <link rel="stylesheet" href="CSS/login.css"/>
+    <link rel="stylesheet" href="CSS/login.css" />
     <script src="JS/login.js"></script>
+    <script src="JS/hamburgermenu.js" defer></script>
     <!--Google-font, Monsterrat-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="JS/login.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Log-in</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-      <nav >
-        <a href="home.html">
-          <img id="menu-logo" src="images/logo-no-border2.png" alt="logotype"
+      <nav class="menu-bar">
+        <div class="left-placeholder"></div>
+        <a href="home.html" class="logo-link">
+          <img id="menu-logo" src="images/logo-2.png" alt="logotype"
         /></a>
         <ul class="menu-ul">
-          <a href="#"> <li>Light Mode</li></a>
-          <a href="#"> <li>Articles</li></a>
-          <a href="account.html"> <li>Account</li></a>
-          <a href="movies.html"> <li>Movies</li> </a>
+          <li><a href="articles.html">ARTICLE</a></li>
+          <li><a href="movies.html">MOVIES</a></li>
+          <li><a href="account.html">ACCOUNT</a></li>
+          <!-- <li><a href="reviewers.html">REVIEWERS</a></li> -->
         </ul>
+        <!-- Help through W3 schools, Link: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp Date: 13/5-2025 -->
+        <div id="hamburgerIcon-container">
+          <button id="hamburger-button" onclick="toggleHamburgerNav()">
+            <img src="images/align-justify.png" alt="Hamburger Icon" />
+          </button>
+          <ul id="menu-ul-hamburger">
+            <li><a href="articles.html">ARTICLE</a></li>
+            <li><a href="movies.html">MOVIES</a></li>
+            <li><a href="account.html">ACCOUNT</a></li>
+            <!-- <li><a href="reviewers.html">REVIEWERS</a></li> -->
+          </ul>
+        </div>
       </nav>
-  
     </header>
     <main>
-        <section>
+      <section>
         <h1>Log in to Neolens</h1>
-            <article> 
-                <input id="Username" type="text" placeholder="Username"/>
-            </article>
-            <article>
-                <input id="Password" type="password" placeholder="Password"/>
-            </article>
-            <label class="container">
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-                <p2>Remember me</p2> <p2>Forgot your password?</p2>
-            </label>
-            <div class="error-message"></div>
-            <link href="account.html"> 
-            <button>Login</button>
-            <p3>Or</p3>
-            <button2>Sign in with Google</button2>
-        </section>
-        <div class="fix-text">
-            <p class="p4">Need and account?</p><p class="p5">Sing in here!</p>
-        </div>
-        
+        <article>
+          <input id="Username" type="text" placeholder="Username" />
+        </article>
+        <article>
+          <input id="Password" type="password" placeholder="Password" />
+        </article>
+        <label class="container">
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+          <p2>Remember me</p2> <p2>Forgot your password?</p2>
+        </label>
+        <div class="error-message"></div>
+        <link href="account.html" />
+        <button>Login</button>
+        <p3>Or</p3>
+        <button2>Sign in with Google</button2>
+      </section>
+      <div class="fix-text">
+        <p class="p4">Need and account?</p>
+        <p class="p5">Sing in here!</p>
+      </div>
     </main>
     <footer>
       <div id="footer-container">
-        <div id="footer-text-container">
-          <p id="footer-text">Instagram</p>
-          <p id="footer-text">Facebook</p>
-          <p id="footer-text">About Us</p>
+        <div id="footer-left-side">
+          <div id="footer-socialmedia-container">
+            <p>SOCIAL MEDIA</p>
+            <a href="#"> INSTAGRAM </a>
+            <a href="#"> FACEBOOK </a>
+            <a href="#"> TIKTOK </a>
+          </div>
+
+          <div id="footer-quicklinks-container">
+            <p>QUICK LINKS</p>
+            <a href="articles.html"> ARTICLES </a>
+            <a href="#"> ABOUT US </a>
+            <a href="#"> FAQ </a>
+          </div>
+          <div class="footer-TMDB-container">
+            <p id="footer-text">
+              This product uses the TMDB API but is not endorsed or certified by
+              TMDB
+            </p>
+            <img src="images/tmdb.png" alt="TMDB logotype" />
+          </div>
         </div>
-        <img id="logo-footer" src="images/logo-no-border2.png" alt="logotype" />
+        <img id="logo-footer" src="images/logo-2.png" alt="logotype" />
       </div>
     </footer>
   </body>
