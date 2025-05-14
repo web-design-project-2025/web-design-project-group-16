@@ -31,13 +31,28 @@
 /* Inspiration taken from https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp Date: 24/04/2025 */
 /* Movie container */
 
+#more-films-button {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #e7dbcf;
+  background-color: #130204;
+  border: 2px solid #e7dbcf;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 48px;
+  margin-left: 48px;
+  gap: 5px;
+}
+
 #content {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  padding: 48px;
+  padding-left: 48px;
+  padding-top: 24px;
+  padding-bottom: 48px;
   gap: 24px;
 }
 
