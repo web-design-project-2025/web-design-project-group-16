@@ -142,44 +142,73 @@ html {
 
 /* --- FOOTER CSS START --- */
 
-/* Grid for entire footer*/
+/* Grid for entire footer */
 #footer-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   background-color: #e7dbcf;
-  height: 240px;
-  padding-right: 12px;
-  padding-left: 24px;
+  /* height: 240px;
+  width: 100%; */
   align-items: center;
 }
 
-/* text specifications*/
-#footer-text {
-  font-family: "Montserrat", sans-serif;
-  padding-top: 12px;
-  margin: 6px;
-}
-
-/* layout left side*/
+/* layout left side */
 #footer-left-side {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 24px;
+  margin-left: 48px;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* Social media*/
+/* Social media */
 #footer-socialmedia-container {
   display: flex;
+  flex-direction: column;
   justify-content: start;
-  text-decoration: none;
 }
-/* quick links*/
+
+/* text specifications social media */
+#footer-socialmedia-container p {
+  color: #130204;
+  font-weight: 600;
+}
+
+#footer-socialmedia-container a {
+  color: #130204;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+#footer-socialmedia-container a:hover {
+  transform: scale(1.05);
+}
+
+/* quick links */
 #footer-quicklinks-container {
   display: flex;
+  flex-direction: column;
   justify-content: start;
+}
+
+/* text specifications quick links */
+#footer-quicklinks-container p {
+  color: #130204;
+  font-weight: 600;
+}
+
+#footer-quicklinks-container a {
+  color: #130204;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+#footer-quicklinks-container a:hover {
+  transform: scale(1.05);
 }
 
 /* TMDB*/
-#footer-TMDB-container {
+/* #footer-TMDB-container {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -187,12 +216,14 @@ html {
 
 #footer-TMDB-container img {
   width: 60%;
-}
+} */
 
 /* logo */
 #logo-footer {
-  height: 210px;
+  max-height: 210px;
+  height: auto;
   width: auto;
+  margin-right: 48px;
 }
 
 /* --- FOOTER CSS END --- */
