@@ -136,17 +136,15 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #e7dbcf;
-  /* height: 240px;
-  width: 100%; */
   align-items: center;
+  overflow: hidden;
 }
 
 /* layout left side */
 #footer-left-side {
   display: flex;
-  flex-direction: row;
   gap: 24px;
-  margin-left: 48px;
+  padding: 48px 0px 48px 48px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -154,7 +152,7 @@ html {
 #footer-socialmedia-container {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  white-space: nowrap;
 }
 
 /* text specifications social media */
@@ -177,7 +175,7 @@ html {
 #footer-quicklinks-container {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  white-space: nowrap;
 }
 
 /* text specifications quick links */
@@ -209,16 +207,15 @@ html {
 
 /* logo */
 #logo-footer {
-  max-height: 210px;
   height: auto;
-  width: auto;
-  margin-right: 48px;
+  width: 200%;
+  padding: 48px;
 }
 
 /* --- FOOTER CSS END --- */
 
 /* --- RESPONSIVE MODE START --- */
-/* Links */
+/* Links in header */
 @media screen and (max-width: 800px) {
   .menu-ul {
     display: none;
