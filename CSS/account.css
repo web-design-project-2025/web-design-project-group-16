@@ -6,7 +6,7 @@
 
 /* Account Page headers */
 #account-page-headers {
-  font-family: "Old Standard TT", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin-top: 48px;
   margin-bottom: 16px;
@@ -32,7 +32,10 @@
 
 /* Profile picture*/
 .profile-info-containter img {
-  width: 15%;
+  width: auto;
+  max-width: 233px;
+  height: auto;
+  max-height: 350px;
   border-radius: 10px;
   margin-left: 48px;
   margin-right: 48px;
@@ -53,7 +56,7 @@
 
 .profile-info-text h1 {
   color: black;
-  font-family: "Old Standard TT", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
@@ -64,13 +67,14 @@
 }
 
 .profile-info-text h3 {
-  font-family: "Old Standard TT", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin-top: 16px;
 }
 
 .profile-info-text p {
   margin-right: 160px;
+  max-width: 520px; /*430px looks better, but with icons added 520px could line up better with the image*/
 }
 
 /* --- PROFILE INFO END --- */
@@ -120,22 +124,112 @@
 }
 
 .account-review-text h2 {
-  font-family: "Old Standard TT", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
 .account-review-text h3 {
-  font-family: "Old Standard TT", serif;
+  font-family: "Montserrat", sans-serif;
+
   font-weight: 400;
   margin-top: 16px;
+  margin-bottom: 8px;
 }
 
 .account-review-text p {
+  font-family: "Montserrat", sans-serif;
   margin-top: 16px;
   margin-right: 120px;
+  max-width: 520px;
 }
 
 /* --- REVIEWS END --- */
+
+/* ---CODE FOR ADDED REVIEWS--*/
+
+.account-review-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 48px;
+  margin-bottom: 48px;
+}
+
+/*Placeholder poster for the user submitted review, doesn't work :( */
+  /* .placeholderElement img {
+    width: 15%;
+    border-radius: 10px;
+    margin-right: 48px;
+  } */ 
+
+.account-review {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 48px;
+  max-width: 520px;
+}
+
+.account-review h2 {
+  font-weight: 700;
+}
+
+.account-review h3 {
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.account-review p {
+  margin-top: 16px;
+  max-width: 520px;
+}
+
+/* --- RESPONSIVENESS ---*/
+
+@media screen and (max-width:1110px) and (min-width:890px) {
+  .profile-info-text p {
+    max-width: 520px;
+  }
+  .account-review-text p {
+    max-width: 520px;
+  }
+}
+
+@media screen and (max-width:890px) and (min-width:630px) {
+  .profile-info-containter {
+    flex-direction: column;
+    max-width: 640px;
+    height: auto;
+  }
+
+  .profile-info-text  {
+    margin-left: 48px;
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width:630px) and (min-width:370px) {
+  .profile-info-containter {
+    flex-direction: column;
+    align-items: center;
+    margin: 48px 24px;
+  }
+
+  .profile-info-containter img {
+    max-width: 233px;
+    margin: 0 auto 48px
+  }
+
+  .profile-info-text {
+    margin: 0 24px;
+    text-align: left;
+  }
+
+  .profile-info-text p {
+    margin-right: 0;
+    max-width: 100%;
+  }
+}
 
 /*Fonts & typefaces*/
 .montserrat-regular {
@@ -144,15 +238,23 @@
   font-weight: 100;
   font-style: normal;
 }
+/* --- RESPONSIVENESS ---*/
 
-.old-standard-tt-bold {
-  font-family: "Old Standard TT", serif;
-  font-weight: 700;
-  font-style: normal;
+@media screen and (max-width:1110px) and (min-width:890px) {
+  .profile-info-text p {
+    max-width: 520px;
+  }
 }
 
-.old-standard-tt-regular {
-  font-family: "Old Standard TT", serif;
-  font-weight: 400;
-  font-style: normal;
+@media screen and (max-width:890px) and (min-width:630px) {
+  .profile-info-containter {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .profile-info-text  {
+    margin-left: 48px;
+    margin-top: 20px;
+  }
 }
+

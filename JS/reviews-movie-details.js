@@ -36,13 +36,13 @@ function displayReviewElement(review) {
     // PROFILE IMAGE
     const profileImageElement = document.createElement("img");
     profileImageElement.classList.add("reviews-profileimage");
-    profileImageElement.src = matchedReviewer?.["picture-of-me"] || "images/Reviewers/default.png";
+    profileImageElement.src = matchedReviewer?.["picture-of-me"] || "images/mockup-profilepicture.jpg";
     reviewElement.appendChild(profileImageElement);
 
     // SUBJECT
     const subjectElement = document.createElement("h4");
     subjectElement.classList.add("reviews-subject");
-    subjectElement.textContent = `${review.subject}`;
+    subjectElement.textContent = review.subject;
     reviewElement.appendChild(subjectElement);
 
     // NAME
@@ -77,7 +77,7 @@ function displayRandomReviews(count) {
     const shuffled = [...reviews].sort(() => 0.5 - Math.random());
     const selectedReviews = shuffled.slice(0, count);
 
-    ContentElement.innerHTML = ""; // Clear previous content
+    ContentElement.innerHTML = "";
 
     selectedReviews.forEach((review) => {
         const element = displayReviewElement(review);
@@ -98,7 +98,7 @@ function saveUserReview(review) {
     localStorage.setItem("userReviews", JSON.stringify(current));
 }
 
-// Display all user-submitted reviews
+// Display all user-submitted reviews 
 function displayUserReviews() {
     const userReviews = loadUserReviews();
     userReviews.forEach((review) => {
@@ -115,6 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
         form.addEventListener("submit", (event) => {
             event.preventDefault();
 
+            const subject = document.getElementById("subject").value.trim();
             const username = document.getElementById("username").value.trim();
             const name = document.getElementById("name").value.trim();
             const rating = document.getElementById("rating").value;
@@ -142,4 +143,5 @@ document.addEventListener("DOMContentLoaded", () => {
 // Initial data load
 loadData();
 
-//localStorage.removeItem("userReviews");
+//Comment in and out to rinse the local storage of your review
+    //localStorage.removeItem("userReviews");
