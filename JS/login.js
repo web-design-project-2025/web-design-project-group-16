@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
   const demoUsername = 'demoUser';
   const demoPassword = 'demoPass123';
 
@@ -36,3 +37,5 @@ document.addEventListener('DOMContentLoaded', function () {
     errorMessageDiv.style.display = 'none';
   });
 });
+    // Initialize demo user credentials (only once)
+   

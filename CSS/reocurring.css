@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none; /* syntax from: https://www.w3schools.com/css/css_link.asp*/
+  box-sizing: border-box;
 }
 html {
   background-color: #130204;
@@ -20,61 +21,240 @@ html {
 
 /* --- MENU BAR CSS START --- */
 
+/* Help from chatGPT with positon,space-between, left and transform. Link: https://chatgpt.com/share/68230639-5adc-8007-99cc-e4d200f7e011 Date: 13/5-2025 */
 .menu-bar {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   background-color: #e7dbcf;
   height: 108px;
+  padding-right: 48px;
+  flex: 1; /* Takes equal space to help center */
 }
 
+/* Wrong semantic in html, help from second year NMD student, erik sanquist with dividing with class: (logo-link) and id: (menu-logo). Date: 13/5-2025*/
 /* Logotype */
+.logo-link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Added a class in html to be able to move links, as well as added flex 1, Link: https://chatgpt.com/share/6823150f-4790-8007-9b39-cdc425427408 Date: 13/5-2025 */
+.left-placeholder {
+  flex: 1; /* Balances space on the left side */
+}
+
 #menu-logo {
-  width: 204px;
-  height: 30px;
-  padding-right: 150px;
+  height: 45px;
+  width: auto;
 }
 
 /* the lsit itself */
 .menu-ul {
   display: flex;
+  gap: 16px;
   list-style: none;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 5%;
+  margin-right: 0;
+  padding: 0;
 }
 
 /* individual list items */
-li {
-  font-family: Arial, Helvetica, sans-serif;
+.menu-ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   color: #130204;
-  margin-left: 3rem;
-  margin-top: 2%;
+}
+
+.menu-ul a {
+  color: inherit;
+}
+/* End help from Erik with deviding css for the changes semantic */
+
+/* Hamburger menu */
+.hamburgermenu-id {
+  display: block;
+}
+
+#hamburger-button {
+  display: none;
+  border: none;
+  background-color: transparent;
 }
 
 /* --- MENU BAR CSS END --- */
 
-/* --- FOOTER CSS START --- */
+/* --- SEARCH-VIDEOBAR STARTS --- */
+/* Container for both the video in the background and the searchbar */
+/* Begin help from chatGPT with position, overflow and z-index, date 24/04/2024, source: https://chatgpt.com/share/680ab363-b874-8007-b549-9c5e4b3c5d75 */
+.search-videobar {
+  position: relative;
+  overflow: hidden;
+  height: 670px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-#footer-container {
+/* The video in the background */
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+/* --- SEARCH-VIDEOBAR END --- */
+
+/* --- SEARCH BAR STARTS --- */
+/* The searchbar */
+#search {
+  background-color: #e7dbcf;
+  z-index: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 432px;
+  padding-right: 24px;
+  margin-top: 250px;
+  border-radius: 5px;
+  gap: 8px;
+}
+/* End help from chat GPT */
+
+/* Placeholder text */
+#search-text {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 20px 24px 20px 24px;
+}
+
+/* Magnifying glas button */
+#search-button {
+  border: none;
+  background-color: transparent;
+}
+/* --- SEARCH BAR ENDS --- */
+
+/* --- FOOTER CSS START --- */
+
+/* Grid for entire footer */
+#footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background-color: #e7dbcf;
-  height: 240px;
+  overflow: hidden;
 }
 
+/* layout left side */
+#footer-left-side {
+  display: flex;
+  align-items: last baseline;
+  gap: 24px;
+  padding: 48px 0px 48px 48px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Social media */
+#footer-socialmedia-container {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+/* text specifications social media */
+#footer-socialmedia-container p {
+  color: #130204;
+  font-weight: 600;
+}
+
+#footer-socialmedia-container a {
+  color: #130204;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+#footer-socialmedia-container a:hover {
+  transform: scale(1.05);
+}
+
+/* quick links */
+#footer-quicklinks-container {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+/* text specifications quick links */
+#footer-quicklinks-container p {
+  color: #130204;
+  font-weight: 600;
+}
+
+#footer-quicklinks-container a {
+  color: #130204;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+#footer-quicklinks-container a:hover {
+  transform: scale(1.05);
+}
+
+/* TMDB*/
+/* #footer-TMDB-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+#footer-TMDB-container img {
+  width: 60%;
+} */
+
+/* logo */
 #logo-footer {
-  width: 773px;
-  height: 105px;
-  padding-left: 450px;
-}
-
-#footer-text-container {
-  margin-left: 7%;
-}
-#footer-text {
-  padding-top: 24px;
-  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  height: auto;
+  width: 200%;
+  padding: 48px;
 }
 
 /* --- FOOTER CSS END --- */
+
+/* --- RESPONSIVE MODE START --- */
+@media screen and (max-width: 800px) {
+  .hamburgermenu-id {
+    display: none; /* hidden by default, toggled by JS */
+  }
+  #hamburger-button {
+    display: block;
+    position: relative;
+  }
+  .menu-ul {
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    gap: 8px;
+    width: fit-content;
+    padding: 32px;
+    margin-top: 90px;
+    margin-right: 48px;
+    border-radius: 10px;
+    background-color: #ede4da;
+    opacity: 90%;
+  }
+}
+/* Logo and footer links */
+@media screen and (max-width: 500px) {
+  #logo-footer {
+    display: none;
+  }
+}
