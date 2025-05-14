@@ -42,7 +42,7 @@ function displayReviewElement(review) {
     // SUBJECT
     const subjectElement = document.createElement("h4");
     subjectElement.classList.add("reviews-subject");
-    subjectElement.textContent = `${review.subject}`;
+    subjectElement.textContent = review.subject;
     reviewElement.appendChild(subjectElement);
 
     // NAME
@@ -98,7 +98,7 @@ function saveUserReview(review) {
     localStorage.setItem("userReviews", JSON.stringify(current));
 }
 
-// Display all user-submitted reviews
+// Display all user-submitted reviews 
 function displayUserReviews() {
     const userReviews = loadUserReviews();
     userReviews.forEach((review) => {
@@ -115,6 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
         form.addEventListener("submit", (event) => {
             event.preventDefault();
 
+            const subject = document.getElementById("subject").value.trim();
             const username = document.getElementById("username").value.trim();
             const name = document.getElementById("name").value.trim();
             const rating = document.getElementById("rating").value;
