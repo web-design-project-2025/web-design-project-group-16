@@ -136,13 +136,13 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #e7dbcf;
-  align-items: center;
   overflow: hidden;
 }
 
 /* layout left side */
 #footer-left-side {
   display: flex;
+  align-items: last baseline;
   gap: 24px;
   padding: 48px 0px 48px 48px;
   font-family: "Montserrat", sans-serif;
@@ -207,6 +207,7 @@ html {
 
 /* logo */
 #logo-footer {
+  display: flex;
   height: auto;
   width: 200%;
   padding: 48px;
@@ -218,6 +219,12 @@ html {
 /* Links in header */
 @media screen and (max-width: 800px) {
   .menu-ul {
+    display: none;
+  }
+}
+/* Logo and footer links */
+@media screen and (max-width: 500px) {
+  #logo-footer {
     display: none;
   }
 }
