@@ -145,8 +145,9 @@ p3 {
     justify-content: space-between;
   } 
 
-  error-message {
+  .error-message {
     color: #cb2026; 
     font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
     display: none;
   }

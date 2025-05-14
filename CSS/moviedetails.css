@@ -1,4 +1,7 @@
 /* --- FOR ENTIRE PAGE START --- */
+* {
+  font-family: "Montserrat", sans-serif;
+}
 .moviedetails-page-container {
   display: grid;
   background-color: #e7dbcf;
@@ -26,18 +29,18 @@
 
 /* Title */
 .moviedetails-title {
-  font-family: montserrat;
   text-transform: uppercase;
   font-size: 48px;
   color: #130204;
   padding-top: 48px;
+  font-weight: 800;
 }
 
 /* Genre */
 .moviedetails-genre {
   text-transform: none;
   color: #130204;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 18px;
   padding-top: 12px;
 }
@@ -46,7 +49,7 @@
 .moviedetails-runtime {
   text-transform: none;
   color: #130204;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 18px;
   padding-top: 12px;
 }
@@ -56,7 +59,7 @@
   text-transform: none;
   color: #130204;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   padding-top: 12px;
 }
 
@@ -68,6 +71,7 @@
   font-size: 18px;
   padding-top: 12px;
   padding-right: 400px;
+  max-width: 580px;
 }
 
 /* Rating */
@@ -75,7 +79,7 @@
   text-transform: none;
   text-align: start;
   color: #130204;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 18px;
   padding-top: 34px;
   margin-bottom: 34px;
@@ -93,7 +97,6 @@
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  font-family: montserrat;
   color: #130204;
 }
 
@@ -122,11 +125,15 @@
   border: 2px solid #ccc;
 }
 
+/* Subject */
+.reviews-subject {
+  font-weight: 700;
+  margin-top: 8px;
+}
 /* Name */
 .reviews-name {
   font-size: 16px;
   font-weight: 600;
-  margin: 0;
   color: #130204;
 }
 
@@ -135,14 +142,14 @@
   font-size: 14px;
   font-weight: 400;
   color: #555;
-  margin: 0 0 0 8px;
+  margin-bottom: 12px;
 }
 
 /* Rating */
 .reviews-rating {
   font-size: 16px;
   font-weight: 500;
-  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 /* Review Text */
@@ -150,7 +157,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  margin-top: 8px;
+  margin-bottom: 6px;
 }
 /* --- REVIEWS SECTION END --- */
 
@@ -161,20 +168,21 @@
   padding: 32px;
   margin: 48px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-family: 'Old Standard TT', serif;
 }
 
 .submit-review-container h3 {
   font-size: 28px;
   color: #130204;
   margin-bottom: 24px;
-  font-weight: 600;
+  font-weight: 800;
+  margin-left: auto;
 }
 
 /* Form layout */
 #review-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
 }
 
@@ -183,10 +191,10 @@
   padding: 12px 16px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #130204;
   background-color: #fff;
+  width: 95%;
 }
 
 /* Textarea styling */
@@ -199,14 +207,14 @@
 #review-form button[type="submit"] {
   padding: 12px 20px;
   font-size: 20px;
-  font-weight: 600;
   color: white;
   background-color: #cb2026;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-family: "Old Standard TT", serif;
+  font-weight: 800;
+  width: 95%;
 }
 
 #review-form button[type="submit"]:hover {
@@ -214,3 +222,10 @@
   box-shadow: 0 6px 12px #616161;
 }
 /* --- REVIEW SUBMISSION SECTION END --- */
+
+/*Fonts & typefaces*/
+.montserrat-regular {
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
