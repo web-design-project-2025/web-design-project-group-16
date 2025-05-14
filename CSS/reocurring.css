@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none; /* syntax from: https://www.w3schools.com/css/css_link.asp*/
+  box-sizing: border-box;
 }
 html {
   background-color: #130204;
