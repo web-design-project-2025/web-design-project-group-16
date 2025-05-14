@@ -21,19 +21,16 @@ html {
 
 /* --- MENU BAR CSS START --- */
 
-/* Help from chatGPT with positon,space-between, left and transform. Link: https://chatgpt.com/share/68230639-5adc-8007-99cc-e4d200f7e011 Date: 13/5-2025 */
 .menu-bar {
-  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: #e7dbcf;
   height: 108px;
   padding-right: 48px;
   flex: 1; /* Takes equal space to help center */
 }
 
-/* Wrong semantic in html, help from second year NMD student, erik sanquist with dividing with class: (logo-link) and id: (menu-logo). Date: 13/5-2025*/
+/* Wrong semantic in html, help from second year NMD student, erik sanquist with dividing with class: (logo-link) and id: (menu-logo). Date: 13/5-2025 */
 /* Logotype */
 .logo-link {
   position: absolute;
@@ -54,27 +51,43 @@ html {
 /* the lsit itself */
 .menu-ul {
   display: flex;
-  gap: 16px;
+  flex-direction: row;
   list-style: none;
+  gap: 16px;
   margin-right: 0;
   padding: 0;
 }
 
 /* individual list items */
-.menu-ul li {
+.menu-ul a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #130204;
 }
-
-.menu-ul a {
-  color: inherit;
-}
 /* End help from Erik with deviding css for the changes semantic */
 
 /* Hamburger menu */
-.hamburgermenu-id {
-  display: block;
+#menu-ul-hamburger {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+  top: 0;
+  right: 0;
+  gap: 8px;
+  padding: 32px;
+  margin-top: 90px;
+  margin-right: 48px;
+  border-radius: 10px;
+  background-color: #ede4da;
+  opacity: 90%;
+}
+
+#menu-ul-hamburger a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #130204;
 }
 
 #hamburger-button {
@@ -228,28 +241,18 @@ html {
 /* --- FOOTER CSS END --- */
 
 /* --- RESPONSIVE MODE START --- */
+/* Links and Hamburgermenu */
 @media screen and (max-width: 800px) {
   .hamburgermenu-id {
     display: none; /* hidden by default, toggled by JS */
   }
+
   #hamburger-button {
-    display: block;
-    position: relative;
+    display: flex;
   }
+
   .menu-ul {
-    flex-direction: column;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    gap: 8px;
-    width: fit-content;
-    padding: 32px;
-    margin-top: 90px;
-    margin-right: 48px;
-    border-radius: 10px;
-    background-color: #ede4da;
-    opacity: 90%;
+    display: none;
   }
 }
 /* Logo and footer links */
