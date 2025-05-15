@@ -1,4 +1,4 @@
-//Code taken from Garrit's Hamstergram Workshop
+//Code taken from and inspired by Garrit's Hamstergram Workshop
 
 const contentElement = document.getElementById("content");
 const params = new URLSearchParams(document.location.search); // Taken from Garrits Example + help lab assistanst
@@ -9,15 +9,11 @@ async function loadData() {
     `https://api.themoviedb.org/3/movie/${movieID}?api_key=41633bc6f1e4947d357fb72eeb8115ed` // How to implement the key into the js taken form:https://www.youtube.com/watch?v=03FAepR-WVQ & help from lab assistants
   ); // help with specifying ID from lab assistans
   const movieData = await movieResponse.json();
-  // movies = movieData.results;
-  console.log(movieData);
 
   renderContent(movieData);
 }
 
-
 function displayMovieElement(movie) {
-  console.log(movie);
   const movieDetailsElement = document.createElement("div");
   movieDetailsElement.classList.add("moviedetails-container");
 
@@ -74,12 +70,10 @@ function displayMovieElement(movie) {
 
 function renderContent(movie) {
   contentElement.innerHTML = "";
-  // const movie = getMovieById(movieID);
-  // console.log(movieID);
   const descriptionElement = displayMovieElement(movie);
   contentElement.appendChild(descriptionElement);
 }
 
-// Error handling with the help of chat https://chatgpt.com/share/6819f849-49cc-8008-a393-6ff2cae0cbcc
+// Error handling with the help of chatGPT, Date: 6/05/2025-https://chatgpt.com/share/6819f849-49cc-8008-a393-6ff2cae0cbcc
 
 loadData();

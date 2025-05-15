@@ -70,7 +70,6 @@
   font-weight: 400;
   font-size: 18px;
   padding-top: 12px;
-  
   max-width: 580px;
 }
 
@@ -195,14 +194,14 @@
   font-size: 16px;
   color: #130204;
   background-color: #fff;
-  width: 92%
+  width: 92%;
 }
 
 /* Textarea styling */
 #review-form textarea {
   resize: vertical;
   min-height: 100px;
-  width: 92%
+  width: 92%;
 }
 
 /* Submit button */

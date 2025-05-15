@@ -1,4 +1,6 @@
-#featured-article {
+/* --- TOP PART OF PAGE START --- */
+
+#page-headers {
   color: #e7dbcf;
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
@@ -24,6 +26,9 @@
   margin-right: 96px;
 }
 
+/* --- TOP PART OF PAGE END --- */
+
+/* White background */
 .article-details {
   background-color: #e7dbcf;
   margin-left: 150px;
@@ -34,38 +39,40 @@
   border-radius: 10px;
 }
 
-/* --- ARTICLE IMAGE ---*/
+/* Article Image */
 #article-image {
   width: 100%;
 }
 
 /* --- ARTICLE DETAILS START --- */
+
+/* div for information about article/author*/
 #details-card-text {
   margin-left: 96px;
   margin-right: 96px;
   padding-top: 48px;
-}
-#details-card-text {
   font-family: "Montserrat", sans-serif;
 }
 
+/* css for h1 */
 #details-card-text h1 {
   font-size: 28px;
   margin-bottom: 4px;
 }
 
+/* css for h2 */
 #details-card-text h2 {
-
   font-weight: 400;
   font-style: italic;
   margin-bottom: 4px;
 }
 
+/* css for h3 */
 #details-card-text h3 {
-
   font-weight: 300;
   margin-bottom: 4px;
 }
+
 /* --- ARTICLE DETAILS END --- */
 
 /* --- ARTICLE INTRO START --- */
@@ -110,16 +117,6 @@
 /* --- ARTICLE ITSELF END --- */
 
 /* --- ARTICLES SCROLL START --- */
-
-#page-headers {
-  color: #e7dbcf;
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  padding-top: 24px;
-  margin-left: 96px;
-  margin-right: 48px;
-  margin-top: 24px;
-}
 
 .scroll-function {
   display: flex;
