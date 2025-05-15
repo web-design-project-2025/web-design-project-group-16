@@ -48,7 +48,7 @@ h3 {
   flex: 1; /* Takes equal space to help center */
 }
 
-/* Wrong semantic in html, help from second year NMD student, erik sanquist with dividing with class: (logo-link) and id: (menu-logo). Date: 13/5-2025 */
+/* Wrong semantic in html, help from second year NMD student, Erik Sanquist with dividing with class: (logo-link) and id: (menu-logo). Date: 13/5-2025 */
 /* Logotype */
 .logo-link {
   position: absolute;
@@ -66,7 +66,7 @@ h3 {
   width: auto;
 }
 
-/* the lsit itself */
+/* The unordered list itself */
 .menu-ul {
   display: flex;
   flex-direction: row;
@@ -76,13 +76,13 @@ h3 {
   padding: 0;
 }
 
-/* individual list items */
+/* Individual list items */
 .menu-ul a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #130204;
 }
-/* End help from Erik with deviding css for the changes semantic */
+/* End help from Erik with deviding css for the changed semantic */
 
 /* Hamburger menu */
 #menu-ul-hamburger {
@@ -118,7 +118,7 @@ h3 {
 
 /* --- SEARCH-VIDEOBAR STARTS --- */
 /* Container for both the video in the background and the searchbar */
-/* Begin help from chatGPT with position, overflow and z-index, date 24/04/2024, source: https://chatgpt.com/share/680ab363-b874-8007-b549-9c5e4b3c5d75 */
+/* Begin help from chatGPT with position, overflow and z-index, Link: https://chatgpt.com/share/680ab363-b874-8007-b549-9c5e4b3c5d75 Date 24/04/2024 */
 .search-videobar {
   position: relative;
   overflow: hidden;
@@ -182,7 +182,7 @@ h3 {
   overflow: hidden;
 }
 
-/* layout left side */
+/* Layout left side */
 #footer-left-side {
   display: flex;
   align-items: last baseline;
@@ -198,7 +198,7 @@ h3 {
   white-space: nowrap;
 }
 
-/* text specifications social media */
+/* Text specifications social media */
 #footer-socialmedia-container p {
   color: #130204;
   font-weight: 600;
@@ -221,7 +221,7 @@ h3 {
   white-space: nowrap;
 }
 
-/* text specifications quick links */
+/* Text specifications quick links */
 #footer-quicklinks-container p {
   color: #130204;
   font-weight: 600;
@@ -237,8 +237,8 @@ h3 {
   transform: scale(1.05);
 }
 
-/* TMDB*/
-/* #footer-TMDB-container {
+/* TMDB, only on login page */
+#footer-TMDB-container {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -246,9 +246,9 @@ h3 {
 
 #footer-TMDB-container img {
   width: 60%;
-} */
+}
 
-/* logo */
+/* Logo footer */
 #logo-footer {
   display: flex;
   height: auto;
@@ -259,7 +259,7 @@ h3 {
 /* --- FOOTER CSS END --- */
 
 /* --- RESPONSIVE MODE START --- */
-/* Links and Hamburgermenu */
+/* Links in header and Hamburgermenu */
 
 @media screen and (max-width: 1016px) {
   .hamburgermenu-id {
@@ -270,6 +270,7 @@ h3 {
     display: flex;
   }
 
+  /* Links in the unordered list in header */
   .menu-ul {
     display: none;
   }
