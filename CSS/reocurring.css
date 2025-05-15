@@ -8,6 +8,13 @@
 html {
   background-color: #130204;
 }
+/* MONSTERRAT FONT*/
+/*
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+*/
 
 /*Body text*/
 p {
@@ -27,14 +34,6 @@ h3 {
   font-size: 18px;
 }
 
-/* MONSTERRAT FONT*/
-/*
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-*/
-
 /* --- CSS FOR ENTIRE PAGE END --- */
 
 /* --- MENU BAR CSS START --- */
@@ -48,7 +47,7 @@ h3 {
   flex: 1; /* Takes equal space to help center */
 }
 
-/* Wrong semantic in html, help from second year NMD student, erik sanquist with dividing with class: (logo-link) and id: (menu-logo). Date: 13/5-2025 */
+/* Wrong semantic in html, help from second year NMD student, Erik Sanquist with dividing with class: (logo-link) and id: (menu-logo). Date: 13/5-2025 */
 /* Logotype */
 .logo-link {
   position: absolute;
@@ -236,17 +235,6 @@ h3 {
 #footer-quicklinks-container a:hover {
   transform: scale(1.05);
 }
-
-/* TMDB*/
-/* #footer-TMDB-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
-
-#footer-TMDB-container img {
-  width: 60%;
-} */
 
 /* logo */
 #logo-footer {
