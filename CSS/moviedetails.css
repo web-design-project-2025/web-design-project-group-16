@@ -104,7 +104,7 @@
 .reviews-subject {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   color: #130204;
 }
 
@@ -142,7 +142,7 @@
   font-size: 14px;
   font-weight: 400;
   color: #555;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 
 /* Rating */
@@ -194,13 +194,14 @@
   font-size: 16px;
   color: #130204;
   background-color: #fff;
-  width: 95%;
+  width: 92%
 }
 
 /* Textarea styling */
 #review-form textarea {
   resize: vertical;
   min-height: 100px;
+  width: 92%
 }
 
 /* Submit button */
@@ -214,7 +215,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-weight: 800;
-  width: 95%;
+  width: 94%;
 }
 
 #review-form button[type="submit"]:hover {
@@ -228,4 +229,78 @@
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
+}
+
+@media (max-width: 995px) {
+  .moviedetails-page-container {
+    margin: 24px;
+  }
+
+  .moviedetails-container {
+    flex-direction: column;
+    margin-left: 48px;
+  }
+
+  .moviedetails-poster {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .submit-review-container {
+    margin: 24px;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 440px) {
+  .moviedetails-page-container {
+    padding: 16px;
+    margin: 16px;
+  }
+
+  .moviedetails-title {
+    font-size: 24px;
+  }
+
+  .moviedetails-genre,
+  .moviedetails-runtime,
+  .moviedetails-release-date,
+  .moviedetails-synopsis,
+  .moviedetails-rating {
+    font-size: 14px;
+  }
+
+  .moviedetails-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+
+  .moviedetails-review {
+    margin: 16px;
+  }
+
+  .reviews-name {
+    font-size: 14px;
+  }
+
+  .reviews-username {
+    font-size: 12px;
+  }
+
+  .reviews-post,
+  .reviews-rating {
+    font-size: 14px;
+  }
+
+  .submit-review-container {
+    padding: 20px;
+    margin: 16px;
+  }
+
+  .submit-review-container h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
 }
