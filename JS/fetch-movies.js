@@ -1,9 +1,7 @@
-//Code taken from Garrit's Hamstergram Workshop
+//Code taken from and inspired by Garrit's Hamstergram Workshop
 let movies = [];
 let reviews = [];
 const contentElement = document.getElementById("content");
-
-// const filmRedirect = document.querySelector("movie-container");
 
 /* --- FUNCTIONS TO RENDER THE DATA START --- */
 
@@ -11,10 +9,9 @@ const contentElement = document.getElementById("content");
 async function loadData() {
   const movieResponse = await fetch(
     "https://api.themoviedb.org/3/discover/movie?api_key=41633bc6f1e4947d357fb72eeb8115ed" // How to implement the key into the js taken form:https://www.youtube.com/watch?v=03FAepR-WVQ
-  ); //Figure out how to fetch the "correct" movie id, arrays
+  );
   const movieData = await movieResponse.json();
   movies = movieData.results;
-  console.log(movieData);
 
   renderContent();
 }
@@ -23,6 +20,7 @@ function getMovieById(id) {
   return movies.find((movie) => movie.id === id);
 }
 
+/* Function to display different elements of the movie */
 function displayMovieElement(movie) {
   const movieElement = document.createElement("div");
   movieElement.classList.add("movie-container");
@@ -47,14 +45,14 @@ function displayMovieElement(movie) {
   return movieElement;
 }
 
+/* Function to render the content as well as being redirected to the moviedetails page if a movie is clicked */
 function renderContent() {
   contentElement.innerHTML = "";
 
   for (let movie of movies) {
     const descriptionElement = displayMovieElement(movie);
-    console.log(movie);
     descriptionElement.addEventListener("click", () => {
-      window.location.href = `moviedetails.html?id=${movie.id}`; // on the click, go to the location on the window where you get a link, where the link will redirect you to the html where the movie id is equal to the id of the movie you pressed
+      window.location.href = `moviedetails.html?id=${movie.id}`;
     }); //Help from lab assistants to make the redirect work
     contentElement.appendChild(descriptionElement);
   }
@@ -77,10 +75,9 @@ const mostPopularButtonElement = document.querySelector("#mostPopular-button");
 async function loadDataUpcomming() {
   const movieResponse = await fetch(
     "https://api.themoviedb.org/3/movie/upcoming?api_key=41633bc6f1e4947d357fb72eeb8115ed" // How to implement the key into the js taken form:https://www.youtube.com/watch?v=03FAepR-WVQ
-  ); //Figure out how to fetch the "correct" movie id, arrays
+  );
   const movieData = await movieResponse.json();
   movies = movieData.results;
-  // console.log(movieData);
 
   renderContent();
 }
@@ -89,10 +86,9 @@ async function loadDataUpcomming() {
 async function loadDataTopRated() {
   const movieResponse = await fetch(
     "https://api.themoviedb.org/3/movie/top_rated?api_key=41633bc6f1e4947d357fb72eeb8115ed" // How to implement the key into the js taken form:https://www.youtube.com/watch?v=03FAepR-WVQ
-  ); //Figure out how to fetch the "correct" movie id, arrays
+  );
   const movieData = await movieResponse.json();
   movies = movieData.results;
-  // console.log(movieData);
 
   renderContent();
 }
@@ -101,10 +97,9 @@ async function loadDataTopRated() {
 async function loadDataMostPopular() {
   const movieResponse = await fetch(
     "https://api.themoviedb.org/3/movie/popular?api_key=41633bc6f1e4947d357fb72eeb8115ed" // How to implement the key into the js taken form:https://www.youtube.com/watch?v=03FAepR-WVQ
-  ); //Figure out how to fetch the "correct" movie id, arrays
+  );
   const movieData = await movieResponse.json();
   movies = movieData.results;
-  // console.log(movieData);
 
   renderContent();
 }
