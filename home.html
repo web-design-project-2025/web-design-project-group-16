@@ -8,23 +8,33 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vina+Sans&display=swap");
     </style>
-    <script src="JS/fetch-homepage" defer></script>
+    <script src="JS/fetch-homepage.js" defer></script>
     <script src="JS/search-function.js" defer></script>
+    <script src="JS/hamburgermenu.js" defer></script>
+
     <title>Neolens</title>
   </head>
 
   <body>
     <header>
       <nav class="menu-bar">
-        <a href="home.html">
-          <img id="menu-logo" src="images/logo-no-border2.png" alt="logotype"
+        <div class="left-placeholder"></div>
+        <a href="home.html" class="logo-link">
+          <img id="menu-logo" src="images/logo-2.png" alt="logotype"
         /></a>
-        <ul class="menu-ul">
-          <a href="#"> <li>Light Mode</li></a>
-          <a href="#"> <li>Articles</li></a>
-          <a href="account.html"> <li>Account</li></a>
-          <a href="movies.html"> <li>Movies</li> </a>
-        </ul>
+        <!-- Help through W3 schools, Link: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp Date: 13/5-2025 -->
+        <div id="hamburgerIcon-container">
+          <button id="hamburger-button" onclick="toggleHamburgerNav()">
+            <img src="images/align-justify.png" alt="Hamburger Icon" />
+          </button>
+          <div id="hamburgermenu-id" class="hamburgermenu-class">
+            <ul class="menu-ul">
+              <li><a href="articles.html">Article</a></li>
+              <li><a href="movies.html">Movies</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -43,13 +53,13 @@
             placeholder="SEARCH
           MOVIES, REVIEWERS ETC..."
           />
-          <img src="" alt="Magnifying glass" />
+          <img src="images/search-icon.png" alt="Magnifying glass" />
         </div>
-        <div class="search-content" id="search-content"></div>
+        <!-- <div class="search-content" id="search-content"></div>  -->
       </div>
 
       <div id="quote">
-        <img src="" alt="Logo" />
+        <img src="images/logo-white.png" alt="Logo" />
         <p id="quote-text">
           Is by film lovers for film lovers and lets you tell everyone why you
           love the films you do
@@ -57,41 +67,82 @@
       </div>
 
       <div class="content" id="content"></div>
+      <a href="movies.html">
+        <button id="more-films-button">See more films</button>
+      </a>
 
       <div id="bento-boxes">
-        <div id="top-reviewers">
-          <p class="bento-headers">Top Reviewers</p>
-          <img src="" alt="" />
-        </div>
-
-        <div id="about-us">
-          <p class="bento-headers">About Us</p>
-          <img src="" alt="Logo" />
+        <a href="#" id="about-us">
+          <p class="bento-headers">ABOUT US AT</p>
+          <img src="images/logo-2.png" alt="Logo" />
           <p class="bento-text">
             Learn more about the people behind the platform — and why we believe
             everyone´s movie opinion deserves a spotlight.
           </p>
+        </a>
+
+        <a href="articles.html" id="article">
+          <div id="article-text">
+            <p class="bento-headers">WHAT'S NEW IN FILM?</p>
+            <p class="bento-text">
+              We've delved into the latest in the world of film - from thrilling
+              thrillers to heartbreaking romances. Click through to read our
+              latest review - you won't want to miss this!
+            </p>
+          </div>
+        </a>
+
+        <a href="reviewers.html" id="top-reviewers">
+          <div id="top-reviewers-content">
+            <div id="top-reviewers-text">
+              <p class="bento-headers">TOP REVIEWERS</p>
+              <p class="bento-text">
+                Learn more about the top reviewers and see their top reviews.
+              </p>
+            </div>
+            <img src="images/Reviewers/reviewer6.jpg" alt="" />
+          </div>
+        </a>
+
+        <div id="other-shows">
+          <p class="bento-headers">OTHER SHOWS AND SERIES</p>
+          <div id="other-shows-content">
+            <p class="bento-text">
+              Check out the websites reviews for the viewers favorite shows and
+              series.
+            </p>
+            <img src="#" alt="" />
+          </div>
         </div>
-        <div id="article">
-          <p class="bento-headers">Article</p>
-          <p class="bento-text">
-            We've delved into the latest in the world of film - from thrilling
-            thrillers to heartbreaking romances. Click through to read our
-            latest review - you won't want to miss this!
-          </p>
-        </div>
-        <div id="box4"><p class="bento-headers">box 4</p></div>
       </div>
     </main>
 
     <footer>
       <div id="footer-container">
-        <div id="footer-text-container">
-          <p id="footer-text">Instagram</p>
-          <p id="footer-text">Facebook</p>
-          <p id="footer-text">About Us</p>
+        <div id="footer-left-side">
+          <div id="footer-socialmedia-container">
+            <p>SOCIAL MEDIA</p>
+            <a href="#"> INSTAGRAM </a>
+            <a href="#"> FACEBOOK </a>
+            <a href="#"> TIKTOK </a>
+          </div>
+
+          <div id="footer-quicklinks-container">
+            <p>QUICK LINKS</p>
+            <a href="articles.html"> ARTICLES </a>
+            <a href="#"> ABOUT US </a>
+            <a href="#"> FAQ </a>
+          </div>
+
+          <!-- <div class="footer-TMDB-container">
+            <p id="footer-text">
+              This product uses the TMDB API but is not endorsed or certified by
+              TMDB
+            </p>
+            <img src="images/tmdb.png" alt="TMDB logotype" />
+          </div> -->
         </div>
-        <img id="logo-footer" src="images/logo-no-border2.png" alt="logotype" />
+        <img id="logo-footer" src="images/logo-2.png" alt="logotype" />
       </div>
     </footer>
   </body>

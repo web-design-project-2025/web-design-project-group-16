@@ -1,0 +1,235 @@
+#featured-article {
+  color: #e7dbcf;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  padding-top: 24px;
+  margin-left: 96px;
+  margin-right: 48px;
+  margin-top: 24px;
+}
+
+#page-header-caption {
+  color: #e7dbcf;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  padding-left: 96px;
+  padding-bottom: 12px;
+}
+
+#line {
+  background-color: #e7dbcf;
+  height: 1px;
+  margin-left: 96px;
+  margin-right: 96px;
+}
+
+.article-details {
+  background-color: #e7dbcf;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* --- ARTICLE IMAGE ---*/
+#article-image {
+  width: 100%;
+}
+
+/* --- ARTICLE DETAILS START --- */
+#details-card-text {
+  margin-left: 96px;
+  margin-right: 96px;
+  padding-top: 48px;
+}
+#details-card-text {
+  font-family: "Montserrat", sans-serif;
+}
+
+#details-card-text h1 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+#details-card-text h2 {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+#details-card-text h3 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 4px;
+}
+/* --- ARTICLE DETAILS END --- */
+
+/* --- ARTICLE INTRO START --- */
+#intro {
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 96px;
+  padding-right: 96px;
+  font-style: italic;
+  font-weight: 500;
+  max-width: 800px;
+}
+
+/* --- ARTICLE INTRO END --- */
+
+/* --- ARTICLE ITSELF START --- */
+#article {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  align-items: baseline;
+  padding-bottom: 48px;
+  padding-left: 96px;
+  padding-right: 96px;
+}
+
+#article p {
+  padding-bottom: 24px;
+  max-width: 700px;
+}
+
+#date {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+}
+/* --- ARTICLE ITSELF END --- */
+
+/* --- ARTICLES SCROLL START --- */
+
+#page-headers {
+  color: #e7dbcf;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  padding-top: 24px;
+  margin-left: 96px;
+  margin-right: 48px;
+  margin-top: 24px;
+}
+
+.scroll-function {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  padding: 16px 48px 48px 96px;
+  gap: 24px;
+}
+.small-article {
+  background-color: #e7dbcf;
+  width: 318px;
+  border-radius: 10px;
+}
+
+.small-article img {
+  width: 318px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.small-article p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 12px;
+}
+
+/* --- ARTICLES SCROLL END --- */
+
+/* --- RESPONSIVE MODE START --- */
+/* Text */
+@media screen and (max-width: 1003px) {
+  .article-details {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  #article {
+    font-size: 16px;
+  }
+  #intro {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #featured-article {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+  .article-details {
+    margin-left: 96px;
+    margin-right: 96px;
+  }
+  #details-card-text {
+    margin-left: 64px;
+  }
+
+  #article {
+    font-size: 14px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  #intro {
+    font-size: 16px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  #date {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #details-card-text {
+    margin-left: 48px;
+  }
+  #article {
+    font-size: 12px;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  #intro {
+    font-size: 14px;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+
+  #date {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .article-details {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  #article {
+    font-size: 14px;
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+  #intro {
+    font-size: 13px;
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+
+  #date {
+    font-size: 12px;
+  }
+}

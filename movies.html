@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/reocurring.css" />
     <link rel="stylesheet" href="CSS/movies.css" />
+    <script src="JS/fetch-movies.js" defer></script>
+    <script src="JS/hamburgermenu.js" defer></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vina+Sans&display=swap");
     </style>
-    <script src="JS/fetch-movies.js" defer></script>
+
     <title>Movies</title>
   </head>
 
   <body>
     <header>
       <nav class="menu-bar">
-        <a href="home.html">
-          <img id="menu-logo" src="images/logo-no-border2.png" alt="logotype"
+        <div class="left-placeholder"></div>
+        <a href="home.html" class="logo-link">
+          <img id="menu-logo" src="images/logo-2.png" alt="logotype"
         /></a>
-        <ul class="menu-ul">
-          <a href="#"> <li>Light Mode</li></a>
-          <a href="#"> <li>Articles</li></a>
-          <a href="account.html"> <li>Account</li></a>
-          <a href="movies.html"> <li>Movies</li> </a>
-        </ul>
+        <!-- Help through W3 schools, Link: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp Date: 13/5-2025 -->
+        <div id="hamburgerIcon-container">
+          <button id="hamburger-button" onclick="toggleHamburgerNav()">
+            <img src="images/align-justify.png" alt="Hamburger Icon" />
+          </button>
+          <div id="hamburgermenu-id" class="hamburgermenu-class">
+            <ul class="menu-ul">
+              <li><a href="articles.html">Article</a></li>
+              <li><a href="movies.html">Movies</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -35,92 +45,21 @@
         </video>
         <!-- End help for chatGPT -->
         <div id="search">
-          <p id="search-text">SEARCH MOVIES, REVIEWERS ETC...</p>
+          <input
+            type="text"
+            name=""
+            id="search-text"
+            placeholder="SEARCH
+          MOVIES, REVIEWERS ETC..."
+          />
           <img src="images/search-icon.png" alt="Magnifying glass" />
         </div>
       </div>
-
-      <!-- <img
-        id="heart-icon"
-        src="images/movie-icons-white-and-black/romance.png"
-        alt="" -->
-      />
-      <!-- 
-      <ul class="categories">
-        <li>
-          <a id="comedy-icon" href="#">
-            <img
-              src="images/movie-icons-white-and-black/comedy.png"
-              alt="Comedy"
-          /></a>
-        </li>
-
-        <li>
-          <a href="#">
-            <img src="images/movie-icons-white-and-black/drama.png" alt="Drama"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/horror.png"
-              alt="Horror"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/romcom.png"
-              alt="Romcom"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/action.png"
-              alt="Action"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/musical.png"
-              alt="Musical"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/old-films.png"
-              alt="Old Films"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/romance.png"
-              alt="Romance"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/sci-fi.png"
-              alt="Sci-Fi"
-          /></a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="images/movie-icons-white-and-black/mystery.png"
-              alt="Mystery"
-          /></a>
-        </li>
-      </ul> -->
       <div class="filter">
-        <button id="sortby-button">
-          Sort By:
-          <img id="arrow" src="images/arrow-icon.png" alt="Arrow" />
+        <p id="sort-by">Sort By:</p>
+        <button id="filter-button">
+          Most Popular
+          <img src="images/arrow-icon.png" alt="Arrow" />
         </button>
         <div class="dropdown-content">
           <button id="mostPopular-button">Most Popular</button>
@@ -130,18 +69,26 @@
       </div>
 
       <div class="content" id="content"></div>
-
-      <!-- <ul class="movies-by-categories"></ul> -->
     </main>
 
     <footer>
       <div id="footer-container">
-        <div id="footer-text-container">
-          <p id="footer-text">Instagram</p>
-          <p id="footer-text">Facebook</p>
-          <p id="footer-text">About Us</p>
+        <div id="footer-left-side">
+          <div id="footer-socialmedia-container">
+            <p>SOCIAL MEDIA</p>
+            <a href="#"> INSTAGRAM </a>
+            <a href="#"> FACEBOOK </a>
+            <a href="#"> TIKTOK </a>
+          </div>
+
+          <div id="footer-quicklinks-container">
+            <p>QUICK LINKS</p>
+            <a href="articles.html"> ARTICLES </a>
+            <a href="#"> ABOUT US </a>
+            <a href="#"> FAQ </a>
+          </div>
         </div>
-        <img id="logo-footer" src="images/logo-no-border2.png" alt="logotype" />
+        <img id="logo-footer" src="images/logo-2.png" alt="logotype" />
       </div>
     </footer>
   </body>

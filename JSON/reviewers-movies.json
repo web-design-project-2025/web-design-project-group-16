@@ -3,100 +3,220 @@
     {
       "user_id": "1",
       "movies": [
-        "images/Movie-Posters/we-live-in-time.jpg",
-        "images/Movie-Posters/anora.jpg",
-        "images/Movie-Posters/bring-them-down.jpg",
-        "images/Movie-Posters/babygirl.jpg"
+        {
+          "image": "images/Movie-Posters/we-live-in-time.jpg",
+          "title": "We live in time"
+        },
+        {
+          "image": "images/Movie-Posters/anora.jpg",
+          "title": "Anora"
+        },
+        {
+          "image": "images/Movie-Posters/bring-them-down.jpg",
+          "title": "Bring them down"
+        },
+        {
+          "image": "images/Movie-Posters/babygirl.jpg",
+          "title": "Babygirl"
+        }
       ]
     },
 
     {
       "user_id": "2",
       "movies": [
-        "images/Movie-Posters/alien-romulus.jpg",
-        "images/Movie-Posters/we-live-in-time.jpg",
-        "images/Movie-Posters/novocaine.jpg",
-        "images/Movie-Posters/smile2.jpg"
+        {
+          "image": "images/Movie-Posters/alien-romulus.jpg",
+          "title": "Alien romulus"
+        },
+        {
+          "image": "images/Movie-Posters/we-live-in-time.jpg",
+          "title": "We live in time"
+        },
+        {
+          "image": "images/Movie-Posters/novocaine.jpg",
+          "title": "Novocaine"
+        },
+        {
+          "image": "images/Movie-Posters/smile2.jpg",
+          "title": "Smile 2"
+        }
       ]
     },
 
     {
       "user_id": "3",
       "movies": [
-        "images/Movie-Posters/no-hard-feelings.jpg",
-        "images/Movie-Posters/ted.jpg",
-        "images/Movie-Posters/smile.jpg",
-        "images/Movie-Posters/novocaine.jpg"
+        {
+          "image": "images/Movie-Posters/no-hard-feelings.jpg",
+          "title": "No hard feelings"
+        },
+        {
+          "image": "images/Movie-Posters/ted.jpg",
+          "title": "Ted"
+        },
+        {
+          "image": "images/Movie-Posters/smile.jpg",
+          "title": "Smile"
+        },
+        {
+          "image": "images/Movie-Posters/novocaine.jpg",
+          "title": "Novocaine"
+        }
       ]
     },
 
     {
       "user_id": "4",
       "movies": [
-        "images/Movie-Posters/drop.jpg",
-        "images/Movie-Posters/it-ends-with-us.jpg",
-        "images/Movie-Posters/anyone-but-you.jpg",
-        "images/Movie-Posters/challengers.jpg"
+        {
+          "image": "images/Movie-Posters/drop.jpg",
+          "title": "Drop"
+        },
+        {
+          "image": "images/Movie-Posters/it-ends-with-us.jpg",
+          "title": "It ends with us"
+        },
+        {
+          "image": "images/Movie-Posters/anyone-but-you.jpg",
+          "title": "Anyone but you"
+        },
+        {
+          "image": "images/Movie-Posters/challengers.jpg",
+          "title": "Challengers"
+        }
       ]
     },
 
     {
       "user_id": "5",
       "movies": [
-        "images/Movie-Posters/you're-cordially-invited.jpg",
-        "images/Movie-Posters/challengers.jpg",
-        "images/Movie-Posters/the-life-list.jpg",
-        "images/Movie-Posters/set-it-up.jpg"
+        {
+          "image": "images/Movie-Posters/you're-cordially-invited.jpg",
+          "title": "You're cordially invited"
+        },
+        {
+          "image": "images/Movie-Posters/challengers.jpg",
+          "title": "Challengers"
+        },
+        {
+          "image": "images/Movie-Posters/the-life-list.jpg",
+          "title": "The life list"
+        },
+        {
+          "image": "images/Movie-Posters/set-it-up.jpg",
+          "title": "Set it up"
+        }
       ]
     },
 
     {
       "user_id": "6",
       "movies": [
-        "images/Movie-Posters/nosferatu.jpg",
-        "images/Movie-Posters/wolfs.jpg",
-        "images/Movie-Posters/the-assessment.jpg",
-        "images/Movie-Posters/the-shining.jpg"
+        {
+          "image": "images/Movie-Posters/nosferatu.jpg",
+          "title": "Nosferatu"
+        },
+        {
+          "image": "images/Movie-Posters/wolfs.jpg",
+          "title": "Wolfs"
+        },
+        {
+          "image": "images/Movie-Posters/the-assessment.jpg",
+          "title": "The assesment"
+        },
+        {
+          "image": "images/Movie-Posters/the-shining.jpg",
+          "title": "The shining"
+        }
       ]
     },
 
     {
       "user_id": "7",
       "movies": [
-        "images/Movie-Posters/set-it-up.jpg",
-        "images/Movie-Posters/babygirl.jpg",
-        "images/Movie-Posters/warfare.jpg",
-        "images/Movie-Posters/anora.jpg"
+        {
+          "image": "images/Movie-Posters/set-it-up.jpg",
+          "title": "Set it up"
+        },
+        {
+          "image": "images/Movie-Posters/babygirl.jpg",
+          "title": "Babygirl"
+        },
+        {
+          "image": "images/Movie-Posters/warfare.jpg",
+          "title": "Warfare"
+        },
+        {
+          "image": "images/Movie-Posters/anora.jpg",
+          "title": "Anora"
+        }
       ]
     },
 
     {
       "user_id": "8",
       "movies": [
-        "images/Movie-Posters/anyone-but-you.jpg",
-        "images/Movie-Posters/mickey-17.jpg",
-        "images/Movie-Posters/the-shining.jpg",
-        "images/Movie-Posters/ted.jpg"
+        {
+          "image": "images/Movie-Posters/anyone-but-you.jpg",
+          "title": "Anyone but you"
+        },
+        {
+          "image": "images/Movie-Posters/mickey-17.jpg",
+          "title": "Mickey 17"
+        },
+        {
+          "image": "images/Movie-Posters/the-shining.jpg",
+          "title": "The shining"
+        },
+        {
+          "image": "images/Movie-Posters/ted.jpg",
+          "title": "Ted"
+        }
       ]
     },
 
     {
       "user_id": "9",
       "movies": [
-        "images/Movie-Posters/the-assessment.jpg",
-        "images/Movie-Posters/smile.jpg",
-        "images/Movie-Posters/it-ends-with-us.jpg",
-        "images/Movie-Posters/warfare.jpg"
+        {
+          "image": "images/Movie-Posters/the-assessment.jpg",
+          "title": "The assesment"
+        },
+        {
+          "image": "images/Movie-Posters/smile.jpg",
+          "title": "Smile"
+        },
+        {
+          "image": "images/Movie-Posters/it-ends-with-us.jpg",
+          "title": "It ends with us"
+        },
+        {
+          "image": "images/Movie-Posters/warfare.jpg",
+          "title": "Warfare"
+        }
       ]
     },
 
     {
       "user_id": "10",
       "movies": [
-        "images/Movie-Posters/ted.jpg",
-        "images/Movie-Posters/the-life-list.jpg",
-        "images/Movie-Posters/drop.jpg",
-        "images/Movie-Posters/anyone-but-you.jpg"
+        {
+          "image": "images/Movie-Posters/ted.jpg",
+          "title": "Ted"
+        },
+        {
+          "image": "images/Movie-Posters/the-life-list.jpg",
+          "title": "The life list"
+        },
+        {
+          "image": "images/Movie-Posters/drop.jpg",
+          "title": "Drop"
+        },
+        {
+          "image": "images/Movie-Posters/anyone-but-you.jpg",
+          "title": "Anyone but you"
+        }
       ]
     }
   ]
