@@ -1,3 +1,4 @@
+//Code taken from Garrit's Hamstergram Workshop
 //// Search filtering
 const input = document.getElementById("search-text");
 const searchButton = document.getElementById("search-button");
@@ -48,20 +49,12 @@ sortReviewersButton.addEventListener("click", function () {
   textElement.classList.toggle("visible");
 });
 
-//// Sort order, ex most popular etc
-// source video: https://www.youtube.com/watch?v=0cSz8bFasm4 Date 11/5-2025
-// Most popular button
-// document
-//   .getElementById("sort-by-most-popular")
-//   .addEventListener("click", sortMovieByMostPopular);
+
 
 // A-Z button
 document.getElementById("sort-by-A-Z").addEventListener("click", sortMovieByAZ);
 
-// // Favorite genre button
-// document
-//   .getElementById("sort-by-favourite-genre")
-//   .addEventListener("click", sortMovieByFavoriteGenre);
+
 
 function sortMovieByAZ() {
   let sortedReviewers = reviewers.sort((curr, next) => {
@@ -95,6 +88,7 @@ function sortMovieByFavoriteGenre() {
   console.log(movies);
 }
 
+// start: Code taken from Garrit's Hamstergram Workshop
 //// Create and load the JSON files for reviwers and movies, create all elements.
 // Reviewers cards
 let reviewers = [];

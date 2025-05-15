@@ -55,14 +55,14 @@
 }
 
 #details-card-text h2 {
-  font-size: 18px;
+
   font-weight: 400;
   font-style: italic;
   margin-bottom: 4px;
 }
 
 #details-card-text h3 {
-  font-size: 14px;
+
   font-weight: 300;
   margin-bottom: 4px;
 }
@@ -224,7 +224,7 @@
     padding-right: 46px;
   }
   #intro {
-    font-size: 13px;
+    font-size: 16px;
     padding-left: 46px;
     padding-right: 46px;
   }

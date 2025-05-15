@@ -9,7 +9,7 @@ h1{
     color: black;
     margin-bottom: 20px;
     font-family: "Montserrat", serif;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 30px;
 }
 
@@ -35,23 +35,22 @@ article {
     border-radius: 10px;
 }
  /* login/sigin buttons*/
-button {
+button3 {
     display:block;
     background-color: #cb2026;
     color: #fdf9ec;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 420px;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
     border-radius: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 24px;
     border-width: 0px;
 }
-button:hover {
+button3:hover {
     transform: translateY(-3px);
     box-shadow:0 6px 12px #616161;
 }

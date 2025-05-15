@@ -86,7 +86,7 @@
   grid-template-columns: repeat(6, 1fr);
   list-style: none;
   margin-left: 48px;
-  gap: 12px;
+  gap: 6px;
 
   /* --- Taken from https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp start --- */
   overflow-x: auto;
@@ -95,7 +95,7 @@
 }
 
 .account-movies-container img {
-  width: 204px;
+  width: auto;
   height: 330px;
   border-radius: 10px;
 }
@@ -110,14 +110,23 @@
 }
 .account-reviews-container {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 48px;
+  flex-direction: column;
+  margin-left: 96px;
   margin-bottom: 48px;
 }
 
+.account-review{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
 .account-reviews-container img {
-  width: 15%;
+  width:50%;
   border-radius: 10px;
 }
 
@@ -141,8 +150,7 @@
 .account-review-text p {
   font-family: "Montserrat", sans-serif;
   margin-top: 16px;
-  margin-right: 120px;
-  max-width: 520px;
+ margin-left: 0;
 }
 
 /* --- REVIEWS END --- */
@@ -202,6 +210,18 @@
     max-width: 640px;
     height: auto;
   }
+  
+  .account-review{
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
+  padding: 0px;
+    
+  }
+  .account-review-text{
+    text-align: center;
+    
+  }
 
   .profile-info-text  {
     margin-left: 48px;
@@ -213,7 +233,6 @@
 @media screen and (max-width:630px) and (min-width:370px) {
   .profile-info-containter {
     flex-direction: column;
-    align-items: center;
     margin: 48px 24px;
   }
 
@@ -231,7 +250,13 @@
     margin-right: 0;
     max-width: 100%;
   }
-}
+
+   .account-review{
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
+  padding: 0px;
+}}
 
 /*Fonts & typefaces*/
 .montserrat-regular {
@@ -242,13 +267,13 @@
 }
 /* --- RESPONSIVENESS ---*/
 
-@media screen and (max-width:1110px) and (min-width:890px) {
+/* @media screen and (max-width:1110px) and (min-width:890px) {
   .profile-info-text p {
     max-width: 520px;
   }
 }
 
-@media screen and (max-width:890px) and (min-width:630px) {
+@media screen and (max-width:890px){
   .profile-info-containter {
     flex-direction: column;
     max-width: 100%;
@@ -258,7 +283,11 @@
     margin-left: 48px;
     margin-top: 20px;
   }
+
+   .account-review{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
 }
-
-
-
+} */

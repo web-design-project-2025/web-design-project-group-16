@@ -38,4 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
     // Initialize demo user credentials (only once)
+
+    //localStorage.removeItem("userReviews");
    

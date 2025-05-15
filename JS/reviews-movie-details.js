@@ -1,3 +1,4 @@
+//Code taken from Garrit's Hamstergram Workshop
 const ContentElement = document.getElementById("reviews");
 let reviews = [];
 let reviewersData = [];

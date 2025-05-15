@@ -44,17 +44,6 @@ function displayMovieElement(movie) {
   titleElement.textContent = movie.original_title;
   movieElement.appendChild(titleElement);
 
-  //RATING
-  // const heartElement = document.createElement("img");
-  // heartElement.src = "images/movie-icons-white-and-black/romance.png";
-  // heartElement.classList.add("rating-icon");
-  // movieElement.appendChild(heartElement);
-
-  // const ratingElement = document.createElement("p");
-  // ratingElement.classList.add("moviedetails-rating");
-  // ratingElement.textContent = movie.vote_average;
-  // movieElement.appendChild(ratingElement);
-
   return movieElement;
 }
 
@@ -66,7 +55,7 @@ function renderContent() {
     console.log(movie);
     descriptionElement.addEventListener("click", () => {
       window.location.href = `moviedetails.html?id=${movie.id}`; // on the click, go to the location on the window where you get a link, where the link will redirect you to the html where the movie id is equal to the id of the movie you pressed
-    });
+    }); //Help from lab assistants to make the redirect work
     contentElement.appendChild(descriptionElement);
   }
 }

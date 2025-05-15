@@ -4,10 +4,10 @@ function displayReviewElement(review) {
     reviewElement.classList.add("moviedetails-review");
 
     // PLACEHOLDER ( for adding a placeholder image instead of a poster, but it won't work)
-    // const placeholderElement = document.createElement("img");
-    // placeholderImageElement.classList.add("placeholder");
-    // placeholderElement.src = review.placeholder || "images/Movie-Posters/placeholder-poster.jpg";
-    // reviewElement.appendChild(placeholderElement);
+    const placeholderElement = document.createElement("img");
+    placeholderImageElement.classList.add("placeholder");
+    placeholderElement.src = review.placeholder || "images/Movie-Posters/placeholder-poster.jpg";
+    reviewElement.appendChild(placeholderElement);
 
     // SUBJECT
     const subjectElement = document.createElement("h2");

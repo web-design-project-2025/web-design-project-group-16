@@ -9,6 +9,24 @@ html {
   background-color: #130204;
 }
 
+/*Body text*/
+p {
+  font-size: 16px;
+}
+
+/*Headers*/
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
 /* MONSTERRAT FONT*/
 /*
   font-family: "Montserrat", sans-serif;
@@ -242,7 +260,8 @@ html {
 
 /* --- RESPONSIVE MODE START --- */
 /* Links and Hamburgermenu */
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1016px) {
   .hamburgermenu-id {
     display: none; /* hidden by default, toggled by JS */
   }

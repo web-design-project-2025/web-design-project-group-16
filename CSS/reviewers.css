@@ -126,7 +126,8 @@
 
 /* Name*/
 .reviewer-name {
-  font-size: 16px;
+    text-transform: uppercase;
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
   padding-bottom: 4px;
   color: #34312e;
@@ -157,16 +158,16 @@
 
 /* Text */
 .reviewer-text {
-  font-size: 11px;
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
   padding-bottom: 4px;
-  width: 150px;
+ 
   color: #34312e;
 }
 
 /* Recently reviewed */
 .reviewer-recently {
-  font-size: 12px;
+  font-size: 18px;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 8px;
   color: #34312e;
