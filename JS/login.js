@@ -6,12 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const loginButton = document.querySelector('button');
   const usernameInput = document.getElementById('Username');
   const passwordInput = document.getElementById('Password');
-  const errorMessageDiv = document.querySelector('.error-message'); // <-- updated to use class
+  const errorMessageDiv = document.querySelector('.error-message'); 
 
   loginButton.addEventListener('click', function () {
     const enteredUsername = usernameInput.value.trim();
     const enteredPassword = passwordInput.value.trim();
 
+    // Login if the password and username is correct, otherwise sipay error message.
     if (enteredUsername === demoUsername && enteredPassword === demoPassword) {
       errorMessageDiv.style.display = 'none';
       window.location.href = 'account.html';
@@ -37,7 +38,5 @@ document.addEventListener('DOMContentLoaded', function () {
     errorMessageDiv.style.display = 'none';
   });
 });
-    // Initialize demo user credentials (only once)
 
-    //localStorage.removeItem("userReviews");
    

@@ -12,6 +12,7 @@
 /* --- FOR ENTIRE PAGE END --- */
 
 /* --- POSTER AND DESCRIPTION BOX START --- */
+
 /*flexbox containter for movie description*/
 .moviedetails-container {
   display: flex;
@@ -108,7 +109,7 @@
   color: #130204;
 }
 
-/* Profile image and identity container */
+/* review */
 .reviewer-info {
   display: flex;
   align-items: center;

@@ -13,7 +13,7 @@ async function loadData() {
     const reviewData = await reviewResponse.json();
     const reviewerJson = await reviewerResponse.json();
 
-    reviews = reviewData["ten-eight"];
+    reviews = reviewData["reviews"];
     reviewersData = reviewerJson.reviewers;
 
     displayRandomReviews(5);
@@ -73,7 +73,7 @@ function displayReviewElement(review) {
     return reviewElement;
 }
 
-// Display N random reviews from fetched data
+// Display random reviews from fetched data
 function displayRandomReviews(count) {
     const shuffled = [...reviews].sort(() => 0.5 - Math.random());
     const selectedReviews = shuffled.slice(0, count);
