@@ -115,7 +115,6 @@
   align-items: flex-start;
   flex-direction: column;
   overflow: hidden;
-  margin-bottom: 48px;
 }
 
 /* the div for the text in review itself */
