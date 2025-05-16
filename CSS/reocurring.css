@@ -66,7 +66,7 @@ h3 {
   width: auto;
 }
 
-/* the lsit itself */
+/* The unordered list itself */
 .menu-ul {
   display: flex;
   flex-direction: row;
@@ -76,13 +76,13 @@ h3 {
   padding: 0;
 }
 
-/* individual list items */
+/* Individual list items */
 .menu-ul a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #130204;
 }
-/* End help from Erik with deviding css for the changes semantic */
+/* End help from Erik with deviding css for the changed semantic */
 
 /* Hamburger menu */
 #menu-ul-hamburger {
@@ -118,7 +118,7 @@ h3 {
 
 /* --- SEARCH-VIDEOBAR STARTS --- */
 /* Container for both the video in the background and the searchbar */
-/* Begin help from chatGPT with position, overflow and z-index, date 24/04/2024, source: https://chatgpt.com/share/680ab363-b874-8007-b549-9c5e4b3c5d75 */
+/* Begin help from chatGPT with position, overflow and z-index, Link: https://chatgpt.com/share/680ab363-b874-8007-b549-9c5e4b3c5d75 Date 24/04/2024 */
 .search-videobar {
   position: relative;
   overflow: hidden;
@@ -182,13 +182,21 @@ h3 {
   overflow: hidden;
 }
 
-/* layout left side */
+/* Layout left side */
 #footer-left-side {
   display: flex;
+  flex-direction: row;
   align-items: last baseline;
   gap: 24px;
   padding: 48px 0px 48px 48px;
   font-family: "Montserrat", sans-serif;
+}
+
+/* Div around social media and quick links */
+#socialmedia-quicklinks {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 
 /* Social media */
@@ -198,7 +206,7 @@ h3 {
   white-space: nowrap;
 }
 
-/* text specifications social media */
+/* Text specifications social media */
 #footer-socialmedia-container p {
   color: #130204;
   font-weight: 600;
@@ -221,7 +229,7 @@ h3 {
   white-space: nowrap;
 }
 
-/* text specifications quick links */
+/* Text specifications quick links */
 #footer-quicklinks-container p {
   color: #130204;
   font-weight: 600;
@@ -237,7 +245,7 @@ h3 {
   transform: scale(1.05);
 }
 
-/* logo */
+/* Logo footer */
 #logo-footer {
   display: flex;
   height: auto;
@@ -248,9 +256,9 @@ h3 {
 /* --- FOOTER CSS END --- */
 
 /* --- RESPONSIVE MODE START --- */
-/* Links and Hamburgermenu */
+/* Links in header and Hamburgermenu */
 
-@media screen and (max-width: 1016px) {
+@media screen and (max-width: 1230px) {
   .hamburgermenu-id {
     display: none; /* hidden by default, toggled by JS */
   }
@@ -259,6 +267,7 @@ h3 {
     display: flex;
   }
 
+  /* Links in the unordered list in header */
   .menu-ul {
     display: none;
   }
@@ -269,3 +278,5 @@ h3 {
     display: none;
   }
 }
+
+/* --- RESPONSIVE MODE ENDS --- */

@@ -34,6 +34,7 @@
   font-size: 48px;
   color: #130204;
   padding-top: 48px;
+  padding-right: 48px;
   font-weight: 700;
 }
 
@@ -232,9 +233,10 @@
   font-style: normal;
 }
 
+/* --- RESPONSIVE MODE START --- */
 @media (max-width: 995px) {
   .moviedetails-page-container {
-    margin: 24px;
+    margin: 48px;
   }
 
   .moviedetails-container {
@@ -249,17 +251,17 @@
   }
 
   .submit-review-container {
-    margin: 24px;
     margin-top: 12px;
   }
 }
 
-@media (max-width: 440px) {
-  .moviedetails-page-container {
-    padding: 16px;
-    margin: 16px;
+@media (max-width: 550px) {
+  .moviedetails-title {
+    padding-right: 0px;
   }
+}
 
+@media (max-width: 500px) {
   .moviedetails-title {
     font-size: 24px;
   }
@@ -270,17 +272,6 @@
   .moviedetails-synopsis,
   .moviedetails-rating {
     font-size: 14px;
-  }
-
-  .moviedetails-poster {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 16px;
-  }
-
-  .moviedetails-review {
-    margin: 16px;
   }
 
   .reviews-name {
@@ -296,13 +287,39 @@
     font-size: 14px;
   }
 
-  .submit-review-container {
-    padding: 20px;
-    margin: 16px;
-  }
-
   .submit-review-container h3 {
     font-size: 20px;
     margin-bottom: 16px;
   }
 }
+
+@media (max-width: 440px) {
+  .moviedetails-page-container {
+    padding: 16px;
+    margin: 48px;
+  }
+
+  .moviedetails-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .moviedetails-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 48px;
+    margin: 0px;
+  }
+
+  .moviedetails-review {
+    margin: 16px;
+  }
+
+  .submit-review-container {
+    padding: 20px;
+    margin: 16px;
+  }
+}
+
+/* --- RESPONSIVE MODE ENDS --- */

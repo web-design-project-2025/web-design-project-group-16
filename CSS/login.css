@@ -12,15 +12,14 @@ h1{
 }
 
 section {
-    display:block;
-    background-color: #e7dbcf;
-    padding: 30px;
-    margin: auto;
-    margin-top: 40px;
-    border-radius: 10px;
-    max-width: 480px;
-    min-width: 270px;
-    
+  display: block;
+  background-color: #e7dbcf;
+  padding: 30px;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 10px;
+  max-width: 480px;
+  min-width: 270px;
 }
 /*code for the username, and password aricles*/
 article {
@@ -54,8 +53,8 @@ button3 {
 }
 /*button animation*/
 button3:hover {
-    transform: translateY(-3px);
-    box-shadow:0 6px 12px #616161;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px #616161;
 }
 
  /* Signin button*/
@@ -77,11 +76,11 @@ button2 {
 
 /* Button animation*/
 button2:hover {
-    transform: translateY(-3px);
-    box-shadow:0 6px 12px #616161;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px #616161;
 }
 
-/* checkbox "line"*/
+/* checkbox "line" */
 .checkbox, p7 {
     display: flex;
     flex-direction: row;
@@ -102,6 +101,172 @@ p3 {
 
 /* text underneath the section*/
 .fix-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.p4,
+.p5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #fdf9ec;
+}
+
+.p5 {
+  background-color: #cb2026;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+/*Fonts & typefaces*/
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.old-standard-tt-bold {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.old-standard-tt-regular {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.error-message {
+  color: #cb2026;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  display: none;
+}
+
+/* Grid for entire footer */
+#footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #e7dbcf;
+  overflow: hidden;
+}
+
+/* Layout left side */
+#footer-left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: last baseline;
+  gap: 24px;
+  padding: 48px 0px 48px 48px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* TMDB, only on login page */
+#footer-TMDB-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 8px;
+}
+
+#TMBD-text {
+  max-width: 250px;
+}
+
+#footer-TMDB-container img {
+  height: auto;
+  width: 60%;
+}
+
+/* Div around social media and quick links */
+#socialmedia-quicklinks {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+/* Social media */
+#footer-socialmedia-container {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+/* Text specifications social media */
+#footer-socialmedia-container p {
+  color: #130204;
+  font-weight: 600;
+}
+
+#footer-socialmedia-container a {
+  color: #130204;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+#footer-socialmedia-container a:hover {
+  transform: scale(1.05);
+}
+
+/* quick links */
+#footer-quicklinks-container {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+/* Text specifications quick links */
+#footer-quicklinks-container p {
+  color: #130204;
+  font-weight: 600;
+}
+
+#footer-quicklinks-container a {
+  color: #130204;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+#footer-quicklinks-container a:hover {
+  transform: scale(1.05);
+}
+
+/* Logo footer */
+#logo-footer {
+  display: flex;
+  height: auto;
+  width: 200%;
+  padding: 48px;
+}
+
+/* --- FOOTER CSS END --- */
+
+/* --- RESPONSIVE MODE START --- */
+/* Logo and footer links */
+@media screen and (max-width: 500px) {
+  #logo-footer {
+    display: none;
+  }
+}
+/* --- RESPONSIVE MODE ENDS --- */
     display: flex;
     justify-content: center;
     align-items: center;

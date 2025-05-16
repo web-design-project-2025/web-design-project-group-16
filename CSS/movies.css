@@ -1,7 +1,7 @@
 /* --- FILTERING STARTS --- */
 .filter {
-  padding-left: 48px;
-  padding-top: 48px;
+  margin-left: 48px;
+  margin-top: 48px;
 }
 
 /* Sort by */
@@ -96,7 +96,7 @@
   border-radius: 10px;
 }
 
-h1 {
+h3 {
   color: aliceblue;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -104,24 +104,18 @@ h1 {
   text-align: center;
   margin-top: 8px;
 }
-
 /* --- MOVIES ENDS --- */
 
 /* --- RESPONSIVE MODE START --- */
-@media screen and (min-width: 850px) {
+@media screen and (max-width: 850px) {
   #content {
-    padding-left: 72px;
-    padding-right: 72px;
-  }
-
-  #filter-button {
     margin-left: 72px;
     margin-right: 72px;
   }
 
-  #sort-by {
-    padding-left: 72px;
-    padding-right: 72px;
+  .filter {
+    margin-left: 72px;
+    margin-right: 72px;
   }
 }
 /* Search */
@@ -147,18 +141,18 @@ h1 {
 /* Movies */
 @media screen and (max-width: 950px) {
   #content {
-    grid-template-columns: repeat(3, 5fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (max-width: 650px) {
   #content {
-    grid-template-columns: repeat(2, 5fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 450px) {
   #content {
-    grid-template-columns: repeat(1, 5fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 /* --- RESPONSIVE MODE ENDS --- */

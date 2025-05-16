@@ -43,18 +43,14 @@ searchButton.addEventListener("click", function () {
 //// Button for sort order
 // Button
 const sortReviewersButton = document.getElementById("sort-by-button");
-const textElement = document.getElementById("sort-choices");
+const textElement = document.getElementById("sort-choice");
 
 sortReviewersButton.addEventListener("click", function () {
   textElement.classList.toggle("visible");
 });
 
-
-
 // A-Z button
 document.getElementById("sort-by-A-Z").addEventListener("click", sortMovieByAZ);
-
-
 
 function sortMovieByAZ() {
   let sortedReviewers = reviewers.sort((curr, next) => {
