@@ -172,12 +172,14 @@
   #bento-boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: auto;
   }
 }
 @media screen and (max-width: 675px) {
   #bento-boxes {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    height: auto;
   }
 }
 /* --- RESPONSIVE MODE ENDS --- */

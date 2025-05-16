@@ -51,6 +51,8 @@
 
 .favourite-genres img {
   width: 40px;
+  margin: 12px;
+  border: none;
 }
 /* Profile text*/
 
@@ -74,7 +76,7 @@
 
 .profile-info-text p {
   margin-right: 160px;
-  max-width: 520px; /*430px looks better, but with icons added 520px could line up better with the image*/
+  max-width: 520px;
 }
 
 /* --- PROFILE INFO END --- */
@@ -108,6 +110,7 @@
   margin-left: 48px;
   margin-top: 48px;
 }
+/*Container for reviews*/
 .account-reviews-container {
   display: flex;
   flex-direction: column;
@@ -118,18 +121,19 @@
   margin-bottom: 48px;
 }
 
-.account-review{
+.account-review {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-
 }
 
+/*Poster images*/
 .account-reviews-container img {
-  width:50%;
+  width: 50%;
   border-radius: 10px;
 }
 
+/*Review text*/
 .account-review-text {
   margin-left: 48px;
 }
@@ -150,13 +154,13 @@
 .account-review-text p {
   font-family: "Montserrat", sans-serif;
   margin-top: 16px;
- margin-left: 0;
+  margin-left: 0;
 }
 
 /* --- REVIEWS END --- */
 
 /* ---CODE FOR ADDED REVIEWS--*/
-
+/*Container for user added reviews*/
 .account-review-container {
   display: flex;
   justify-content: flex-start;
@@ -166,12 +170,12 @@
 }
 
 /*Placeholder poster for the user submitted review, doesn't work :( */
-  /* .placeholderElement img {
+/* .placeholderElement img {
     width: 15%;
     border-radius: 10px;
     margin-right: 48px;
-  } */ 
-
+  } */
+/*text in user review*/
 .account-review {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 48px;
@@ -195,7 +199,7 @@
 
 /* --- RESPONSIVENESS ---*/
 
-@media screen and (max-width:1110px) and (min-width:890px) {
+@media screen and (max-width: 1110px) and (min-width: 890px) {
   .profile-info-text p {
     max-width: 520px;
   }
@@ -204,33 +208,30 @@
   }
 }
 
-@media screen and (max-width:890px) and (min-width:630px) {
+@media screen and (max-width: 890px) and (min-width: 630px) {
   .profile-info-containter {
     flex-direction: column;
     max-width: 640px;
     height: auto;
   }
-  
-  .account-review{
+
+  .account-review {
     flex-direction: column;
     justify-content: center;
-  align-items: center;
-  padding: 0px;
-    
+    align-items: center;
+    padding: 0px;
   }
-  .account-review-text{
+  .account-review-text {
     text-align: center;
-    
   }
 
-  .profile-info-text  {
+  .profile-info-text {
     margin-left: 48px;
     margin-top: 20px;
   }
-
 }
 
-@media screen and (max-width:630px) and (min-width:370px) {
+@media screen and (max-width: 630px) and (min-width: 370px) {
   .profile-info-containter {
     flex-direction: column;
     margin: 48px 24px;
@@ -238,7 +239,7 @@
 
   .profile-info-containter img {
     max-width: 233px;
-    margin: 0 auto 48px
+    margin: 0 auto 48px;
   }
 
   .profile-info-text {
@@ -251,12 +252,13 @@
     max-width: 100%;
   }
 
-   .account-review{
+  .account-review {
     flex-direction: column;
     justify-content: center;
-  align-items: center;
-  padding: 0px;
-}}
+    align-items: center;
+    padding: 0px;
+  }
+}
 
 /*Fonts & typefaces*/
 .montserrat-regular {
@@ -266,28 +268,3 @@
   font-style: normal;
 }
 /* --- RESPONSIVENESS ---*/
-
-/* @media screen and (max-width:1110px) and (min-width:890px) {
-  .profile-info-text p {
-    max-width: 520px;
-  }
-}
-
-@media screen and (max-width:890px){
-  .profile-info-containter {
-    flex-direction: column;
-    max-width: 100%;
-  }
-
-  .profile-info-text  {
-    margin-left: 48px;
-    margin-top: 20px;
-  }
-
-   .account-review{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-}
-} */
