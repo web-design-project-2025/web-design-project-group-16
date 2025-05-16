@@ -4,6 +4,10 @@ This website is the final project for the Web Design Project course a Jönköpin
 and the people people behind it are Maja Johansson, Emelie Kryger and Lova Venema. It is a movie review website where 
 the UI and UX design plays a big role in combination with the complexity of the code.
 
+### If you want to try the log in sequence, use the following infromation:
+Username: demoUser
+Password: demoPass123
+
 ### What can you do with the Neolens site?🎥
 * The Neolens website is for leaving reviews as well as finding honest opinions of different films. 
 * Reviews can be left on the individual detail pages for the films.
