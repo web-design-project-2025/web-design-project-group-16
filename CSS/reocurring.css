@@ -184,10 +184,18 @@ h3 {
 /* Layout left side */
 #footer-left-side {
   display: flex;
+  flex-direction: row;
   align-items: last baseline;
   gap: 24px;
   padding: 48px 0px 48px 48px;
   font-family: "Montserrat", sans-serif;
+}
+
+/* Div around social media and quick links */
+#socialmedia-quicklinks {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 
 /* Social media */
@@ -236,17 +244,6 @@ h3 {
   transform: scale(1.05);
 }
 
-/* TMDB, only on login page */
-#footer-TMDB-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
-
-#footer-TMDB-container img {
-  width: 60%;
-}
-
 /* Logo footer */
 #logo-footer {
   display: flex;
@@ -260,7 +257,7 @@ h3 {
 /* --- RESPONSIVE MODE START --- */
 /* Links in header and Hamburgermenu */
 
-@media screen and (max-width: 1016px) {
+@media screen and (max-width: 1230px) {
   .hamburgermenu-id {
     display: none; /* hidden by default, toggled by JS */
   }
@@ -280,3 +277,5 @@ h3 {
     display: none;
   }
 }
+
+/* --- RESPONSIVE MODE ENDS --- */

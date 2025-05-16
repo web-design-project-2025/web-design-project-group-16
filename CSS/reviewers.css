@@ -236,4 +236,12 @@
     height: 550px;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .reviewer-image {
+    width: auto;
+    height: 100px;
+  }
+}
+
 /* --- RESPONSIVE MODE ENDS --- */

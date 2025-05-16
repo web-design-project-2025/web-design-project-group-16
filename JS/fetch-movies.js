@@ -37,10 +37,10 @@ function displayMovieElement(movie) {
   imageElement.appendChild(posterElement);
 
   // TITLE ELEMENT
-  // const titleElement = document.createElement("h1");
-  // titleElement.classList.add("moviedetails-title");
-  // titleElement.textContent = movie.original_title;
-  // movieElement.appendChild(titleElement);
+  const titleElement = document.createElement("h3");
+  titleElement.classList.add("moviedetails-title");
+  titleElement.textContent = movie.original_title;
+  movieElement.appendChild(titleElement);
 
   return movieElement;
 }
