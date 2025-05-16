@@ -1,13 +1,13 @@
 /* --- TOP PART OF PAGE START --- */
 
-#page-headers {
+.page-headers {
   color: #e7dbcf;
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   padding-top: 24px;
   margin-left: 96px;
   margin-right: 48px;
-  margin-top: 24px;
+  margin-top: 22px;
 }
 
 #page-header-caption {
@@ -118,11 +118,18 @@
 
 /* --- ARTICLES SCROLL START --- */
 
+#more-articles {
+  margin-left: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+
 .scroll-function {
   display: flex;
   flex-direction: row;
   overflow: scroll;
-  padding: 16px 48px 48px 96px;
+  padding: 16px 32px 48px 32px;
   gap: 24px;
 }
 .small-article {
