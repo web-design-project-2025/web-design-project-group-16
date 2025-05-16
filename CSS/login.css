@@ -13,7 +13,6 @@ h1{
     font-size: 30px;
 }
 
-/*code for the username, and password*/
 section {
     display:block;
     background-color: #e7dbcf;
@@ -25,6 +24,7 @@ section {
     min-width: 270px;
     
 }
+/*code for the username, and password aricles*/
 article {
     display: block;
     background-color: #ffff;
@@ -34,7 +34,7 @@ article {
     margin-bottom: 20px;
     border-radius: 10px;
 }
- /* login/sigin buttons*/
+ /* Login button*/
 button3 {
     display:block;
     background-color: #cb2026;
@@ -50,11 +50,13 @@ button3 {
     font-size: 24px;
     border-width: 0px;
 }
+/*button animation*/
 button3:hover {
     transform: translateY(-3px);
     box-shadow:0 6px 12px #616161;
 }
 
+ /* Signin button*/
 button2 {
     display:block;
     background-color: #ffff;
@@ -72,16 +74,21 @@ button2 {
     font-size: 18px;
 }
 
+/* Button animation*/
 button2:hover {
     transform: translateY(-3px);
     box-shadow:0 6px 12px #616161;
 }
 
 /* checkbox "line"*/
-p2, p6 {
+.checkbox {
     font-family: "Monsterrat", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+/* "OR" text between buttons*/
 p3 {
     text-align: center;
     display: block;
@@ -90,6 +97,7 @@ p3 {
     font-size: 20px;
 }
 
+/* text underneath the section*/
 .fix-text {
     display: flex;
     justify-content: center;
@@ -126,18 +134,7 @@ p3 {
     font-style: normal;
   }
 
-  .old-standard-tt-bold {
-    font-family: "Old Standard TT", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-
-  .old-standard-tt-regular {
-    font-family: "Old Standard TT", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
+  /* error message when putting in the wrong password*/
   p2{
     display: flex;
     flex-direction: row;

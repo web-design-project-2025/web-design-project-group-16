@@ -74,7 +74,7 @@
 
 .profile-info-text p {
   margin-right: 160px;
-  max-width: 520px; /*430px looks better, but with icons added 520px could line up better with the image*/
+  max-width: 520px;
 }
 
 /* --- PROFILE INFO END --- */
@@ -108,6 +108,7 @@
   margin-left: 48px;
   margin-top: 48px;
 }
+/*Container for reviews*/
 .account-reviews-container {
   display: flex;
   flex-direction: column;
@@ -125,11 +126,13 @@
 
 }
 
+/*Poster images*/
 .account-reviews-container img {
   width:50%;
   border-radius: 10px;
 }
 
+/*Review text*/
 .account-review-text {
   margin-left: 48px;
 }
@@ -156,7 +159,7 @@
 /* --- REVIEWS END --- */
 
 /* ---CODE FOR ADDED REVIEWS--*/
-
+/*Container for user added reviews*/
 .account-review-container {
   display: flex;
   justify-content: flex-start;
@@ -171,7 +174,7 @@
     border-radius: 10px;
     margin-right: 48px;
   } */ 
-
+/*text in user review*/
 .account-review {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 48px;
@@ -266,28 +269,3 @@
   font-style: normal;
 }
 /* --- RESPONSIVENESS ---*/
-
-/* @media screen and (max-width:1110px) and (min-width:890px) {
-  .profile-info-text p {
-    max-width: 520px;
-  }
-}
-
-@media screen and (max-width:890px){
-  .profile-info-containter {
-    flex-direction: column;
-    max-width: 100%;
-  }
-
-  .profile-info-text  {
-    margin-left: 48px;
-    margin-top: 20px;
-  }
-
-   .account-review{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-}
-} */
