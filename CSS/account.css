@@ -26,7 +26,7 @@
 .profile-info-containter {
   display: flex;
   flex-direction: row;
-  margin-top: 96px;
+  margin-top: 48px;
   margin-bottom: 48px;
 }
 
@@ -50,12 +50,12 @@
 }
 
 .favourite-genres img {
-  width: 40px;
+  width: 5%;
   margin: 12px;
   border: none;
 }
-/* Profile text*/
 
+/* Profile text*/
 .profile-info-text h1 {
   color: black;
   font-family: "Montserrat", sans-serif;
@@ -82,13 +82,13 @@
 /* --- PROFILE INFO END --- */
 
 /* --- IMAGES START --- */
-/* Images container */
+/* Images container*/
 .account-movies-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   list-style: none;
   margin-left: 48px;
-  gap: 6px;
+  gap: 24px;
 
   /* --- Taken from https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp start --- */
   overflow-x: auto;
@@ -96,6 +96,7 @@
   /* --- end ---- */
 }
 
+/* CSS for separete images*/
 .account-movies-container img {
   width: auto;
   height: 330px;
@@ -104,48 +105,51 @@
 
 /* --- IMAGES END --- */
 
-/* --- REVIEWS START --- */
-
-#top-reviews {
-  margin-left: 48px;
-  margin-top: 48px;
-}
-/*Container for reviews*/
+/* --- REVIEWS THAT ARE ALWAYS SHOWN START --- */
+/* Div for the entire div for reviews*/
 .account-reviews-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  margin-left: 96px;
+  overflow: hidden;
+  margin-left: 48px;
+  margin-right: 48px;
   margin-bottom: 48px;
 }
 
+/* the div for the text in review itself */
 .account-review {
   display: flex;
-  justify-content: flex-start;
   align-items: flex-start;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 48px;
+  max-width: 520px;
+  margin-left: 48px;
+  margin-top: 48px;
 }
 
-/*Poster images*/
+/*Posters for reviews*/
 .account-reviews-container img {
   width: 50%;
   border-radius: 10px;
 }
 
-/*Review text*/
+/* The div for all the text */
 .account-review-text {
   margin-left: 48px;
 }
 
+/* title on the review */
 .account-review-text h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
+/* Th rating */
 .account-review-text h3 {
   font-family: "Montserrat", sans-serif;
-
   font-weight: 400;
   margin-top: 16px;
   margin-bottom: 8px;
@@ -156,82 +160,138 @@
   margin-top: 16px;
   margin-left: 0;
 }
+/* --- REVIEWS THAT ARE ALWAYS SHOWN END --- */
 
-/* --- REVIEWS END --- */
+/* --- REVIEWS THAT GET ADDED WHEN USER WRITES ONE START --- */
 
-/* ---CODE FOR ADDED REVIEWS--*/
 /*Container for user added reviews*/
-.account-review-container {
+.moviedetails-review {
   display: flex;
-  justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 48px;
-  margin-bottom: 48px;
-}
-
-/*Placeholder poster for the user submitted review, doesn't work :( */
-/* .placeholderElement img {
-    width: 15%;
-    border-radius: 10px;
-    margin-right: 48px;
-  } */
-/*text in user review*/
-.account-review {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 48px;
   max-width: 520px;
+  margin-left: 48px;
 }
 
-.account-review h2 {
+/*Placeholder poster for the user submitted review, doesn't work :( */
+.moviedetails-review img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* Title for added review */
+.reviews-subject {
+  margin-left: 48px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
-.account-review h3 {
+/* Rating for added review */
+.rating {
   font-weight: 400;
   margin-top: 16px;
   margin-bottom: 8px;
+  text-transform: none;
 }
 
-.account-review p {
+/* The added review itself */
+.reviews-post {
   margin-top: 16px;
-  max-width: 520px;
 }
 
-/* --- RESPONSIVENESS ---*/
+/* --- REVIEWS THAT GET ADDED WHEN USER WRITES ONE END --- */
+
+/* --- RESPONSIVENESS START ---*/
 
 @media screen and (max-width: 1110px) and (min-width: 890px) {
   .profile-info-text p {
     max-width: 520px;
   }
   .account-review-text p {
-    max-width: 520px;
+    width: auto;
   }
 }
 
 @media screen and (max-width: 890px) and (min-width: 630px) {
+  /* Profile */
   .profile-info-containter {
     flex-direction: column;
     max-width: 640px;
     height: auto;
   }
 
+  .profile-info-text {
+    margin-left: 48px;
+    margin-top: 20px;
+  }
+
+  /* Page Headers */
+  #account-page-headers {
+    text-align: center;
+  }
+
+  /* Genre icons*/
+  .favourite-genres img {
+    padding-top: 12px;
+    margin: 6px;
+    width: 5%;
+    border-radius: none;
+  }
+
+  /* Reviews that are always displayed start */
+  .account-reviews-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .account-review {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0px;
-  }
-  .account-review-text {
-    text-align: center;
+    margin: 0px;
+    margin-bottom: 24px;
   }
 
-  .profile-info-text {
-    margin-left: 48px;
-    margin-top: 20px;
+  .account-review-text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
   }
+
+  .account-review h2 {
+    padding-top: 12px;
+    margin: 0px;
+  }
+
+  /* Reviews that are always displayed End */
+
+  /* Reviews that are added by user start */
+
+  .moviedetails-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 24px;
+  }
+
+  .reviews-subject {
+    padding-top: 12px;
+    margin: 0px;
+  }
+
+  /* Review that are added by user end */
 }
 
 @media screen and (max-width: 630px) and (min-width: 370px) {
+  /* profile start*/
   .profile-info-containter {
     flex-direction: column;
     margin: 48px 24px;
@@ -241,23 +301,78 @@
     max-width: 233px;
     margin: 0 auto 48px;
   }
-
   .profile-info-text {
     margin: 0 24px;
     text-align: left;
   }
 
   .profile-info-text p {
-    margin-right: 0;
+    margin: 0px;
     max-width: 100%;
   }
 
+  /* Genre Icons*/
+  .favourite-genres img {
+    padding-top: 12px;
+    margin: 0px;
+    width: 10%;
+    border: none;
+  }
+
+  /* Account page header */
+  #account-page-headers {
+    text-align: center;
+  }
+
+  /* Reviews that are always displayed start */
+  .account-reviews-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .account-review {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0px;
+    margin: 0px;
+    margin-bottom: 24px;
   }
+
+  .account-review-text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .account-review h2 {
+    padding-top: 12px;
+    margin: 0px;
+  }
+
+  /* Reviews that are always displayed End */
+
+  /* Reviews that are added by user start */
+
+  .moviedetails-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 24px;
+  }
+
+  .reviews-subject {
+    padding-top: 12px;
+    margin: 0px;
+  }
+
+  /* Review that are added by user end */
 }
 
 /*Fonts & typefaces*/
@@ -267,4 +382,4 @@
   font-weight: 100;
   font-style: normal;
 }
-/* --- RESPONSIVENESS ---*/
+/* --- RESPONSIVENESS END ---*/
